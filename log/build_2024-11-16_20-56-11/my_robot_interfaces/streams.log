@@ -1,0 +1,7 @@
+[0.008s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_interfaces
+[0.017s] [31mCMake Error at CMakeLists.txt:12:
+[0.017s]   Parse error.  Expected a command name, got unquoted argument with text "{".
+[0.017s] 
+[0.017s] [0m
+[0.018s] -- Configuring incomplete, errors occurred!
+[0.019s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_interfaces

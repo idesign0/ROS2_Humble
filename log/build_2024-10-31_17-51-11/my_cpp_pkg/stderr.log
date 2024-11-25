@@ -1,0 +1,8 @@
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/robot_radio_station.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp/rclcpp.hpp: No such file or directory
+    1 | #include [01;31m[K<rclcpp/rclcpp/rclcpp.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_radio_station.dir/build.make:76: CMakeFiles/robot_radio_station.dir/src/robot_radio_station.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/robot_radio_station.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

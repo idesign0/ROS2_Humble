@@ -1,0 +1,19 @@
+[0.306s] Invoking command in '/home/parallels/ros2_ws/build/add_two_ints': PYTHONPATH=/home/parallels/ros2_ws/build/add_two_ints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/ros2_ws/build/add_two_ints/build --no-deps symlink_data
+[0.428s] running develop
+[0.521s] running egg_info
+[0.521s] writing add_two_ints.egg-info/PKG-INFO
+[0.521s] writing dependency_links to add_two_ints.egg-info/dependency_links.txt
+[0.521s] writing entry points to add_two_ints.egg-info/entry_points.txt
+[0.522s] writing requirements to add_two_ints.egg-info/requires.txt
+[0.522s] writing top-level names to add_two_ints.egg-info/top_level.txt
+[0.523s] reading manifest file 'add_two_ints.egg-info/SOURCES.txt'
+[0.523s] writing manifest file 'add_two_ints.egg-info/SOURCES.txt'
+[0.524s] running build_ext
+[0.524s] Creating /home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages/add-two-ints.egg-link (link to .)
+[0.524s] Installing add_two_ints_client script to /home/parallels/ros2_ws/install/add_two_ints/lib/add_two_ints
+[0.524s] Installing add_two_ints_client_no_oop script to /home/parallels/ros2_ws/install/add_two_ints/lib/add_two_ints
+[0.525s] Installing add_two_ints_server script to /home/parallels/ros2_ws/install/add_two_ints/lib/add_two_ints
+[0.525s] 
+[0.525s] Installed /home/parallels/ros2_ws/build/add_two_ints
+[0.525s] running symlink_data
+[0.541s] Invoked command in '/home/parallels/ros2_ws/build/add_two_ints' returned '0': PYTHONPATH=/home/parallels/ros2_ws/build/add_two_ints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/ros2_ws/build/add_two_ints/build --no-deps symlink_data

@@ -1,0 +1,44 @@
+[0.015s] Invoking command in '/home/parallels/ros2_ws/build/ros2_control_test_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/hardware_interface:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/ros2_control/ros2_control_test_assets -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/ros2_control_test_assets
+[0.069s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.114s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.179s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.179s] -- Detecting C compile features
+[0.179s] -- Detecting C compile features - done
+[0.182s] -- Detecting CXX compiler ABI info
+[0.253s] -- Detecting CXX compiler ABI info - done
+[0.259s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.259s] -- Detecting CXX compile features
+[0.259s] -- Detecting CXX compile features - done
+[0.265s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.360s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.491s] -- Configuring done
+[0.495s] -- Generating done
+[0.496s] -- Build files have been written to: /home/parallels/ros2_ws/build/ros2_control_test_assets
+[0.499s] Invoked command in '/home/parallels/ros2_ws/build/ros2_control_test_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/hardware_interface:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/ros2_control/ros2_control_test_assets -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/ros2_control_test_assets
+[0.500s] Invoking command in '/home/parallels/ros2_ws/build/ros2_control_test_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/hardware_interface:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/ros2_control_test_assets -- -j4 -l4
+[0.548s] Invoked command in '/home/parallels/ros2_ws/build/ros2_control_test_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/hardware_interface:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/ros2_control_test_assets -- -j4 -l4
+[0.567s] Invoking command in '/home/parallels/ros2_ws/build/ros2_control_test_assets': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/hardware_interface:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/ros2_control_test_assets
+[0.571s] -- Install configuration: ""
+[0.571s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/include
+[0.571s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/include/ros2_control_test_assets
+[0.571s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/include/ros2_control_test_assets/components_urdfs.hpp
+[0.572s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/include/ros2_control_test_assets/descriptions.hpp
+[0.574s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ament_index/resource_index/package_run_dependencies/ros2_control_test_assets
+[0.575s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ament_index/resource_index/parent_prefix_path/ros2_control_test_assets
+[0.576s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/environment/ament_prefix_path.sh
+[0.576s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/environment/ament_prefix_path.dsv
+[0.577s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/environment/path.sh
+[0.577s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/environment/path.dsv
+[0.578s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/local_setup.bash
+[0.579s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/local_setup.sh
+[0.579s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/local_setup.zsh
+[0.580s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/local_setup.dsv
+[0.581s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/package.dsv
+[0.582s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ament_index/resource_index/packages/ros2_control_test_assets
+[0.584s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.584s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake/ros2_control_test_assetsConfig.cmake
+[0.585s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/cmake/ros2_control_test_assetsConfig-version.cmake
+[0.585s] -- Installing: /home/parallels/ros2_ws/install/ros2_control_test_assets/share/ros2_control_test_assets/package.xml
+[0.587s] Invoked command in '/home/parallels/ros2_ws/build/ros2_control_test_assets' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/hardware_interface:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/ros2_control_test_assets

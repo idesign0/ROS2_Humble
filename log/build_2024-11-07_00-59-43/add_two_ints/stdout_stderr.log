@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing add_two_ints.egg-info/PKG-INFO
+writing dependency_links to add_two_ints.egg-info/dependency_links.txt
+writing entry points to add_two_ints.egg-info/entry_points.txt
+writing requirements to add_two_ints.egg-info/requires.txt
+writing top-level names to add_two_ints.egg-info/top_level.txt
+reading manifest file 'add_two_ints.egg-info/SOURCES.txt'
+writing manifest file 'add_two_ints.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages/add-two-ints.egg-link (link to .)
+Installing add_two_ints_client_no_oop = add_two_ints.add_two_ints_client_no_oop:mainadd_two_ints_client script to /home/parallels/ros2_ws/install/add_two_ints/lib/add_two_ints
+Installing add_two_ints_server script to /home/parallels/ros2_ws/install/add_two_ints/lib/add_two_ints
+
+Installed /home/parallels/ros2_ws/build/add_two_ints
+running symlink_data

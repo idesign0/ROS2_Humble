@@ -1,0 +1,28 @@
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:[m[K In member function ‘[01m[Kvoid LED_node::callback_setled(my_robot_interfaces::srv::SetLED_Request_<std::allocator<void> >::SharedPtr, my_robot_interfaces::srv::SetLED_Response_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:20:26:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   20 |             LEDind[3] = ([01;35m[K0[m[K,0,0);
+      |                          [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:20:30:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   20 |             LEDind[3] = (0,0,[01;35m[K0[m[K);
+      |                              [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:22:26:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   22 |             LEDind[3] = ([01;35m[K1[m[K,1,0);
+      |                          [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:22:30:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   22 |             LEDind[3] = (1,1,[01;35m[K0[m[K);
+      |                              [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:24:26:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   24 |             LEDind[3] = ([01;35m[K1[m[K,0,0);
+      |                          [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:24:30:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   24 |             LEDind[3] = (1,0,[01;35m[K0[m[K);
+      |                              [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:26:26:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   26 |             LEDind[3] = ([01;35m[K0[m[K,0,0);
+      |                          [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:26:30:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   26 |             LEDind[3] = (0,0,[01;35m[K0[m[K);
+      |                              [01;35m[K^[m[K
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:17:97:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 |     void callback_setled(setLedtype::Request::SharedPtr request,[01;35m[KsetLedtype::Response::SharedPtr response[m[K){
+      |                                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K

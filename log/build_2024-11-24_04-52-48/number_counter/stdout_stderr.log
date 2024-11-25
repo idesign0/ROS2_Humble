@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/number_counter/number_counter.egg-info/PKG-INFO
+writing dependency_links to ../../build/number_counter/number_counter.egg-info/dependency_links.txt
+writing entry points to ../../build/number_counter/number_counter.egg-info/entry_points.txt
+writing requirements to ../../build/number_counter/number_counter.egg-info/requires.txt
+writing top-level names to ../../build/number_counter/number_counter.egg-info/top_level.txt
+reading manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+writing manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+running build
+running build_py
+copying number_counter/number_publisher.py -> /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter
+copying number_counter/number_counter.py -> /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter
+running install
+running install_lib
+copying /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter/number_publisher.py -> /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter
+copying /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter/number_counter.py -> /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter
+byte-compiling /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter/number_publisher.py to number_publisher.cpython-310.pyc
+byte-compiling /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter/number_counter.py to number_counter.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/number_counter/number_counter.egg-info to /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter-0.0.0-py3.10.egg-info
+running install_scripts
+Installing number_count script to /home/parallels/ros2_ws/install/number_counter/lib/number_counter
+Installing number_pub script to /home/parallels/ros2_ws/install/number_counter/lib/number_counter
+writing list of installed files to '/home/parallels/ros2_ws/build/number_counter/install.log'

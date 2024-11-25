@@ -1,0 +1,230 @@
+[0.000000] (-) TimerEvent: {}
+[0.000109] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.000131] (-) JobUnselected: {'identifier': 'add_two_ints'}
+[0.000143] (-) JobUnselected: {'identifier': 'add_two_ints_cpp'}
+[0.000184] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.000214] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.000231] (-) JobUnselected: {'identifier': 'controller_interface'}
+[0.000242] (-) JobUnselected: {'identifier': 'controller_manager'}
+[0.000256] (-) JobUnselected: {'identifier': 'controller_manager_msgs'}
+[0.000314] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.000333] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.000346] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.000360] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.000370] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.000383] (-) JobUnselected: {'identifier': 'gz_ros2_control_tests'}
+[0.000392] (-) JobUnselected: {'identifier': 'hardware_interface'}
+[0.000405] (-) JobUnselected: {'identifier': 'hardware_interface_testing'}
+[0.000415] (-) JobUnselected: {'identifier': 'ign_ros2_control'}
+[0.000429] (-) JobUnselected: {'identifier': 'ign_ros2_control_demos'}
+[0.000490] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.000511] (-) JobUnselected: {'identifier': 'joint_limits'}
+[0.000524] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.000534] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.000546] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000556] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000569] (-) JobUnselected: {'identifier': 'number_counter'}
+[0.000578] (-) JobUnselected: {'identifier': 'polygon_base'}
+[0.000590] (-) JobUnselected: {'identifier': 'polygon_plugins'}
+[0.000599] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.000612] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.000621] (-) JobUnselected: {'identifier': 'ros2_control'}
+[0.000632] (-) JobUnselected: {'identifier': 'ros2_control_test_assets'}
+[0.000639] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.000651] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.000660] (-) JobUnselected: {'identifier': 'ros2controlcli'}
+[0.000673] (-) JobUnselected: {'identifier': 'rqt_controller_manager'}
+[0.000682] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.000693] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.000700] (-) JobUnselected: {'identifier': 'transmission_interface'}
+[0.000711] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.000721] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.000734] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.000745] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/parallels/ros2_ws/install/my_robot_interfaces')])}
+[0.000762] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.008938] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.009485] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.009799] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/ros2_ws/build/my_cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/parallels/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/velocity_controllers/lib:/home/parallels/ros2_ws/install/tricycle_steering_controller/lib:/home/parallels/ros2_ws/install/tricycle_controller/lib:/home/parallels/ros2_ws/install/transmission_interface/lib:/home/parallels/ros2_ws/install/bicycle_steering_controller/lib:/home/parallels/ros2_ws/install/ackermann_steering_controller/lib:/home/parallels/ros2_ws/install/steering_controllers_library/lib:/home/parallels/ros2_ws/install/ign_ros2_control/lib:/home/parallels/ros2_ws/install/hardware_interface_testing/lib:/home/parallels/ros2_ws/install/controller_manager/lib:/home/parallels/ros2_ws/install/range_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/position_controllers/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/home/parallels/ros2_ws/install/admittance_controller/lib:/home/parallels/ros2_ws/install/joint_trajectory_controller/lib:/home/parallels/ros2_ws/install/joint_state_broadcaster/lib:/home/parallels/ros2_ws/install/imu_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/gripper_controllers/lib:/home/parallels/ros2_ws/install/effort_controllers/lib:/home/parallels/ros2_ws/install/forward_command_controller/lib:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/diff_drive_controller/lib:/home/parallels/ros2_ws/install/controller_interface/lib:/home/parallels/ros2_ws/install/hardware_interface/lib:/home/parallels/ros2_ws/install/controller_manager_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2455'), ('SYSTEMD_EXEC_PID', '2572'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '324717'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:29109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-02-desktop:@/tmp/.ICE-unix/2535,unix/ubuntu-linux-22-04-02-desktop:/tmp/.ICE-unix/2535'), ('INVOCATION_ID', 'd8284445e5014c218acd583c14be91d1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D2P9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:01fb2012-e3b9-4be0-850d-b884a264021a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/ros2controlcli/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/build/my_py_pkg:/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/build/add_two_ints:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble')]), 'shell': False}
+[0.036152] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099542] (-) TimerEvent: {}
+[0.114340] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.138021] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.139448] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.142734] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.149353] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.156914] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.188230] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.194699] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199617] (-) TimerEvent: {}
+[0.283107] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.299724] (-) TimerEvent: {}
+[0.321478] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[0.350884] (my_cpp_pkg) StdoutLine: {'line': b'-- Found my_robot_interfaces: 0.0.0 (/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)\n'}
+[0.399849] (-) TimerEvent: {}
+[0.411555] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.415868] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:24 (add_executable):\n'}
+[0.416430] (my_cpp_pkg) StderrLine: {'line': b'  Policy CMP0115 is not set: Source file extensions must be explicit.  Run\n'}
+[0.416474] (my_cpp_pkg) StderrLine: {'line': b'  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy\n'}
+[0.416502] (my_cpp_pkg) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.416527] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.416550] (my_cpp_pkg) StderrLine: {'line': b'  File:\n'}
+[0.416574] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.416597] (my_cpp_pkg) StderrLine: {'line': b'    /home/parallels/ros2_ws/src/my_cpp_pkg/src/hardwareStatus_pub.cpp\n'}
+[0.416621] (my_cpp_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.416645] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.416669] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:27 (add_executable):\n'}
+[0.416692] (my_cpp_pkg) StderrLine: {'line': b'  Policy CMP0115 is not set: Source file extensions must be explicit.  Run\n'}
+[0.416715] (my_cpp_pkg) StderrLine: {'line': b'  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy\n'}
+[0.416738] (my_cpp_pkg) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.416761] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.416784] (my_cpp_pkg) StderrLine: {'line': b'  File:\n'}
+[0.416807] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.416830] (my_cpp_pkg) StderrLine: {'line': b'    /home/parallels/ros2_ws/src/my_cpp_pkg/src/hardwarestatus_sub.cpp\n'}
+[0.416855] (my_cpp_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.416877] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.416901] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:30 (add_executable):\n'}
+[0.416924] (my_cpp_pkg) StderrLine: {'line': b'  Policy CMP0115 is not set: Source file extensions must be explicit.  Run\n'}
+[0.416947] (my_cpp_pkg) StderrLine: {'line': b'  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy\n'}
+[0.417034] (my_cpp_pkg) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.417088] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.417151] (my_cpp_pkg) StderrLine: {'line': b'  File:\n'}
+[0.417203] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.417233] (my_cpp_pkg) StderrLine: {'line': b'    /home/parallels/ros2_ws/src/my_cpp_pkg/src/battery_node.cpp\n'}
+[0.417259] (my_cpp_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.417284] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.417308] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:33 (add_executable):\n'}
+[0.417331] (my_cpp_pkg) StderrLine: {'line': b'  Policy CMP0115 is not set: Source file extensions must be explicit.  Run\n'}
+[0.417355] (my_cpp_pkg) StderrLine: {'line': b'  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy\n'}
+[0.417378] (my_cpp_pkg) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[0.417401] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.417439] (my_cpp_pkg) StderrLine: {'line': b'  File:\n'}
+[0.417468] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.417505] (my_cpp_pkg) StderrLine: {'line': b'    /home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp\n'}
+[0.417529] (my_cpp_pkg) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.417552] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.436828] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.438291] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/parallels/ros2_ws/build/my_cpp_pkg\n'}
+[0.458849] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[0.463192] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_radio_station\x1b[0m\n'}
+[0.463266] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hardwarestatus_pub\x1b[0m\n'}
+[0.477439] (my_cpp_pkg) StdoutLine: {'line': b'[ 14%] Built target cpp_node\n'}
+[0.478027] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smartphone\x1b[0m\n'}
+[0.482832] (my_cpp_pkg) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/hardwarestatus_pub.dir/src/hardwareStatus_pub.cpp.o\x1b[0m\n'}
+[0.484150] (my_cpp_pkg) StdoutLine: {'line': b'[ 35%] Built target robot_radio_station\n'}
+[0.494020] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target smartphone\n'}
+[0.497803] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hardwarestatus_sub\x1b[0m\n'}
+[0.499978] (-) TimerEvent: {}
+[0.504130] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target client_battery\x1b[0m\n'}
+[0.513677] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target LED_panel\x1b[0m\n'}
+[0.523815] (my_cpp_pkg) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/hardwarestatus_sub.dir/src/hardwarestatus_sub.cpp.o\x1b[0m\n'}
+[0.524309] (my_cpp_pkg) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/client_battery.dir/src/battery_node.cpp.o\x1b[0m\n'}
+[0.529899] (my_cpp_pkg) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/LED_panel.dir/src/LED_panel.cpp.o\x1b[0m\n'}
+[0.600084] (-) TimerEvent: {}
+[0.700388] (-) TimerEvent: {}
+[0.800752] (-) TimerEvent: {}
+[0.901187] (-) TimerEvent: {}
+[1.001598] (-) TimerEvent: {}
+[1.102012] (-) TimerEvent: {}
+[1.202710] (-) TimerEvent: {}
+[1.303534] (-) TimerEvent: {}
+[1.404125] (-) TimerEvent: {}
+[1.504552] (-) TimerEvent: {}
+[1.605010] (-) TimerEvent: {}
+[1.705507] (-) TimerEvent: {}
+[1.806114] (-) TimerEvent: {}
+[1.906535] (-) TimerEvent: {}
+[2.006856] (-) TimerEvent: {}
+[2.107345] (-) TimerEvent: {}
+[2.207796] (-) TimerEvent: {}
+[2.308134] (-) TimerEvent: {}
+[2.408476] (-) TimerEvent: {}
+[2.524928] (-) TimerEvent: {}
+[2.696103] (-) TimerEvent: {}
+[2.796413] (-) TimerEvent: {}
+[2.896817] (-) TimerEvent: {}
+[2.997160] (-) TimerEvent: {}
+[3.097447] (-) TimerEvent: {}
+[3.199323] (-) TimerEvent: {}
+[3.299662] (-) TimerEvent: {}
+[3.400394] (-) TimerEvent: {}
+[3.502842] (-) TimerEvent: {}
+[3.603170] (-) TimerEvent: {}
+[3.703766] (-) TimerEvent: {}
+[3.805517] (-) TimerEvent: {}
+[3.905776] (-) TimerEvent: {}
+[4.014124] (-) TimerEvent: {}
+[4.114542] (-) TimerEvent: {}
+[4.214856] (-) TimerEvent: {}
+[4.315283] (-) TimerEvent: {}
+[4.415575] (-) TimerEvent: {}
+[4.515825] (-) TimerEvent: {}
+[4.532160] (my_cpp_pkg) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable client_battery\x1b[0m\n'}
+[4.615963] (-) TimerEvent: {}
+[4.716365] (-) TimerEvent: {}
+[4.816673] (-) TimerEvent: {}
+[4.855124] (my_cpp_pkg) StdoutLine: {'line': b'[ 78%] Built target client_battery\n'}
+[4.916768] (-) TimerEvent: {}
+[4.928423] (my_cpp_pkg) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable hardwarestatus_pub\x1b[0m\n'}
+[5.016872] (-) TimerEvent: {}
+[5.093724] (my_cpp_pkg) StdoutLine: {'line': b'[ 85%] Built target hardwarestatus_pub\n'}
+[5.116978] (-) TimerEvent: {}
+[5.217222] (-) TimerEvent: {}
+[5.317522] (-) TimerEvent: {}
+[5.336963] (my_cpp_pkg) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable LED_panel\x1b[0m\n'}
+[5.417608] (-) TimerEvent: {}
+[5.484886] (my_cpp_pkg) StdoutLine: {'line': b'[ 92%] Built target LED_panel\n'}
+[5.517731] (-) TimerEvent: {}
+[5.618651] (-) TimerEvent: {}
+[5.718861] (-) TimerEvent: {}
+[5.820137] (-) TimerEvent: {}
+[5.920398] (-) TimerEvent: {}
+[6.020797] (-) TimerEvent: {}
+[6.121334] (-) TimerEvent: {}
+[6.221597] (-) TimerEvent: {}
+[6.322244] (-) TimerEvent: {}
+[6.423124] (-) TimerEvent: {}
+[6.523409] (-) TimerEvent: {}
+[6.625807] (-) TimerEvent: {}
+[6.726242] (-) TimerEvent: {}
+[6.798847] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hardwarestatus_sub\x1b[0m\n'}
+[6.826348] (-) TimerEvent: {}
+[6.926663] (-) TimerEvent: {}
+[7.021046] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target hardwarestatus_sub\n'}
+[7.026775] (-) TimerEvent: {}
+[7.055545] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.121510] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[7.126897] (-) TimerEvent: {}
+[7.183421] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/parallels/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/parallels/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/velocity_controllers/lib:/home/parallels/ros2_ws/install/tricycle_steering_controller/lib:/home/parallels/ros2_ws/install/tricycle_controller/lib:/home/parallels/ros2_ws/install/transmission_interface/lib:/home/parallels/ros2_ws/install/bicycle_steering_controller/lib:/home/parallels/ros2_ws/install/ackermann_steering_controller/lib:/home/parallels/ros2_ws/install/steering_controllers_library/lib:/home/parallels/ros2_ws/install/ign_ros2_control/lib:/home/parallels/ros2_ws/install/hardware_interface_testing/lib:/home/parallels/ros2_ws/install/controller_manager/lib:/home/parallels/ros2_ws/install/range_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/position_controllers/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/home/parallels/ros2_ws/install/admittance_controller/lib:/home/parallels/ros2_ws/install/joint_trajectory_controller/lib:/home/parallels/ros2_ws/install/joint_state_broadcaster/lib:/home/parallels/ros2_ws/install/imu_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/gripper_controllers/lib:/home/parallels/ros2_ws/install/effort_controllers/lib:/home/parallels/ros2_ws/install/forward_command_controller/lib:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/diff_drive_controller/lib:/home/parallels/ros2_ws/install/controller_interface/lib:/home/parallels/ros2_ws/install/hardware_interface/lib:/home/parallels/ros2_ws/install/controller_manager_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2455'), ('SYSTEMD_EXEC_PID', '2572'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '324717'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:29109'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-02-desktop:@/tmp/.ICE-unix/2535,unix/ubuntu-linux-22-04-02-desktop:/tmp/.ICE-unix/2535'), ('INVOCATION_ID', 'd8284445e5014c218acd583c14be91d1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.D2P9W2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:01fb2012-e3b9-4be0-850d-b884a264021a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/ros2controlcli/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/build/my_py_pkg:/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/build/add_two_ints:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble')]), 'shell': False}
+[7.194027] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.200287] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[7.203092] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_radio_station\n'}
+[7.204766] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[7.207525] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardwarestatus_pub\n'}
+[7.224678] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardwarestatus_pub" to ""\n'}
+[7.226456] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardwarestatus_sub\n'}
+[7.226965] (-) TimerEvent: {}
+[7.238339] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hardwarestatus_sub" to ""\n'}
+[7.239578] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/client_battery\n'}
+[7.240823] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/client_battery" to ""\n'}
+[7.241837] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/LED_panel\n'}
+[7.243434] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/LED_panel" to ""\n'}
+[7.244142] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[7.244763] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[7.248323] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[7.248641] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[7.249659] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[7.249944] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[7.250967] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[7.251263] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[7.251549] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[7.251825] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[7.252460] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[7.253023] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[7.254883] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[7.255189] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[7.255788] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[7.264769] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.328790] (-) TimerEvent: {}
+[7.429463] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[7.430474] (-) TimerEvent: {}
+[7.433785] (-) EventReactorShutdown: {}

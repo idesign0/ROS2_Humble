@@ -1,0 +1,97 @@
+[0.014s] Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/velocity_controllers/lib:/home/parallels/ros2_ws/install/tricycle_steering_controller/lib:/home/parallels/ros2_ws/install/tricycle_controller/lib:/home/parallels/ros2_ws/install/transmission_interface/lib:/home/parallels/ros2_ws/install/bicycle_steering_controller/lib:/home/parallels/ros2_ws/install/ackermann_steering_controller/lib:/home/parallels/ros2_ws/install/steering_controllers_library/lib:/home/parallels/ros2_ws/install/ign_ros2_control/lib:/home/parallels/ros2_ws/install/hardware_interface_testing/lib:/home/parallels/ros2_ws/install/controller_manager/lib:/home/parallels/ros2_ws/install/range_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/position_controllers/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/home/parallels/ros2_ws/install/admittance_controller/lib:/home/parallels/ros2_ws/install/joint_trajectory_controller/lib:/home/parallels/ros2_ws/install/joint_state_broadcaster/lib:/home/parallels/ros2_ws/install/imu_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/gripper_controllers/lib:/home/parallels/ros2_ws/install/effort_controllers/lib:/home/parallels/ros2_ws/install/forward_command_controller/lib:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/diff_drive_controller/lib:/home/parallels/ros2_ws/install/controller_interface/lib:/home/parallels/ros2_ws/install/hardware_interface/lib:/home/parallels/ros2_ws/install/controller_manager_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.081s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.163s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.188s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.190s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.194s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.201s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.210s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.234s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.236s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.330s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.366s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.398s] -- Found my_robot_interfaces: 0.0.0 (/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+[0.458s] -- Configuring done
+[0.460s] [33mCMake Warning (dev) at CMakeLists.txt:24 (add_executable):
+[0.460s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.460s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.460s]   command to set the policy and suppress this warning.
+[0.460s] 
+[0.460s]   File:
+[0.460s] 
+[0.460s]     /home/parallels/ros2_ws/src/my_cpp_pkg/src/hardwareStatus_pub.cpp
+[0.460s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.460s] [0m
+[0.461s] [33mCMake Warning (dev) at CMakeLists.txt:27 (add_executable):
+[0.461s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.461s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.461s]   command to set the policy and suppress this warning.
+[0.461s] 
+[0.461s]   File:
+[0.461s] 
+[0.461s]     /home/parallels/ros2_ws/src/my_cpp_pkg/src/hardwarestatus_sub.cpp
+[0.461s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.461s] [0m
+[0.461s] [33mCMake Warning (dev) at CMakeLists.txt:30 (add_executable):
+[0.461s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.461s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.461s]   command to set the policy and suppress this warning.
+[0.461s] 
+[0.461s]   File:
+[0.461s] 
+[0.461s]     /home/parallels/ros2_ws/src/my_cpp_pkg/src/battery_node.cpp
+[0.461s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.461s] [0m
+[0.461s] [33mCMake Warning (dev) at CMakeLists.txt:33 (add_executable):
+[0.461s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[0.461s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[0.461s]   command to set the policy and suppress this warning.
+[0.461s] 
+[0.461s]   File:
+[0.461s] 
+[0.461s]     /home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp
+[0.461s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.461s] [0m
+[0.482s] -- Generating done
+[0.484s] -- Build files have been written to: /home/parallels/ros2_ws/build/my_cpp_pkg
+[0.501s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.502s] [35m[1mConsolidate compiler generated dependencies of target robot_radio_station[0m
+[0.504s] [35m[1mConsolidate compiler generated dependencies of target smartphone[0m
+[0.505s] [35m[1mConsolidate compiler generated dependencies of target hardwarestatus_pub[0m
+[0.515s] [  7%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[0.516s] [ 14%] [32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o[0m
+[0.525s] [ 28%] Built target hardwarestatus_pub
+[0.529s] [ 42%] Built target robot_radio_station
+[0.533s] [35m[1mConsolidate compiler generated dependencies of target hardwarestatus_sub[0m
+[0.539s] [35m[1mConsolidate compiler generated dependencies of target client_battery[0m
+[0.548s] [ 57%] Built target hardwarestatus_sub
+[0.549s] [ 64%] [32mBuilding CXX object CMakeFiles/client_battery.dir/src/battery_node.cpp.o[0m
+[0.555s] [35m[1mConsolidate compiler generated dependencies of target LED_panel[0m
+[0.578s] [ 71%] [32mBuilding CXX object CMakeFiles/LED_panel.dir/src/LED_panel.cpp.o[0m
+[3.011s] In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+[3.035s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[3.035s]                  from [01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:1[m[K:
+[3.037s] /usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘[01m[K_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = long int; _OI = int*][m[K’:
+[3.050s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:522:42:[m[K   required from ‘[01m[K_OI std::__copy_move_a1(_II, _II, _OI) [with bool _IsMove = false; _II = long int; _OI = int*][m[K’
+[3.050s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:530:31:[m[K   required from ‘[01m[K_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = long int; _OI = int*][m[K’
+[3.054s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:620:7:[m[K   required from ‘[01m[K_OI std::copy(_II, _II, _OI) [with _II = long int; _OI = int*][m[K’
+[3.054s] [01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:45:18:[m[K   required from here
+[3.054s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:488:64:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kiterator_category[m[K’ in ‘[01m[Kstruct std::iterator_traits<long int>[m[K’
+[3.054s]   488 |       typedef typename iterator_traits<_II>::iterator_category [01;31m[K_Category[m[K;
+[3.054s]       |                                                                [01;31m[K^~~~~~~~~[m[K
+[3.055s] [01m[K/usr/include/c++/11/bits/stl_algobase.h:495:51:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kiterator_category[m[K’ in ‘[01m[Kstruct std::iterator_traits<long int>[m[K’
+[3.055s]   494 |       return [01;31m[Kstd::__copy_move<_IsMove, __memcpyable<_OI, _II>::__value,[m[K
+[3.055s]       |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.055s]   495 | [01;31m[K                              _Category>::__copy_m(__first, __last, __result)[m[K;
+[3.055s]       |                               [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.269s] [ 78%] [32m[1mLinking CXX executable cpp_node[0m
+[3.378s] gmake[2]: *** [CMakeFiles/LED_panel.dir/build.make:76: CMakeFiles/LED_panel.dir/src/LED_panel.cpp.o] Error 1
+[3.380s] gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/LED_panel.dir/all] Error 2
+[3.380s] gmake[1]: *** Waiting for unfinished jobs....
+[3.431s] [ 85%] [32m[1mLinking CXX executable client_battery[0m
+[3.440s] [ 85%] Built target cpp_node
+[3.545s] [ 85%] Built target client_battery
+[5.353s] [ 92%] [32m[1mLinking CXX executable smartphone[0m
+[5.576s] [ 92%] Built target smartphone
+[5.578s] gmake: *** [Makefile:146: all] Error 2
+[5.614s] Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/velocity_controllers/lib:/home/parallels/ros2_ws/install/tricycle_steering_controller/lib:/home/parallels/ros2_ws/install/tricycle_controller/lib:/home/parallels/ros2_ws/install/transmission_interface/lib:/home/parallels/ros2_ws/install/bicycle_steering_controller/lib:/home/parallels/ros2_ws/install/ackermann_steering_controller/lib:/home/parallels/ros2_ws/install/steering_controllers_library/lib:/home/parallels/ros2_ws/install/ign_ros2_control/lib:/home/parallels/ros2_ws/install/hardware_interface_testing/lib:/home/parallels/ros2_ws/install/controller_manager/lib:/home/parallels/ros2_ws/install/range_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/position_controllers/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/home/parallels/ros2_ws/install/admittance_controller/lib:/home/parallels/ros2_ws/install/joint_trajectory_controller/lib:/home/parallels/ros2_ws/install/joint_state_broadcaster/lib:/home/parallels/ros2_ws/install/imu_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/gripper_controllers/lib:/home/parallels/ros2_ws/install/effort_controllers/lib:/home/parallels/ros2_ws/install/forward_command_controller/lib:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/diff_drive_controller/lib:/home/parallels/ros2_ws/install/controller_interface/lib:/home/parallels/ros2_ws/install/hardware_interface/lib:/home/parallels/ros2_ws/install/controller_manager_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j4 -l4

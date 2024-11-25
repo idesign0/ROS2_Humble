@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing number_counter.egg-info/PKG-INFO
+writing dependency_links to number_counter.egg-info/dependency_links.txt
+writing entry points to number_counter.egg-info/entry_points.txt
+writing requirements to number_counter.egg-info/requires.txt
+writing top-level names to number_counter.egg-info/top_level.txt
+reading manifest file 'number_counter.egg-info/SOURCES.txt'
+writing manifest file 'number_counter.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number-counter.egg-link (link to .)
+Installing number_count script to /home/parallels/ros2_ws/install/number_counter/lib/number_counter
+Installing number_pub script to /home/parallels/ros2_ws/install/number_counter/lib/number_counter
+
+Installed /home/parallels/ros2_ws/build/number_counter
+running symlink_data

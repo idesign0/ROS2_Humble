@@ -1,0 +1,26 @@
+[0.006s] Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.052s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[1.328s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[1.384s] [100%] Built target cpp_node
+[1.389s] Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[1.409s] Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_cpp_pkg
+[1.415s] -- Install configuration: ""
+[1.415s] -- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[1.415s] -- Set runtime path of "/home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node" to ""
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[1.415s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[1.416s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[1.416s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[1.416s] -- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[1.416s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[1.416s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[1.416s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[1.416s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[1.416s] Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_cpp_pkg

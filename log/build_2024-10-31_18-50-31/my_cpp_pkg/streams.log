@@ -1,0 +1,29 @@
+[0.005s] Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.044s] [ 33%] Built target cpp_node
+[0.048s] [ 66%] Built target smartphone
+[0.053s] [ 83%] [32mBuilding CXX object CMakeFiles/robot_radio_station.dir/src/robot_radio_station.cpp.o[0m
+[1.877s] [100%] [32m[1mLinking CXX executable robot_radio_station[0m
+[1.980s] [100%] Built target robot_radio_station
+[1.990s] Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[2.014s] Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_cpp_pkg
+[2.017s] -- Install configuration: ""
+[2.017s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[2.018s] -- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_radio_station
+[2.019s] -- Set runtime path of "/home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_radio_station" to ""
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[2.020s] -- Installing: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[2.020s] -- Up-to-date: /home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[2.021s] Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_cpp_pkg

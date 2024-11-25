@@ -1,0 +1,18 @@
+In file included from [01m[K/usr/include/c++/11/memory:63[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:1[m[K:
+/usr/include/c++/11/bits/stl_algobase.h: In instantiation of ‘[01m[Kstatic _OI std::__copy_move<false, false, std::random_access_iterator_tag>::__copy_m(_II, _II, _OI) [with _II = int*; _OI = std::array<int, 3>][m[K’:
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:495:30:[m[K   required from ‘[01m[K_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = int*; _OI = std::array<int, 3>][m[K’
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:522:42:[m[K   required from ‘[01m[K_OI std::__copy_move_a1(_II, _II, _OI) [with bool _IsMove = false; _II = int*; _OI = std::array<int, 3>][m[K’
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:530:31:[m[K   required from ‘[01m[K_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = int*; _OI = std::array<int, 3>][m[K’
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:620:7:[m[K   required from ‘[01m[K_OI std::copy(_II, _II, _OI) [with _II = int*; _OI = std::array<int, 3>][m[K’
+[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/LED_panel.cpp:43:18:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:385:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kstd::array<int, 3>[m[K’)
+  385 |               [01;31m[K*__result[m[K = *__first;
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_algobase.h:387:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator++[m[K’ (operand type is ‘[01m[Kstd::array<int, 3>[m[K’)
+  387 |               [01;31m[K++__result[m[K;
+      |               [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/LED_panel.dir/build.make:76: CMakeFiles/LED_panel.dir/src/LED_panel.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/LED_panel.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

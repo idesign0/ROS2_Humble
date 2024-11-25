@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:31 (install):
+  install TARGETS given target "client_battery" which does not exist.
+
+[0m
+gmake: *** [Makefile:431: cmake_check_build_system] Error 1

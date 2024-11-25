@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target smartphone[0m
+[35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[ 14%] Built target smartphone
+[ 28%] Built target robot_radio_station
+[ 42%] Built target cpp_node
+[ 50%] [32mBuilding CXX object CMakeFiles/hardwarestatus_pub.dir/src/hardwareStatus_pub.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/hardwarestatus_sub.dir/src/hardwarestatus_sub.cpp.o[0m
+[35m[1mConsolidate compiler generated dependencies of target LED_panel[0m
+[35m[1mConsolidate compiler generated dependencies of target client_battery[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/LED_panel.dir/src/LED_panel.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/client_battery.dir/src/battery_node.cpp.o[0m
+[ 78%] [32m[1mLinking CXX executable client_battery[0m
+[ 78%] Built target client_battery
+[ 85%] [32m[1mLinking CXX executable hardwarestatus_pub[0m
+[ 85%] Built target hardwarestatus_pub
+[ 92%] [32m[1mLinking CXX executable hardwarestatus_sub[0m
+[ 92%] Built target hardwarestatus_sub

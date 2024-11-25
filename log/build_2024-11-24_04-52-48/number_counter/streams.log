@@ -1,0 +1,28 @@
+[0.354s] Invoking command in '/home/parallels/ros2_ws/src/number_counter': PYTHONPATH=/home/parallels/ros2_ws/build/number_counter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/number_counter build --build-base /home/parallels/ros2_ws/build/number_counter/build install --record /home/parallels/ros2_ws/build/number_counter/install.log --single-version-externally-managed install_data
+[0.468s] running egg_info
+[0.468s] writing ../../build/number_counter/number_counter.egg-info/PKG-INFO
+[0.469s] writing dependency_links to ../../build/number_counter/number_counter.egg-info/dependency_links.txt
+[0.469s] writing entry points to ../../build/number_counter/number_counter.egg-info/entry_points.txt
+[0.469s] writing requirements to ../../build/number_counter/number_counter.egg-info/requires.txt
+[0.469s] writing top-level names to ../../build/number_counter/number_counter.egg-info/top_level.txt
+[0.469s] reading manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+[0.470s] writing manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+[0.470s] running build
+[0.470s] running build_py
+[0.470s] copying number_counter/number_publisher.py -> /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter
+[0.470s] copying number_counter/number_counter.py -> /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter
+[0.471s] running install
+[0.471s] running install_lib
+[0.471s] copying /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter/number_publisher.py -> /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter
+[0.471s] copying /home/parallels/ros2_ws/build/number_counter/build/lib/number_counter/number_counter.py -> /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter
+[0.471s] byte-compiling /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter/number_publisher.py to number_publisher.cpython-310.pyc
+[0.472s] byte-compiling /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter/number_counter.py to number_counter.cpython-310.pyc
+[0.472s] running install_data
+[0.472s] running install_egg_info
+[0.473s] removing '/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter-0.0.0-py3.10.egg-info' (and everything under it)
+[0.473s] Copying ../../build/number_counter/number_counter.egg-info to /home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages/number_counter-0.0.0-py3.10.egg-info
+[0.474s] running install_scripts
+[0.483s] Installing number_count script to /home/parallels/ros2_ws/install/number_counter/lib/number_counter
+[0.483s] Installing number_pub script to /home/parallels/ros2_ws/install/number_counter/lib/number_counter
+[0.483s] writing list of installed files to '/home/parallels/ros2_ws/build/number_counter/install.log'
+[0.494s] Invoked command in '/home/parallels/ros2_ws/src/number_counter' returned '0': PYTHONPATH=/home/parallels/ros2_ws/build/number_counter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/number_counter build --build-base /home/parallels/ros2_ws/build/number_counter/build install --record /home/parallels/ros2_ws/build/number_counter/install.log --single-version-externally-managed install_data
