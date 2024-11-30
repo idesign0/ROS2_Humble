@@ -12,10 +12,10 @@ def generate_launch_description():
         
         remappings=[
             remap_number_topic
-        ]
+        ],
 
         parameters=[
-            {"name123":4,}
+            {"name123":4}
         ]
     )
 

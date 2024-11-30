@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000091] (-) JobUnselected: {'identifier': 'ackermann_steering_controller'}
+[0.000108] (-) JobUnselected: {'identifier': 'add_two_ints'}
+[0.000121] (-) JobUnselected: {'identifier': 'add_two_ints_cpp'}
+[0.000433] (-) JobUnselected: {'identifier': 'admittance_controller'}
+[0.000456] (-) JobUnselected: {'identifier': 'bicycle_steering_controller'}
+[0.000471] (-) JobUnselected: {'identifier': 'controller_interface'}
+[0.000518] (-) JobUnselected: {'identifier': 'controller_manager'}
+[0.000533] (-) JobUnselected: {'identifier': 'controller_manager_msgs'}
+[0.000571] (-) JobUnselected: {'identifier': 'diff_drive_controller'}
+[0.000586] (-) JobUnselected: {'identifier': 'effort_controllers'}
+[0.000628] (-) JobUnselected: {'identifier': 'force_torque_sensor_broadcaster'}
+[0.000642] (-) JobUnselected: {'identifier': 'forward_command_controller'}
+[0.000682] (-) JobUnselected: {'identifier': 'gripper_controllers'}
+[0.000697] (-) JobUnselected: {'identifier': 'gz_ros2_control_tests'}
+[0.000738] (-) JobUnselected: {'identifier': 'hardware_interface'}
+[0.000752] (-) JobUnselected: {'identifier': 'hardware_interface_testing'}
+[0.000797] (-) JobUnselected: {'identifier': 'ign_ros2_control'}
+[0.000808] (-) JobUnselected: {'identifier': 'ign_ros2_control_demos'}
+[0.000815] (-) JobUnselected: {'identifier': 'imu_sensor_broadcaster'}
+[0.000823] (-) JobUnselected: {'identifier': 'joint_limits'}
+[0.000830] (-) JobUnselected: {'identifier': 'joint_state_broadcaster'}
+[0.000837] (-) JobUnselected: {'identifier': 'joint_trajectory_controller'}
+[0.000844] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000850] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000857] (-) JobUnselected: {'identifier': 'my_robot_bringup'}
+[0.000864] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000871] (-) JobUnselected: {'identifier': 'number_counter'}
+[0.000877] (-) JobUnselected: {'identifier': 'polygon_base'}
+[0.000884] (-) JobUnselected: {'identifier': 'polygon_plugins'}
+[0.000890] (-) JobUnselected: {'identifier': 'position_controllers'}
+[0.000897] (-) JobUnselected: {'identifier': 'range_sensor_broadcaster'}
+[0.000904] (-) JobUnselected: {'identifier': 'ros2_control'}
+[0.000910] (-) JobUnselected: {'identifier': 'ros2_control_test_assets'}
+[0.000917] (-) JobUnselected: {'identifier': 'ros2_controllers'}
+[0.000923] (-) JobUnselected: {'identifier': 'ros2_controllers_test_nodes'}
+[0.000930] (-) JobUnselected: {'identifier': 'ros2controlcli'}
+[0.000936] (-) JobUnselected: {'identifier': 'rqt_controller_manager'}
+[0.000943] (-) JobUnselected: {'identifier': 'rqt_joint_trajectory_controller'}
+[0.000963] (-) JobUnselected: {'identifier': 'steering_controllers_library'}
+[0.000972] (-) JobUnselected: {'identifier': 'transmission_interface'}
+[0.000979] (-) JobUnselected: {'identifier': 'tricycle_controller'}
+[0.000985] (-) JobUnselected: {'identifier': 'tricycle_steering_controller'}
+[0.000992] (-) JobUnselected: {'identifier': 'velocity_controllers'}
+[0.001004] (my_robot_station_bringup) JobQueued: {'identifier': 'my_robot_station_bringup', 'dependencies': OrderedDict()}
+[0.001080] (my_robot_station_bringup) JobStarted: {'identifier': 'my_robot_station_bringup'}
+[0.008242] (my_robot_station_bringup) JobProgress: {'identifier': 'my_robot_station_bringup', 'progress': 'cmake'}
+[0.008327] (my_robot_station_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/parallels/ros2_ws/src/my_robot_station_bringup', '-DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_station_bringup'], 'cwd': '/home/parallels/ros2_ws/build/my_robot_station_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/ros2_ws/install/velocity_controllers/lib:/home/parallels/ros2_ws/install/tricycle_steering_controller/lib:/home/parallels/ros2_ws/install/tricycle_controller/lib:/home/parallels/ros2_ws/install/transmission_interface/lib:/home/parallels/ros2_ws/install/bicycle_steering_controller/lib:/home/parallels/ros2_ws/install/ackermann_steering_controller/lib:/home/parallels/ros2_ws/install/steering_controllers_library/lib:/home/parallels/ros2_ws/install/ign_ros2_control/lib:/home/parallels/ros2_ws/install/hardware_interface_testing/lib:/home/parallels/ros2_ws/install/controller_manager/lib:/home/parallels/ros2_ws/install/range_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/position_controllers/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/admittance_controller/lib:/home/parallels/ros2_ws/install/joint_trajectory_controller/lib:/home/parallels/ros2_ws/install/joint_state_broadcaster/lib:/home/parallels/ros2_ws/install/imu_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/gripper_controllers/lib:/home/parallels/ros2_ws/install/effort_controllers/lib:/home/parallels/ros2_ws/install/forward_command_controller/lib:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster/lib:/home/parallels/ros2_ws/install/diff_drive_controller/lib:/home/parallels/ros2_ws/install/controller_interface/lib:/home/parallels/ros2_ws/install/hardware_interface/lib:/home/parallels/ros2_ws/install/controller_manager_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2372'), ('SYSTEMD_EXEC_PID', '2478'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3661'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:29201'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-02-desktop:@/tmp/.ICE-unix/2454,unix/ubuntu-linux-22-04-02-desktop:/tmp/.ICE-unix/2454'), ('INVOCATION_ID', '4e70231006844d029147110f2639db58'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QV4MX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:be9ecf6b-2f1e-4ffa-957f-2e9bb29ab418'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/ros2_ws/build/my_robot_station_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/ros2controlcli/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/build/my_py_pkg:/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/build/add_two_ints:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/ros2_ws/install/ros2_controllers:/home/parallels/ros2_ws/install/ign_ros2_control_demos:/home/parallels/ros2_ws/install/velocity_controllers:/home/parallels/ros2_ws/install/tricycle_steering_controller:/home/parallels/ros2_ws/install/tricycle_controller:/home/parallels/ros2_ws/install/ros2_control:/home/parallels/ros2_ws/install/transmission_interface:/home/parallels/ros2_ws/install/bicycle_steering_controller:/home/parallels/ros2_ws/install/ackermann_steering_controller:/home/parallels/ros2_ws/install/steering_controllers_library:/home/parallels/ros2_ws/install/gz_ros2_control_tests:/home/parallels/ros2_ws/install/ign_ros2_control:/home/parallels/ros2_ws/install/hardware_interface_testing:/home/parallels/ros2_ws/install/controller_manager:/home/parallels/ros2_ws/install/ros2_control_test_assets:/home/parallels/ros2_ws/install/range_sensor_broadcaster:/home/parallels/ros2_ws/install/position_controllers:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/admittance_controller:/home/parallels/ros2_ws/install/joint_trajectory_controller:/home/parallels/ros2_ws/install/joint_state_broadcaster:/home/parallels/ros2_ws/install/joint_limits:/home/parallels/ros2_ws/install/imu_sensor_broadcaster:/home/parallels/ros2_ws/install/gripper_controllers:/home/parallels/ros2_ws/install/effort_controllers:/home/parallels/ros2_ws/install/forward_command_controller:/home/parallels/ros2_ws/install/force_torque_sensor_broadcaster:/home/parallels/ros2_ws/install/diff_drive_controller:/home/parallels/ros2_ws/install/controller_interface:/home/parallels/ros2_ws/install/hardware_interface:/home/parallels/ros2_ws/install/controller_manager_msgs:/home/parallels/ros2_ws/install/add_two_ints_cpp::/usr:/usr')]), 'shell': False}
+[0.100085] (-) TimerEvent: {}
+[0.150365] (my_robot_station_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200592] (-) TimerEvent: {}
+[0.221042] (my_robot_station_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.231712] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.278080] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.281895] (my_robot_station_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.282510] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.285590] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.287528] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300757] (-) TimerEvent: {}
+[0.331949] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.336382] (my_robot_station_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.336532] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.336816] (my_robot_station_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.363053] (my_robot_station_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.406782] (-) TimerEvent: {}
+[0.467198] (my_robot_station_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.507088] (-) TimerEvent: {}
+[0.601028] (my_robot_station_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (install):\n'}
+[0.601170] (my_robot_station_bringup) StderrLine: {'line': b'  install DIRECTORY given no DESTINATION!\n'}
+[0.601206] (my_robot_station_bringup) StderrLine: {'line': b'\n'}
+[0.601234] (my_robot_station_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.607170] (-) TimerEvent: {}
+[0.630214] (my_robot_station_bringup) StderrLine: {'line': b"Error parsing '/home/parallels/ros2_ws/src/my_robot_station_bringup/package.xml':\n"}
+[0.673412] (my_robot_station_bringup) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.673550] (my_robot_station_bringup) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>\n'}
+[0.673584] (my_robot_station_bringup) StderrLine: {'line': b'    main()\n'}
+[0.673609] (my_robot_station_bringup) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main\n'}
+[0.673634] (my_robot_station_bringup) StderrLine: {'line': b'    raise e\n'}
+[0.673659] (my_robot_station_bringup) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main\n'}
+[0.673683] (my_robot_station_bringup) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[0.673706] (my_robot_station_bringup) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string\n'}
+[0.673989] (my_robot_station_bringup) StderrLine: {'line': b"    raise InvalidPackage('Error(s):%s' % (''.join(['\\n- %s' % e for e in errors])), filename)\n"}
+[0.674045] (my_robot_station_bringup) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/parallels/ros2_ws/src/my_robot_station_bringup/package.xml':\n"}
+[0.674075] (my_robot_station_bringup) StderrLine: {'line': b'Error(s):\n'}
+[0.674119] (my_robot_station_bringup) StderrLine: {'line': b'- The manifest of package "my_robot_station_bringup" (with format version 3) must not contain the following tags: exect_depend\n'}
+[0.683318] (my_robot_station_bringup) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):\n'}
+[0.683425] (my_robot_station_bringup) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.683469] (my_robot_station_bringup) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[0.683529] (my_robot_station_bringup) StderrLine: {'line': b'  /home/parallels/ros2_ws/src/my_robot_station_bringup/package.xml\n'}
+[0.683553] (my_robot_station_bringup) StderrLine: {'line': b'  /home/parallels/ros2_ws/build/my_robot_station_bringup/ament_cmake_core/package.cmake)\n'}
+[0.683578] (my_robot_station_bringup) StderrLine: {'line': b'  returned error code 1\n'}
+[0.683601] (my_robot_station_bringup) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.683624] (my_robot_station_bringup) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.683650] (my_robot_station_bringup) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[0.683676] (my_robot_station_bringup) StderrLine: {'line': b'  CMakeLists.txt:15 (ament_package)\n'}
+[0.683701] (my_robot_station_bringup) StderrLine: {'line': b'\n'}
+[0.683725] (my_robot_station_bringup) StderrLine: {'line': b'\x1b[0m\n'}
+[0.683749] (my_robot_station_bringup) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.683780] (my_robot_station_bringup) StdoutLine: {'line': b'See also "/home/parallels/ros2_ws/build/my_robot_station_bringup/CMakeFiles/CMakeOutput.log".\n'}
+[0.686275] (my_robot_station_bringup) CommandEnded: {'returncode': 1}
+[0.686512] (my_robot_station_bringup) JobEnded: {'identifier': 'my_robot_station_bringup', 'rc': 1}
+[0.697208] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+Invoking command in '/home/parallels/ros2_ws/build/my_robot_station_bringup': /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_station_bringup -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_station_bringup
+Invoked command in '/home/parallels/ros2_ws/build/my_robot_station_bringup' returned '1': /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_station_bringup -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_station_bringup
