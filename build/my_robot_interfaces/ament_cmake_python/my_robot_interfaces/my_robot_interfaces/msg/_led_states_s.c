@@ -66,12 +66,12 @@ bool my_robot_interfaces__msg__led_states__convert_from_py(PyObject * _pymsg, vo
       PyArrayObject * seq_field = (PyArrayObject *)field;
       Py_INCREF(seq_field);
       assert(PyArray_NDIM(seq_field) == 1);
-      assert(PyArray_TYPE(seq_field) == NPY_INT32);
+      assert(PyArray_TYPE(seq_field) == NPY_INT64);
       Py_ssize_t size = 3;
-      int32_t * dest = ros_message->states;
+      int64_t * dest = ros_message->states;
       for (Py_ssize_t i = 0; i < size; ++i) {
-        int32_t tmp = *(npy_int32 *)PyArray_GETPTR1(seq_field, i);
-        memcpy(&dest[i], &tmp, sizeof(int32_t));
+        int64_t tmp = *(npy_int64 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(int64_t));
       }
       Py_DECREF(seq_field);
     }
@@ -110,11 +110,11 @@ PyObject * my_robot_interfaces__msg__led_states__convert_to_py(void * raw_ros_me
     assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
     PyArrayObject * seq_field = (PyArrayObject *)field;
     assert(PyArray_NDIM(seq_field) == 1);
-    assert(PyArray_TYPE(seq_field) == NPY_INT32);
-    assert(sizeof(npy_int32) == sizeof(int32_t));
-    npy_int32 * dst = (npy_int32 *)PyArray_GETPTR1(seq_field, 0);
-    int32_t * src = &(ros_message->states[0]);
-    memcpy(dst, src, 3 * sizeof(int32_t));
+    assert(PyArray_TYPE(seq_field) == NPY_INT64);
+    assert(sizeof(npy_int64) == sizeof(int64_t));
+    npy_int64 * dst = (npy_int64 *)PyArray_GETPTR1(seq_field, 0);
+    int64_t * src = &(ros_message->states[0]);
+    memcpy(dst, src, 3 * sizeof(int64_t));
     Py_DECREF(field);
   }
 

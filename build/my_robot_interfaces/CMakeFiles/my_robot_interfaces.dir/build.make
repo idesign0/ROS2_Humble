@@ -68,6 +68,8 @@ include CMakeFiles/my_robot_interfaces.dir/progress.make
 
 CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/msg/HardwareStatus.msg
 CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/msg/LedStates.msg
+CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/msg/Turtle.msg
+CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/msg/TurtleArray.msg
 CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/srv/ComputeRectangleArea.srv
 CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/ComputeRectangleArea_Request.msg
 CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/ComputeRectangleArea_Response.msg

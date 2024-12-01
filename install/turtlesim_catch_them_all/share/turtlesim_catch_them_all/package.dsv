@@ -1,0 +1,6 @@
+source;share/turtlesim_catch_them_all/hook/pythonpath.ps1
+source;share/turtlesim_catch_them_all/hook/pythonpath.dsv
+source;share/turtlesim_catch_them_all/hook/pythonpath.sh
+source;../../build/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/pythonpath_develop.ps1
+source;../../build/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/pythonpath_develop.dsv
+source;../../build/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/pythonpath_develop.sh

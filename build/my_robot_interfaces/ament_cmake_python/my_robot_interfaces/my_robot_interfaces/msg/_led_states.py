@@ -62,11 +62,11 @@ class LedStates(metaclass=Metaclass_LedStates):
     ]
 
     _fields_and_field_types = {
-        'states': 'int32[3]',
+        'states': 'int64[3]',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('int32'), 3),  # noqa: E501
+        rosidl_parser.definition.Array(rosidl_parser.definition.BasicType('int64'), 3),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -74,9 +74,9 @@ class LedStates(metaclass=Metaclass_LedStates):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         if 'states' not in kwargs:
-            self.states = numpy.zeros(3, dtype=numpy.int32)
+            self.states = numpy.zeros(3, dtype=numpy.int64)
         else:
-            self.states = numpy.array(kwargs.get('states'), dtype=numpy.int32)
+            self.states = numpy.array(kwargs.get('states'), dtype=numpy.int64)
             assert self.states.shape == (3, )
 
     def __repr__(self):
@@ -125,8 +125,8 @@ class LedStates(metaclass=Metaclass_LedStates):
     @states.setter
     def states(self, value):
         if isinstance(value, numpy.ndarray):
-            assert value.dtype == numpy.int32, \
-                "The 'states' numpy.ndarray() must have the dtype of 'numpy.int32'"
+            assert value.dtype == numpy.int64, \
+                "The 'states' numpy.ndarray() must have the dtype of 'numpy.int64'"
             assert value.size == 3, \
                 "The 'states' numpy.ndarray() must have a size of 3"
             self._states = value
@@ -144,6 +144,6 @@ class LedStates(metaclass=Metaclass_LedStates):
                  not isinstance(value, UserString) and
                  len(value) == 3 and
                  all(isinstance(v, int) for v in value) and
-                 all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'states' field must be a set or sequence with length 3 and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._states = numpy.array(value, dtype=numpy.int32)
+                 all(val >= -9223372036854775808 and val < 9223372036854775808 for val in value)), \
+                "The 'states' field must be a set or sequence with length 3 and each value of type 'int' and each integer in [-9223372036854775808, 9223372036854775807]"
+        self._states = numpy.array(value, dtype=numpy.int64)
