@@ -5,25 +5,25 @@ from random import uniform
 from turtlesim.srv import Spawn
 from turtlesim.srv import Kill
 from my_robot_interfaces.msg import Turtle
-
+from my_robot_interfaces.msg import TurtleArray
 from functools import partial
  
 class turtle_spawner(Node):
     def __init__(self):
         super().__init__("turtle_spawner")
 
-        self.turtle = Turtle()
+        self.aliveTurtles = TurtleArray()
         
-        self.pub_turtleList = self.create_publisher(Turtle,"alive_turtles",10)
+        self.pub_turtleList = self.create_publisher(TurtleArray,"alive_turtles",10)
         timer_ = self.create_timer(0.5,self.call_spawn_srv)
 
         self.call_spawn_srv()
 
     def call_spawn_srv(self):
 
-        x = uniform(0,10)
-        y = uniform(0,10)
-        thta = uniform(0,2)
+        x = uniform(0,11)
+        y = uniform(0,11)
+        thta = uniform(0,1)
 
         new_turtle_srv = self.create_client(Spawn,"/spawn")
 
@@ -47,7 +47,8 @@ class turtle_spawner(Node):
             turtle.theta = request.theta
             turtle.name = request.name
 
-            self.pub_turtleList.publish(turtle)
+            self.aliveTurtles.turtlearray.append(turtle)
+            self.pub_turtleList.publish(self.aliveTurtles)
 
         except Exception as e:
             self.get_logger().error("Service call Failed %r" %(e,))
