@@ -2,8 +2,6 @@
 import rclpy
 from rclpy.node import Node
 
- 
- 
 class turtle_controller(Node):
     def __init__(self):
         super().__init__("turtle_controller")
