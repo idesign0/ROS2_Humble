@@ -1,0 +1,98 @@
+[0.006s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.031s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.098s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.101s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.103s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.117s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.286s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.388s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.547s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.561s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.577s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.577s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.577s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[0.599s] -- Configuring done
+[0.631s] -- Generating done
+[0.633s] -- Build files have been written to: /home/parallels/ros2_ws/build/my_robot_interfaces
+[0.647s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.657s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.669s] [  2%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.809s] running egg_info
+[0.810s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.810s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.811s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.814s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.815s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.835s] [  2%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[1.024s] [  2%] Built target my_robot_interfaces__cpp
+[1.042s] [  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.052s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.118s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[1.126s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.156s] [  7%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/hardware_status__functions.c.o[0m
+[1.348s] [  8%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/led_states__functions.c.o[0m
+[1.401s] [ 10%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/turtle__functions.c.o[0m
+[1.474s] [ 11%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/turtle_array__functions.c.o[0m
+[1.492s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_cpp[0m
+[1.497s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.506s] [ 12%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.c.o[0m
+[1.512s] [ 13%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/hardware_status__type_support.cpp.o[0m
+[1.515s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.517s] [ 15%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/hardware_status__type_support.cpp.o[0m
+[1.531s] [ 16%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/hardware_status__type_support.cpp.o[0m
+[1.541s] [ 17%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/set_led__functions.c.o[0m
+[1.578s] [ 18%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/catch__functions.c.o[0m
+[1.592s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/srv/detail/catch__functions.h:19[m[K,
+[1.592s]                  from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/srv/detail/catch__functions.c:4[m[K:
+[1.592s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/srv/detail/catch__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kmy_robot_interfaces/msg/detail/turtlel__struct.h: No such file or directory
+[1.592s]    22 | #include [01;31m[K"my_robot_interfaces/msg/detail/turtlel__struct.h"[m[K
+[1.592s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.592s] compilation terminated.
+[1.594s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/build.make:285: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/catch__functions.c.o] Error 1
+[1.594s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/all] Error 2
+[1.594s] gmake[1]: *** Waiting for unfinished jobs....
+[1.599s] [ 20%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/led_states__type_support.cpp.o[0m
+[1.939s] [ 21%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/led_states__type_support.cpp.o[0m
+[2.062s] [ 22%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/turtle__type_support.cpp.o[0m
+[2.062s] [ 24%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/turtle_array__type_support.cpp.o[0m
+[2.066s] [ 25%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/led_states__type_support.cpp.o[0m
+[2.258s] [ 26%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/turtle__type_support.cpp.o[0m
+[2.411s] [ 27%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/compute_rectangle_area__type_support.cpp.o[0m
+[2.612s] [ 29%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/turtle__type_support.cpp.o[0m
+[2.711s] [ 30%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/set_led__type_support.cpp.o[0m
+[2.722s] [ 31%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/turtle_array__type_support.cpp.o[0m
+[2.800s] [ 32%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/catch__type_support.cpp.o[0m
+[2.856s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/catch__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[2.856s]                  from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/catch__type_support.cpp:4[m[K:
+[2.856s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/srv/detail/catch__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kmy_robot_interfaces/msg/detail/turtlel__struct.hpp: No such file or directory
+[2.856s]    20 | #include [01;31m[K"my_robot_interfaces/msg/detail/turtlel__struct.hpp"[m[K
+[2.856s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.856s] compilation terminated.
+[2.858s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:217: CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/catch__type_support.cpp.o] Error 1
+[2.858s] gmake[2]: *** Waiting for unfinished jobs....
+[2.870s] [ 34%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/turtle_array__type_support.cpp.o[0m
+[3.131s] [ 35%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/compute_rectangle_area__type_support.cpp.o[0m
+[3.156s] [ 36%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.cpp.o[0m
+[3.201s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[3.230s] [ 37%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/set_led__type_support.cpp.o[0m
+[3.302s] [ 39%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/catch__type_support.cpp.o[0m
+[3.399s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/catch__type_support.cpp:12[m[K:
+[3.399s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/srv/detail/catch__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kmy_robot_interfaces/msg/detail/turtlel__struct.hpp: No such file or directory
+[3.399s]    20 | #include [01;31m[K"my_robot_interfaces/msg/detail/turtlel__struct.hpp"[m[K
+[3.399s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.399s] compilation terminated.
+[3.400s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:217: CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/catch__type_support.cpp.o] Error 1
+[3.400s] gmake[2]: *** Waiting for unfinished jobs....
+[3.407s] [ 40%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/set_led__type_support.cpp.o[0m
+[3.447s] [ 41%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/catch__type_support.cpp.o[0m
+[3.476s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_cpp/my_robot_interfaces/srv/catch__type_support.cpp:7[m[K:
+[3.476s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/srv/detail/catch__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kmy_robot_interfaces/msg/detail/turtlel__struct.hpp: No such file or directory
+[3.476s]    20 | #include [01;31m[K"my_robot_interfaces/msg/detail/turtlel__struct.hpp"[m[K
+[3.477s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.477s] compilation terminated.
+[3.478s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/build.make:194: CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/catch__type_support.cpp.o] Error 1
+[3.478s] gmake[2]: *** Waiting for unfinished jobs....
+[3.524s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[3.550s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+[3.550s] gmake: *** [Makefile:146: all] Error 2
+[3.552s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j4 -l4

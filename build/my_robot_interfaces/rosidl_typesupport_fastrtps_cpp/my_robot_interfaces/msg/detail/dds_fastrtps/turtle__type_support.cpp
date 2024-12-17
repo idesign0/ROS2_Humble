@@ -32,14 +32,14 @@ cdr_serialize(
   const my_robot_interfaces::msg::Turtle & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
   // Member: x
   cdr << ros_message.x;
   // Member: y
   cdr << ros_message.y;
   // Member: theta
   cdr << ros_message.theta;
+  // Member: name
+  cdr << ros_message.name;
   return true;
 }
 
@@ -49,9 +49,6 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_robot_interfaces::msg::Turtle & ros_message)
 {
-  // Member: name
-  cdr >> ros_message.name;
-
   // Member: x
   cdr >> ros_message.x;
 
@@ -60,6 +57,9 @@ cdr_deserialize(
 
   // Member: theta
   cdr >> ros_message.theta;
+
+  // Member: name
+  cdr >> ros_message.name;
 
   return true;
 }
@@ -77,10 +77,6 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
   // Member: x
   {
     size_t item_size = sizeof(ros_message.x);
@@ -99,6 +95,10 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.name.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -123,19 +123,6 @@ max_serialized_size_Turtle(
   is_plain = true;
 
 
-  // Member: name
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
   // Member: x
   {
     size_t array_size = 1;
@@ -163,6 +150,19 @@ max_serialized_size_Turtle(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -171,7 +171,7 @@ max_serialized_size_Turtle(
     using DataType = my_robot_interfaces::msg::Turtle;
     is_plain =
       (
-      offsetof(DataType, theta) +
+      offsetof(DataType, name) +
       last_member_size
       ) == ret_val;
   }

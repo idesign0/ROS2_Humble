@@ -37,23 +37,6 @@ void my_robot_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtl
 
 static rosidl_typesupport_introspection_c__MessageMember my_robot_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_message_member_array[4] = {
   {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(my_robot_interfaces__msg__Turtle, name),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
     "x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -96,6 +79,23 @@ static rosidl_typesupport_introspection_c__MessageMember my_robot_interfaces__ms
     0,  // array size
     false,  // is upper bound
     offsetof(my_robot_interfaces__msg__Turtle, theta),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "name",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_robot_interfaces__msg__Turtle, name),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

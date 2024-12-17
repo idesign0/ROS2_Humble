@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Turtle_name
+{
+public:
+  explicit Init_Turtle_name(::my_robot_interfaces::msg::Turtle & msg)
+  : msg_(msg)
+  {}
+  ::my_robot_interfaces::msg::Turtle name(::my_robot_interfaces::msg::Turtle::_name_type arg)
+  {
+    msg_.name = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::my_robot_interfaces::msg::Turtle msg_;
+};
+
 class Init_Turtle_theta
 {
 public:
   explicit Init_Turtle_theta(::my_robot_interfaces::msg::Turtle & msg)
   : msg_(msg)
   {}
-  ::my_robot_interfaces::msg::Turtle theta(::my_robot_interfaces::msg::Turtle::_theta_type arg)
+  Init_Turtle_name theta(::my_robot_interfaces::msg::Turtle::_theta_type arg)
   {
     msg_.theta = std::move(arg);
-    return std::move(msg_);
+    return Init_Turtle_name(msg_);
   }
 
 private:
@@ -56,29 +72,13 @@ private:
 class Init_Turtle_x
 {
 public:
-  explicit Init_Turtle_x(::my_robot_interfaces::msg::Turtle & msg)
-  : msg_(msg)
+  Init_Turtle_x()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
   Init_Turtle_y x(::my_robot_interfaces::msg::Turtle::_x_type arg)
   {
     msg_.x = std::move(arg);
     return Init_Turtle_y(msg_);
-  }
-
-private:
-  ::my_robot_interfaces::msg::Turtle msg_;
-};
-
-class Init_Turtle_name
-{
-public:
-  Init_Turtle_name()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  Init_Turtle_x name(::my_robot_interfaces::msg::Turtle::_name_type arg)
-  {
-    msg_.name = std::move(arg);
-    return Init_Turtle_x(msg_);
   }
 
 private:
@@ -96,7 +96,7 @@ template<>
 inline
 auto build<::my_robot_interfaces::msg::Turtle>()
 {
-  return my_robot_interfaces::msg::builder::Init_Turtle_name();
+  return my_robot_interfaces::msg::builder::Init_Turtle_x();
 }
 
 }  // namespace my_robot_interfaces

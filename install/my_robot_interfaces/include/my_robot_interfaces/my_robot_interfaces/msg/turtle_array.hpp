@@ -7,5 +7,6 @@
 #include "my_robot_interfaces/msg/detail/turtle_array__struct.hpp"
 #include "my_robot_interfaces/msg/detail/turtle_array__builder.hpp"
 #include "my_robot_interfaces/msg/detail/turtle_array__traits.hpp"
+#include "my_robot_interfaces/msg/detail/turtle_array__type_support.hpp"
 
 #endif  // MY_ROBOT_INTERFACES__MSG__TURTLE_ARRAY_HPP_

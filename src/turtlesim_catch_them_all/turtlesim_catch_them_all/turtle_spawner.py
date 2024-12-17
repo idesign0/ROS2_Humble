@@ -6,6 +6,7 @@ from turtlesim.srv import Spawn
 from turtlesim.srv import Kill
 from my_robot_interfaces.msg import Turtle
 from my_robot_interfaces.msg import TurtleArray
+from my_robot_interfaces.srv import Catch
 from functools import partial
  
 class turtle_spawner(Node):
@@ -13,8 +14,8 @@ class turtle_spawner(Node):
         super().__init__("turtle_spawner")
         self.aliveTurtles = TurtleArray()
         self.pub_turtleList = self.create_publisher(TurtleArray,"alive_turtles",10)
-        timer_1 = self.create_timer(0.5,self.call_spawn_srv)
-        timer_2 = self.create_timer(1,self.call_kill_srv)
+        self.catch_turtle_srv = self.create_service(Catch,"catch_turtle",self.call_kill_srv)
+        timer_1 = self.create_timer(1,self.call_spawn_srv)
 
     def call_spawn_srv(self):
 
@@ -50,29 +51,39 @@ class turtle_spawner(Node):
         except Exception as e:
             self.get_logger().error("Service call Failed %r" %(e,))
 
-    def call_kill_srv(self):
+    def call_kill_srv(self,Req_turtle):
 
         if not self.aliveTurtles or len(self.aliveTurtles.turtlearray) == 0:
             self.get_logger().warning("No turtles in the array.")
             return
+        
+        if not Req_turtle.turtle in self.aliveTurtles.turtlearray:
+            self.get_logger().warning(Req_turtle.turtle.name + " is not available in array")
+            return
 
-        kill_turtle_client = self.create_client(Kill,"/kill")
+        kill_turtle_client = self.create_client(Kill,"kill")
         
         while(not kill_turtle_client.wait_for_service(1.0)):
             self.get_logger().warn("Waiting for Service: Kill to start..")
         
         request = Kill.Request()
-        request.name = self.aliveTurtles.turtlearray[0].name
+        request.name = Req_turtle.turtle.name
         future = kill_turtle_client.call_async(request)
+        future.add_done_callback(partial(self.callback_remove_turtles,request=request))
+        
+    def callback_remove_turtles(self,future,request):
+        try:
+            self.aliveTurtles.turtlearray = self.aliveTurtles.turtlearray[1:]
+            self.get_logger().info("Kill:Success")
+        except Exception as e:
+            self.get_logger().error("Service call Failed %r" %(e,))
 
-        self.aliveTurtles.turtlearray = self.aliveTurtles.turtlearray[1:]
 
 def main(args=None):
     rclpy.init(args=args)
     node = turtle_spawner()
     rclpy.spin(node)
     rclpy.shutdown()
- 
  
 if __name__ == "__main__":
     main()

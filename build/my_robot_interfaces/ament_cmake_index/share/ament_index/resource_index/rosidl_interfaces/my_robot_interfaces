@@ -6,6 +6,10 @@ msg/Turtle.idl
 msg/Turtle.msg
 msg/TurtleArray.idl
 msg/TurtleArray.msg
+srv/Catch.idl
+srv/Catch.srv
+srv/Catch_Request.msg
+srv/Catch_Response.msg
 srv/ComputeRectangleArea.idl
 srv/ComputeRectangleArea.srv
 srv/ComputeRectangleArea_Request.msg

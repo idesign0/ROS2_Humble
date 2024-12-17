@@ -1,0 +1,10 @@
+[0.006s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.043s] [  1%] Built target my_robot_interfaces__cpp
+[0.043s] failed to create symbolic link '/home/parallels/ros2_ws/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[0.044s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[0.044s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[0.044s] gmake[1]: *** Waiting for unfinished jobs....
+[0.046s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.059s] [ 24%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.059s] gmake: *** [Makefile:146: all] Error 2
+[0.060s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j4 -l4

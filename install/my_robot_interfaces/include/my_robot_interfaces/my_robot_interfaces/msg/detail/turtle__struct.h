@@ -24,10 +24,10 @@ extern "C"
 /// Struct defined in msg/Turtle in the package my_robot_interfaces.
 typedef struct my_robot_interfaces__msg__Turtle
 {
-  rosidl_runtime_c__String name;
   float x;
   float y;
   float theta;
+  rosidl_runtime_c__String name;
 } my_robot_interfaces__msg__Turtle;
 
 // Struct for a sequence of my_robot_interfaces__msg__Turtle.

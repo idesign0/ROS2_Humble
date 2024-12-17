@@ -57,34 +57,34 @@ class Turtle(metaclass=Metaclass_Turtle):
     """Message class 'Turtle'."""
 
     __slots__ = [
-        '_name',
         '_x',
         '_y',
         '_theta',
+        '_name',
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
         'x': 'float',
         'y': 'float',
         'theta': 'float',
+        'name': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
         self.theta = kwargs.get('theta', float())
+        self.name = kwargs.get('name', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -115,13 +115,13 @@ class Turtle(metaclass=Metaclass_Turtle):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
-            return False
         if self.x != other.x:
             return False
         if self.y != other.y:
             return False
         if self.theta != other.theta:
+            return False
+        if self.name != other.name:
             return False
         return True
 
@@ -129,19 +129,6 @@ class Turtle(metaclass=Metaclass_Turtle):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
-
-    @builtins.property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
-
-    @name.setter
-    def name(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
 
     @builtins.property
     def x(self):
@@ -187,3 +174,16 @@ class Turtle(metaclass=Metaclass_Turtle):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'theta' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._theta = value
+
+    @builtins.property
+    def name(self):
+        """Message field 'name'."""
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'name' field must be of type 'str'"
+        self._name = value

@@ -51,20 +51,6 @@ static bool _Turtle__cdr_serialize(
     return false;
   }
   const _Turtle__ros_msg_type * ros_message = static_cast<const _Turtle__ros_msg_type *>(untyped_ros_message);
-  // Field name: name
-  {
-    const rosidl_runtime_c__String * str = &ros_message->name;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
   // Field name: x
   {
     cdr << ros_message->x;
@@ -80,6 +66,20 @@ static bool _Turtle__cdr_serialize(
     cdr << ros_message->theta;
   }
 
+  // Field name: name
+  {
+    const rosidl_runtime_c__String * str = &ros_message->name;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   return true;
 }
 
@@ -92,6 +92,21 @@ static bool _Turtle__cdr_deserialize(
     return false;
   }
   _Turtle__ros_msg_type * ros_message = static_cast<_Turtle__ros_msg_type *>(untyped_ros_message);
+  // Field name: x
+  {
+    cdr >> ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr >> ros_message->y;
+  }
+
+  // Field name: theta
+  {
+    cdr >> ros_message->theta;
+  }
+
   // Field name: name
   {
     std::string tmp;
@@ -106,21 +121,6 @@ static bool _Turtle__cdr_deserialize(
       fprintf(stderr, "failed to assign string into field 'name'\n");
       return false;
     }
-  }
-
-  // Field name: x
-  {
-    cdr >> ros_message->x;
-  }
-
-  // Field name: y
-  {
-    cdr >> ros_message->y;
-  }
-
-  // Field name: theta
-  {
-    cdr >> ros_message->theta;
   }
 
   return true;
@@ -140,10 +140,6 @@ size_t get_serialized_size_my_robot_interfaces__msg__Turtle(
   (void)padding;
   (void)wchar_size;
 
-  // field.name name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->name.size + 1);
   // field.name x
   {
     size_t item_size = sizeof(ros_message->x);
@@ -162,6 +158,10 @@ size_t get_serialized_size_my_robot_interfaces__msg__Turtle(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->name.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -191,18 +191,6 @@ size_t max_serialized_size_my_robot_interfaces__msg__Turtle(
   full_bounded = true;
   is_plain = true;
 
-  // member: name
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
   // member: x
   {
     size_t array_size = 1;
@@ -227,6 +215,18 @@ size_t max_serialized_size_my_robot_interfaces__msg__Turtle(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: name
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -236,7 +236,7 @@ size_t max_serialized_size_my_robot_interfaces__msg__Turtle(
     using DataType = my_robot_interfaces__msg__Turtle;
     is_plain =
       (
-      offsetof(DataType, theta) +
+      offsetof(DataType, name) +
       last_member_size
       ) == ret_val;
   }

@@ -38,10 +38,10 @@ struct Turtle_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
       this->x = 0.0f;
       this->y = 0.0f;
       this->theta = 0.0f;
+      this->name = "";
     }
   }
 
@@ -51,17 +51,14 @@ struct Turtle_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->name = "";
       this->x = 0.0f;
       this->y = 0.0f;
       this->theta = 0.0f;
+      this->name = "";
     }
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _name_type name;
   using _x_type =
     float;
   _x_type x;
@@ -71,14 +68,11 @@ struct Turtle_
   using _theta_type =
     float;
   _theta_type theta;
+  using _name_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _name_type name;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->name = _arg;
-    return *this;
-  }
   Type & set__x(
     const float & _arg)
   {
@@ -95,6 +89,12 @@ struct Turtle_
     const float & _arg)
   {
     this->theta = _arg;
+    return *this;
+  }
+  Type & set__name(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->name = _arg;
     return *this;
   }
 
@@ -140,9 +140,6 @@ struct Turtle_
   // comparison operators
   bool operator==(const Turtle_ & other) const
   {
-    if (this->name != other.name) {
-      return false;
-    }
     if (this->x != other.x) {
       return false;
     }
@@ -150,6 +147,9 @@ struct Turtle_
       return false;
     }
     if (this->theta != other.theta) {
+      return false;
+    }
+    if (this->name != other.name) {
       return false;
     }
     return true;

@@ -76,6 +76,9 @@ CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/ComputeRectangleArea_Response.m
 CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/srv/SetLED.srv
 CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/SetLED_Request.msg
 CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/SetLED_Response.msg
+CMakeFiles/my_robot_interfaces: /home/parallels/ros2_ws/src/my_robot_interfaces/srv/Catch.srv
+CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/Catch_Request.msg
+CMakeFiles/my_robot_interfaces: rosidl_cmake/srv/Catch_Response.msg
 
 my_robot_interfaces: CMakeFiles/my_robot_interfaces
 my_robot_interfaces: CMakeFiles/my_robot_interfaces.dir/build.make

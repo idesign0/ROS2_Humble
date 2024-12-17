@@ -7,5 +7,6 @@
 #include "my_robot_interfaces/srv/detail/compute_rectangle_area__struct.hpp"
 #include "my_robot_interfaces/srv/detail/compute_rectangle_area__builder.hpp"
 #include "my_robot_interfaces/srv/detail/compute_rectangle_area__traits.hpp"
+#include "my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.hpp"
 
 #endif  // MY_ROBOT_INTERFACES__SRV__COMPUTE_RECTANGLE_AREA_HPP_

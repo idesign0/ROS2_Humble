@@ -25,13 +25,6 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: name
-  {
-    out << "name: ";
-    rosidl_generator_traits::value_to_yaml(msg.name, out);
-    out << ", ";
-  }
-
   // member: x
   {
     out << "x: ";
@@ -50,6 +43,13 @@ inline void to_flow_style_yaml(
   {
     out << "theta: ";
     rosidl_generator_traits::value_to_yaml(msg.theta, out);
+    out << ", ";
+  }
+
+  // member: name
+  {
+    out << "name: ";
+    rosidl_generator_traits::value_to_yaml(msg.name, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -58,16 +58,6 @@ inline void to_block_style_yaml(
   const Turtle & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: name
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "name: ";
-    rosidl_generator_traits::value_to_yaml(msg.name, out);
-    out << "\n";
-  }
-
   // member: x
   {
     if (indentation > 0) {
@@ -95,6 +85,16 @@ inline void to_block_style_yaml(
     }
     out << "theta: ";
     rosidl_generator_traits::value_to_yaml(msg.theta, out);
+    out << "\n";
+  }
+
+  // member: name
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "name: ";
+    rosidl_generator_traits::value_to_yaml(msg.name, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

@@ -21,14 +21,14 @@ my_robot_interfaces__msg__Turtle__init(my_robot_interfaces__msg__Turtle * msg)
   if (!msg) {
     return false;
   }
+  // x
+  // y
+  // theta
   // name
   if (!rosidl_runtime_c__String__init(&msg->name)) {
     my_robot_interfaces__msg__Turtle__fini(msg);
     return false;
   }
-  // x
-  // y
-  // theta
   return true;
 }
 
@@ -38,23 +38,17 @@ my_robot_interfaces__msg__Turtle__fini(my_robot_interfaces__msg__Turtle * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_runtime_c__String__fini(&msg->name);
   // x
   // y
   // theta
+  // name
+  rosidl_runtime_c__String__fini(&msg->name);
 }
 
 bool
 my_robot_interfaces__msg__Turtle__are_equal(const my_robot_interfaces__msg__Turtle * lhs, const my_robot_interfaces__msg__Turtle * rhs)
 {
   if (!lhs || !rhs) {
-    return false;
-  }
-  // name
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->name), &(rhs->name)))
-  {
     return false;
   }
   // x
@@ -69,6 +63,12 @@ my_robot_interfaces__msg__Turtle__are_equal(const my_robot_interfaces__msg__Turt
   if (lhs->theta != rhs->theta) {
     return false;
   }
+  // name
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->name), &(rhs->name)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -80,18 +80,18 @@ my_robot_interfaces__msg__Turtle__copy(
   if (!input || !output) {
     return false;
   }
-  // name
-  if (!rosidl_runtime_c__String__copy(
-      &(input->name), &(output->name)))
-  {
-    return false;
-  }
   // x
   output->x = input->x;
   // y
   output->y = input->y;
   // theta
   output->theta = input->theta;
+  // name
+  if (!rosidl_runtime_c__String__copy(
+      &(input->name), &(output->name)))
+  {
+    return false;
+  }
   return true;
 }
 

@@ -1,0 +1,24 @@
+[0.006s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.036s] [  1%] Built target my_robot_interfaces__cpp
+[0.037s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.037s] failed to create symbolic link '/home/parallels/ros2_ws/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[0.037s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[0.038s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[0.038s] gmake[1]: *** Waiting for unfinished jobs....
+[0.042s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_cpp[0m
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.055s] [ 25%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.058s] [ 36%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.264s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.274s] [ 39%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/led_states__type_support.cpp.o[0m
+[0.274s] [ 39%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/hardware_status__type_support.cpp.o[0m
+[0.274s] [ 40%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/turtle__type_support.cpp.o[0m
+[0.275s] [ 41%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/turtle_array__type_support.cpp.o[0m
+[0.470s] [ 43%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.cpp.o[0m
+[0.473s] [ 44%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/set_led__type_support.cpp.o[0m
+[0.501s] [ 45%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/catch__type_support.cpp.o[0m
+[0.693s] [ 46%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[0.730s] [ 46%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.731s] gmake: *** [Makefile:146: all] Error 2
+[0.732s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/rqt_joint_trajectory_controller:/home/parallels/ros2_ws/install/rqt_controller_manager:/home/parallels/ros2_ws/install/ros2controlcli:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j4 -l4

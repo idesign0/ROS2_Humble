@@ -6,13 +6,13 @@
 module my_robot_interfaces {
   module msg {
     struct Turtle {
-      string name;
-
       float x;
 
       float y;
 
       float theta;
+
+      string name;
     };
   };
 };
