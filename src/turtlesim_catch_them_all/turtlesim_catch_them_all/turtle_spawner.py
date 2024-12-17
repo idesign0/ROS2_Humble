@@ -51,7 +51,7 @@ class turtle_spawner(Node):
         except Exception as e:
             self.get_logger().error("Service call Failed %r" %(e,))
 
-    def call_kill_srv(self,Req_turtle):
+    def call_kill_srv(self,Req_turtle,response):
 
         if not self.aliveTurtles or len(self.aliveTurtles.turtlearray) == 0:
             self.get_logger().warning("No turtles in the array.")

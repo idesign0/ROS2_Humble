@@ -7,5 +7,6 @@
 #include "controller_manager_msgs/srv/detail/list_controllers__struct.hpp"
 #include "controller_manager_msgs/srv/detail/list_controllers__builder.hpp"
 #include "controller_manager_msgs/srv/detail/list_controllers__traits.hpp"
+#include "controller_manager_msgs/srv/detail/list_controllers__type_support.hpp"
 
 #endif  // CONTROLLER_MANAGER_MSGS__SRV__LIST_CONTROLLERS_HPP_

@@ -108,10 +108,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "my_robot_interfaces/srv/detail/catch__struct.h"
 
 
-// Include directives for member types
-// Member `response_msg`
-#include "rosidl_runtime_c/string_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -133,14 +129,14 @@ void my_robot_interfaces__srv__Catch_Response__rosidl_typesupport_introspection_
 
 static rosidl_typesupport_introspection_c__MessageMember my_robot_interfaces__srv__Catch_Response__rosidl_typesupport_introspection_c__Catch_Response_message_member_array[1] = {
   {
-    "response_msg",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    "structure_needs_at_least_one_member",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_robot_interfaces__srv__Catch_Response, response_msg),  // bytes offset in struct
+    offsetof(my_robot_interfaces__srv__Catch_Response, structure_needs_at_least_one_member),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

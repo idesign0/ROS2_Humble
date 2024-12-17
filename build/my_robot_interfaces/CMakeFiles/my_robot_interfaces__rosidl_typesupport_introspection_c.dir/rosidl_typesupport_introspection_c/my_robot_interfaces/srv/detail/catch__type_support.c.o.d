@@ -65,5 +65,4 @@ CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_ty
  /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/msg/detail/turtle__functions.h \
  /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/msg/detail/turtle__type_support.h \
  /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_c.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h

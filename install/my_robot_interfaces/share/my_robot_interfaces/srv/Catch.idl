@@ -10,7 +10,7 @@ module my_robot_interfaces {
       my_robot_interfaces::msg::Turtle turtle;
     };
     struct Catch_Response {
-      string response_msg;
+      uint8 structure_needs_at_least_one_member;
     };
   };
 };

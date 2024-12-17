@@ -317,3 +317,18 @@ get_service_type_support_handle<controller_manager_msgs::srv::ConfigureControlle
 }
 
 }  // namespace rosidl_typesupport_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_CPP_PUBLIC
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_cpp, controller_manager_msgs, srv, ConfigureController)() {
+  return ::rosidl_typesupport_cpp::get_service_type_support_handle<controller_manager_msgs::srv::ConfigureController>();
+}
+
+#ifdef __cplusplus
+}
+#endif

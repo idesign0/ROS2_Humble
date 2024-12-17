@@ -250,21 +250,13 @@ my_robot_interfaces__srv__Catch_Request__Sequence__copy(
 }
 
 
-// Include directives for member types
-// Member `response_msg`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 my_robot_interfaces__srv__Catch_Response__init(my_robot_interfaces__srv__Catch_Response * msg)
 {
   if (!msg) {
     return false;
   }
-  // response_msg
-  if (!rosidl_runtime_c__String__init(&msg->response_msg)) {
-    my_robot_interfaces__srv__Catch_Response__fini(msg);
-    return false;
-  }
+  // structure_needs_at_least_one_member
   return true;
 }
 
@@ -274,8 +266,7 @@ my_robot_interfaces__srv__Catch_Response__fini(my_robot_interfaces__srv__Catch_R
   if (!msg) {
     return;
   }
-  // response_msg
-  rosidl_runtime_c__String__fini(&msg->response_msg);
+  // structure_needs_at_least_one_member
 }
 
 bool
@@ -284,10 +275,8 @@ my_robot_interfaces__srv__Catch_Response__are_equal(const my_robot_interfaces__s
   if (!lhs || !rhs) {
     return false;
   }
-  // response_msg
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->response_msg), &(rhs->response_msg)))
-  {
+  // structure_needs_at_least_one_member
+  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
     return false;
   }
   return true;
@@ -301,12 +290,8 @@ my_robot_interfaces__srv__Catch_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // response_msg
-  if (!rosidl_runtime_c__String__copy(
-      &(input->response_msg), &(output->response_msg)))
-  {
-    return false;
-  }
+  // structure_needs_at_least_one_member
+  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
   return true;
 }
 

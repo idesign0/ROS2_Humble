@@ -40,14 +40,10 @@ typedef struct my_robot_interfaces__srv__Catch_Request__Sequence
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'response_msg'
-#include "rosidl_runtime_c/string.h"
-
 /// Struct defined in srv/Catch in the package my_robot_interfaces.
 typedef struct my_robot_interfaces__srv__Catch_Response
 {
-  rosidl_runtime_c__String response_msg;
+  uint8_t structure_needs_at_least_one_member;
 } my_robot_interfaces__srv__Catch_Response;
 
 // Struct for a sequence of my_robot_interfaces__srv__Catch_Response.

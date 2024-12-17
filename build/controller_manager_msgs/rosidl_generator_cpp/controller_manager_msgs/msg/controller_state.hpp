@@ -7,5 +7,6 @@
 #include "controller_manager_msgs/msg/detail/controller_state__struct.hpp"
 #include "controller_manager_msgs/msg/detail/controller_state__builder.hpp"
 #include "controller_manager_msgs/msg/detail/controller_state__traits.hpp"
+#include "controller_manager_msgs/msg/detail/controller_state__type_support.hpp"
 
 #endif  // CONTROLLER_MANAGER_MSGS__MSG__CONTROLLER_STATE_HPP_

@@ -337,6 +337,12 @@ CMakeFiles/test_force_torque_sensor.dir/test/test_force_torque_sensor.cpp.o: \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
  /usr/include/c++/11/codecvt \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp \
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/parallels/ros2_ws/install/hardware_interface/include/hardware_interface/loaned_state_interface.hpp \
  /home/parallels/ros2_ws/install/hardware_interface/include/hardware_interface/handle.hpp \
  /home/parallels/ros2_ws/install/hardware_interface/include/hardware_interface/macros.hpp \

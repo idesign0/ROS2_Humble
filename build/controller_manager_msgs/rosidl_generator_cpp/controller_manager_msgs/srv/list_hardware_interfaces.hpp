@@ -7,5 +7,6 @@
 #include "controller_manager_msgs/srv/detail/list_hardware_interfaces__struct.hpp"
 #include "controller_manager_msgs/srv/detail/list_hardware_interfaces__builder.hpp"
 #include "controller_manager_msgs/srv/detail/list_hardware_interfaces__traits.hpp"
+#include "controller_manager_msgs/srv/detail/list_hardware_interfaces__type_support.hpp"
 
 #endif  // CONTROLLER_MANAGER_MSGS__SRV__LIST_HARDWARE_INTERFACES_HPP_

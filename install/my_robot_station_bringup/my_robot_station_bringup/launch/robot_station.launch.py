@@ -1,1 +1,0 @@
-/home/parallels/ros2_ws/src/my_robot_station_bringup/launch/robot_station.launch.py

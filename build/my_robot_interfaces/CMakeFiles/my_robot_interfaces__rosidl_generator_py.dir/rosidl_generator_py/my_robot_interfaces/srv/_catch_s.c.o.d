@@ -212,5 +212,4 @@ CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_r
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/srv/detail/catch__functions.h \
- /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+ /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h

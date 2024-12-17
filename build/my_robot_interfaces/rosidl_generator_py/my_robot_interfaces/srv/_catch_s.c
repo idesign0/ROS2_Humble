@@ -118,9 +118,6 @@ PyObject * my_robot_interfaces__srv__catch__request__convert_to_py(void * raw_ro
 // already included above
 // #include "my_robot_interfaces/srv/detail/catch__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
 
 ROSIDL_GENERATOR_C_EXPORT
 bool my_robot_interfaces__srv__catch__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -155,21 +152,7 @@ bool my_robot_interfaces__srv__catch__response__convert_from_py(PyObject * _pyms
     assert(strncmp("my_robot_interfaces.srv._catch.Catch_Response", full_classname_dest, 45) == 0);
   }
   my_robot_interfaces__srv__Catch_Response * ros_message = _ros_message;
-  {  // response_msg
-    PyObject * field = PyObject_GetAttrString(_pymsg, "response_msg");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->response_msg, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
+  ros_message->structure_needs_at_least_one_member = 0;
 
   return true;
 }
@@ -191,24 +174,7 @@ PyObject * my_robot_interfaces__srv__catch__response__convert_to_py(void * raw_r
       return NULL;
     }
   }
-  my_robot_interfaces__srv__Catch_Response * ros_message = (my_robot_interfaces__srv__Catch_Response *)raw_ros_message;
-  {  // response_msg
-    PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->response_msg.data,
-      strlen(ros_message->response_msg.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "response_msg", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
+  (void)raw_ros_message;
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;

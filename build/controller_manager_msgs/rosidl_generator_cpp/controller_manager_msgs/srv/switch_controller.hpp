@@ -7,5 +7,6 @@
 #include "controller_manager_msgs/srv/detail/switch_controller__struct.hpp"
 #include "controller_manager_msgs/srv/detail/switch_controller__builder.hpp"
 #include "controller_manager_msgs/srv/detail/switch_controller__traits.hpp"
+#include "controller_manager_msgs/srv/detail/switch_controller__type_support.hpp"
 
 #endif  // CONTROLLER_MANAGER_MSGS__SRV__SWITCH_CONTROLLER_HPP_

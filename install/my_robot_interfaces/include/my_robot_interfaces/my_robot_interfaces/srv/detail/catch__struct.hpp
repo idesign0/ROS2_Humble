@@ -149,32 +149,25 @@ struct Catch_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response_msg = "";
+      this->structure_needs_at_least_one_member = 0;
     }
   }
 
   explicit Catch_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : response_msg(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response_msg = "";
+      this->structure_needs_at_least_one_member = 0;
     }
   }
 
   // field types and members
-  using _response_msg_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _response_msg_type response_msg;
+  using _structure_needs_at_least_one_member_type =
+    uint8_t;
+  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
 
-  // setters for named parameter idiom
-  Type & set__response_msg(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->response_msg = _arg;
-    return *this;
-  }
 
   // constant declarations
 
@@ -218,7 +211,7 @@ struct Catch_Response_
   // comparison operators
   bool operator==(const Catch_Response_ & other) const
   {
-    if (this->response_msg != other.response_msg) {
+    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
       return false;
     }
     return true;

@@ -133,9 +133,6 @@ class Catch_Request(metaclass=Metaclass_Catch_Request):
 # Import statements for member types
 
 # already imported above
-# import builtins
-
-# already imported above
 # import rosidl_parser.definition
 
 
@@ -184,22 +181,18 @@ class Catch_Response(metaclass=Metaclass_Catch_Response):
     """Message class 'Catch_Response'."""
 
     __slots__ = [
-        '_response_msg',
     ]
 
     _fields_and_field_types = {
-        'response_msg': 'string',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.response_msg = kwargs.get('response_msg', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -230,27 +223,12 @@ class Catch_Response(metaclass=Metaclass_Catch_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.response_msg != other.response_msg:
-            return False
         return True
 
     @classmethod
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
-
-    @builtins.property
-    def response_msg(self):
-        """Message field 'response_msg'."""
-        return self._response_msg
-
-    @response_msg.setter
-    def response_msg(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'response_msg' field must be of type 'str'"
-        self._response_msg = value
 
 
 class Metaclass_Catch(type):

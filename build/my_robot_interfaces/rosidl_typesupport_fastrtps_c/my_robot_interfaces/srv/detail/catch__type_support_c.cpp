@@ -267,8 +267,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // response_msg
-#include "rosidl_runtime_c/string_functions.h"  // response_msg
 
 // forward declare type support functions
 
@@ -284,18 +282,9 @@ static bool _Catch_Response__cdr_serialize(
     return false;
   }
   const _Catch_Response__ros_msg_type * ros_message = static_cast<const _Catch_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: response_msg
+  // Field name: structure_needs_at_least_one_member
   {
-    const rosidl_runtime_c__String * str = &ros_message->response_msg;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -310,20 +299,9 @@ static bool _Catch_Response__cdr_deserialize(
     return false;
   }
   _Catch_Response__ros_msg_type * ros_message = static_cast<_Catch_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: response_msg
+  // Field name: structure_needs_at_least_one_member
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->response_msg.data) {
-      rosidl_runtime_c__String__init(&ros_message->response_msg);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->response_msg,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'response_msg'\n");
-      return false;
-    }
+    cdr >> ros_message->structure_needs_at_least_one_member;
   }
 
   return true;
@@ -343,10 +321,12 @@ size_t get_serialized_size_my_robot_interfaces__srv__Catch_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name response_msg
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->response_msg.size + 1);
+  // field.name structure_needs_at_least_one_member
+  {
+    size_t item_size = sizeof(ros_message->structure_needs_at_least_one_member);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -376,17 +356,12 @@ size_t max_serialized_size_my_robot_interfaces__srv__Catch_Response(
   full_bounded = true;
   is_plain = true;
 
-  // member: response_msg
+  // member: structure_needs_at_least_one_member
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -397,7 +372,7 @@ size_t max_serialized_size_my_robot_interfaces__srv__Catch_Response(
     using DataType = my_robot_interfaces__srv__Catch_Response;
     is_plain =
       (
-      offsetof(DataType, response_msg) +
+      offsetof(DataType, structure_needs_at_least_one_member) +
       last_member_size
       ) == ret_val;
   }

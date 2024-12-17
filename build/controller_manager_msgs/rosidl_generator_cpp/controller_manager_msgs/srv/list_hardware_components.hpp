@@ -7,5 +7,6 @@
 #include "controller_manager_msgs/srv/detail/list_hardware_components__struct.hpp"
 #include "controller_manager_msgs/srv/detail/list_hardware_components__builder.hpp"
 #include "controller_manager_msgs/srv/detail/list_hardware_components__traits.hpp"
+#include "controller_manager_msgs/srv/detail/list_hardware_components__type_support.hpp"
 
 #endif  // CONTROLLER_MANAGER_MSGS__SRV__LIST_HARDWARE_COMPONENTS_HPP_

@@ -60,26 +60,6 @@ namespace my_robot_interfaces
 namespace srv
 {
 
-namespace builder
-{
-
-class Init_Catch_Response_response_msg
-{
-public:
-  Init_Catch_Response_response_msg()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
-  {}
-  ::my_robot_interfaces::srv::Catch_Response response_msg(::my_robot_interfaces::srv::Catch_Response::_response_msg_type arg)
-  {
-    msg_.response_msg = std::move(arg);
-    return std::move(msg_);
-  }
-
-private:
-  ::my_robot_interfaces::srv::Catch_Response msg_;
-};
-
-}  // namespace builder
 
 }  // namespace srv
 
@@ -90,7 +70,7 @@ template<>
 inline
 auto build<::my_robot_interfaces::srv::Catch_Response>()
 {
-  return my_robot_interfaces::srv::builder::Init_Catch_Response_response_msg();
+  return ::my_robot_interfaces::srv::Catch_Response(rosidl_runtime_cpp::MessageInitialization::ZERO);
 }
 
 }  // namespace my_robot_interfaces

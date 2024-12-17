@@ -121,6 +121,17 @@ template <typename T, size_t capacity>
       return params_;
     }
 
+    bool try_get_params(Params & params_in) const {
+      if (mutex_.try_lock()) {
+        if (const bool is_old = params_in.__stamp != params_.__stamp; is_old) {
+          params_in = params_;
+        }
+        mutex_.unlock();
+        return true;
+      }
+      return false;
+    }
+
     bool is_old(Params const& other) const {
       std::lock_guard<std::mutex> lock(mutex_);
       return params_.__stamp != other.__stamp;

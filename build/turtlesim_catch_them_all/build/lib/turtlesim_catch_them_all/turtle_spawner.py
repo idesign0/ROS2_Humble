@@ -12,9 +12,10 @@ from functools import partial
 class turtle_spawner(Node):
     def __init__(self):
         super().__init__("turtle_spawner")
+        self.aliveTurtles = TurtleArray()
         self.pub_turtleList = self.create_publisher(TurtleArray,"alive_turtles",10)
-        self.catch_turtle_srv = self.create_service(Catch,"/catch_turtle",self.call_kill_srv)
-        timer_1 = self.create_timer(2,self.call_spawn_srv)
+        self.catch_turtle_srv = self.create_service(Catch,"catch_turtle",self.call_kill_srv)
+        timer_1 = self.create_timer(1,self.call_spawn_srv)
 
     def call_spawn_srv(self):
 
@@ -50,13 +51,17 @@ class turtle_spawner(Node):
         except Exception as e:
             self.get_logger().error("Service call Failed %r" %(e,))
 
-    def call_kill_srv(self,Req_turtle,Response_turtle):
+    def call_kill_srv(self,Req_turtle):
 
         if not self.aliveTurtles or len(self.aliveTurtles.turtlearray) == 0:
             self.get_logger().warning("No turtles in the array.")
             return
+        
+        if not Req_turtle.turtle in self.aliveTurtles.turtlearray:
+            self.get_logger().warning(Req_turtle.turtle.name + " is not available in array")
+            return
 
-        kill_turtle_client = self.create_client(Kill,"/kill")
+        kill_turtle_client = self.create_client(Kill,"kill")
         
         while(not kill_turtle_client.wait_for_service(1.0)):
             self.get_logger().warn("Waiting for Service: Kill to start..")
@@ -64,14 +69,12 @@ class turtle_spawner(Node):
         request = Kill.Request()
         request.name = Req_turtle.turtle.name
         future = kill_turtle_client.call_async(request)
-        Response_turtle = future.add_done_callback(partial(self.callback_remove_turtles,request = Req_turtle))
-        return Response_turtle
+        future.add_done_callback(partial(self.callback_remove_turtles,request=request))
         
     def callback_remove_turtles(self,future,request):
         try:
             self.aliveTurtles.turtlearray = self.aliveTurtles.turtlearray[1:]
-            response_msg = "Kill:Success"
-            return response_msg
+            self.get_logger().info("Kill:Success")
         except Exception as e:
             self.get_logger().error("Service call Failed %r" %(e,))
 

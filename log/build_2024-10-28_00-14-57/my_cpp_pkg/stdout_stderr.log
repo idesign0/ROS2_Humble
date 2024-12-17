@@ -1,9 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
-[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
-[01m[K/home/parallels/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:7:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
-    7 |         [01;31m[K}[m[K
-      |         [01;31m[K^[m[K
-gmake[2]: *** [CMakeFiles/cpp_node.dir/build.make:76: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cpp_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
