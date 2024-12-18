@@ -61,18 +61,19 @@ class turtle_spawner(Node):
         
         for turtle in self.aliveTurtles.turtlearray:
             if Req_turtle.turtle.name == turtle.name:
-               kill_turtle_client = self.create_client(Kill,"kill")
-        
-            while(not kill_turtle_client.wait_for_service(1.0)):
-                self.get_logger().warn("Waiting for Service: Kill to start..")
+                
+                kill_turtle_client = self.create_client(Kill,"kill")
+                
+                while(not kill_turtle_client.wait_for_service(1.0)):
+                    self.get_logger().warn("Waiting for Service: Kill to start..")
             
-            request = Kill.Request()
-            request.name = Req_turtle.turtle.name
-            future = kill_turtle_client.call_async(request)
-            self.aliveTurtles.turtlearray = self.aliveTurtles.turtlearray[1:]
-            self.pub_turtleList.publish(self.aliveTurtles)
+                request = Kill.Request()
+                request.name = Req_turtle.turtle.name
+                future = kill_turtle_client.call_async(request)
+                self.aliveTurtles.turtlearray = self.aliveTurtles.turtlearray[1:]
+                self.pub_turtleList.publish(self.aliveTurtles)
 
-            return response
+                return response
     
 def main(args=None):
     rclpy.init(args=args)

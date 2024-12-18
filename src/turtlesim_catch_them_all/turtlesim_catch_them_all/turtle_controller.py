@@ -33,7 +33,7 @@ class turtle_controller(Node):
 
         err = 0.00001
         if (abs(self.turtle.x - self.master_pos.x) < err) and (abs(self.turtle.y - self.master_pos.y) < err):
-            self.catch_the_turtle()
+            self.catch_the_turtle
         else:
             msg = Twist()
             msg.linear.x = (self.turtle.x - self.master_pos.x)
