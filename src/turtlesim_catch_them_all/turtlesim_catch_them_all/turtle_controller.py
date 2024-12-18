@@ -14,19 +14,25 @@ class turtle_controller(Node):
         super().__init__("turtle_controller")
         self.turtle = Turtle()
         self.turtleList_sub = self.create_subscription(TurtleArray,"alive_turtles",self.turtlelist_callback,10)
-        self.turtlePose_sub = self.create_subscription(Pose,'/turtle1/pose',self.pose_callback,10)
-        self.turtlevel_pub = self.create_publisher(Twist,'/turtle1/cmd_vel',10)
-        control_timer_ = self.create_timer(3,self.callback_control)
+        self.turtlePose_sub = self.create_subscription(Pose,'turtle1/pose',self.pose_callback,10)
+        self.turtlevel_pub = self.create_publisher(Twist,'turtle1/cmd_vel',10)
+        control_timer_ = self.create_timer(1,self.callback_control)
 
     def turtlelist_callback(self,msg):
-        self.turtle = msg.turtlearray[0]
+
+        if not (len(msg.turtlearray) > 0):
+            self.get_logger().warning("No turtles in the array.")
+            exit
+        else:
+            self.turtle = msg.turtlearray[0]
 
     def pose_callback(self,msg):
         self.master_pos = msg
 
     def callback_control(self):
-        err = 0.01
-        if (abs(self.turtle.x < self.master_pos.x) < err) and (abs(self.turtle.y == self.master_pos.y) < err):
+
+        err = 0.00001
+        if (abs(self.turtle.x - self.master_pos.x) < err) and (abs(self.turtle.y - self.master_pos.y) < err):
             self.catch_the_turtle()
         else:
             msg = Twist()
@@ -47,7 +53,7 @@ class turtle_controller(Node):
 
     def callback_catch_turtles(self,future):
         try:
-            self.get_logger().info("Kill:Success")
+            self.get_logger().info(self.turtle.name + " Kill:Success")
         except Exception as e:
             self.get_logger().error("Service call Failed %r" %(e,))
 
