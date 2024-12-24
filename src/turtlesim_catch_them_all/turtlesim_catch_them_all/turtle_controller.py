@@ -37,7 +37,7 @@ class turtle_controller(Node):
             self.get_logger().warning("No turtles in the array.")
             return
         
-        err = 0.0001
+        err = 0.1
 
         if (abs(self.turtle.x - self.master_pos.x) < err) and (abs(self.turtle.y - self.master_pos.y) < err):
             self.catch_the_turtle()
