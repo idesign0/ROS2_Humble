@@ -15,7 +15,7 @@ class turtle_spawner(Node):
         self.aliveTurtles = TurtleArray()
         self.pub_turtleList = self.create_publisher(TurtleArray,"alive_turtles",10)
         self.catch_turtle_srv = self.create_service(Catch,"catch_turtle",self.call_kill_srv)
-        timer_1 = self.create_timer(5,self.call_spawn_srv)
+        timer_1 = self.create_timer(3,self.call_spawn_srv)
 
     def call_spawn_srv(self):
 
