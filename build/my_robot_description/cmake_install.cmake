@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_description/" TYPE DIRECTORY FILES
     "/home/parallels/ros2_ws/src/my_robot_description/urdf"
     "/home/parallels/ros2_ws/src/my_robot_description/launch"
+    "/home/parallels/ros2_ws/src/my_robot_description/rviz"
     )
 endif()
 

@@ -230,7 +230,8 @@
 			"paths" : 
 			[
 				"urdf",
-				"launch"
+				"launch",
+				"rviz"
 			],
 			"type" : "directory"
 		},
