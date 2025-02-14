@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="my_robot">
+<robot name="my_robot" xmlns:xacro="https://www.ros.org/wiki/xacro">
     <material name="blue">
         <color rgba="0 0 0.5 1"/>
     </material>
