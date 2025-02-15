@@ -1,3 +1,5 @@
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
