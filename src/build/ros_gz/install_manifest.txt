@@ -1,0 +1,15 @@
+/home/parallels/ros2_ws/src/install/ros_gz/share/ament_index/resource_index/package_run_dependencies/ros_gz
+/home/parallels/ros2_ws/src/install/ros_gz/share/ament_index/resource_index/parent_prefix_path/ros_gz
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/environment/ament_prefix_path.sh
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/environment/ament_prefix_path.dsv
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/environment/path.sh
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/environment/path.dsv
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/local_setup.bash
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/local_setup.sh
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/local_setup.zsh
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/local_setup.dsv
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/package.dsv
+/home/parallels/ros2_ws/src/install/ros_gz/share/ament_index/resource_index/packages/ros_gz
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/cmake/ros_gzConfig.cmake
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/cmake/ros_gzConfig-version.cmake
+/home/parallels/ros2_ws/src/install/ros_gz/share/ros_gz/package.xml
