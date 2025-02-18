@@ -1,0 +1,15 @@
+/home/parallels/ros2_ws/install/ros2_control/share/ament_index/resource_index/package_run_dependencies/ros2_control
+/home/parallels/ros2_ws/install/ros2_control/share/ament_index/resource_index/parent_prefix_path/ros2_control
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/environment/ament_prefix_path.sh
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/environment/ament_prefix_path.dsv
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/environment/path.sh
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/environment/path.dsv
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/local_setup.bash
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/local_setup.sh
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/local_setup.zsh
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/local_setup.dsv
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/package.dsv
+/home/parallels/ros2_ws/install/ros2_control/share/ament_index/resource_index/packages/ros2_control
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/cmake/ros2_controlConfig.cmake
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/cmake/ros2_controlConfig-version.cmake
+/home/parallels/ros2_ws/install/ros2_control/share/ros2_control/package.xml

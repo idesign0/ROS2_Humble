@@ -1,0 +1,6 @@
+source;share/add_two_ints/hook/pythonpath.ps1
+source;share/add_two_ints/hook/pythonpath.dsv
+source;share/add_two_ints/hook/pythonpath.sh
+source;share/add_two_ints/hook/ament_prefix_path.ps1
+source;share/add_two_ints/hook/ament_prefix_path.dsv
+source;share/add_two_ints/hook/ament_prefix_path.sh

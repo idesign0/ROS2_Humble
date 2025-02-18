@@ -1,0 +1,9 @@
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/uninstall.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/turtlesim_catch_them_all_bringup_uninstall.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/test.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/edit_cache.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/rebuild_cache.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/list_install_components.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/install.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/install/local.dir
+/home/parallels/ros2_ws/build/turtlesim_catch_them_all_bringup/CMakeFiles/install/strip.dir
