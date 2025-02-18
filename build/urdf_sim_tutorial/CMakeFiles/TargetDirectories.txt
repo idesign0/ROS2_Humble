@@ -1,9 +1,0 @@
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/uninstall.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/urdf_sim_tutorial_uninstall.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/test.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/edit_cache.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/rebuild_cache.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/list_install_components.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/install.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/install/local.dir
-/home/parallels/ros2_ws/build/urdf_sim_tutorial/CMakeFiles/install/strip.dir
