@@ -1,6 +1,0 @@
-source;share/number_counter/hook/pythonpath.ps1
-source;share/number_counter/hook/pythonpath.dsv
-source;share/number_counter/hook/pythonpath.sh
-source;share/number_counter/hook/ament_prefix_path.ps1
-source;share/number_counter/hook/ament_prefix_path.dsv
-source;share/number_counter/hook/ament_prefix_path.sh

@@ -1,4 +1,0 @@
-[console_scripts]
-number_count = number_counter.number_counter:main
-number_pub = number_counter.number_publisher:main
-
