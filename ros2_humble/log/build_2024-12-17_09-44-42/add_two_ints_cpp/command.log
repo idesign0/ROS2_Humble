@@ -1,6 +1,0 @@
-Invoking command in '/home/parallels/ros2_ws/build/add_two_ints_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/add_two_ints_cpp -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/add_two_ints_cpp
-Invoked command in '/home/parallels/ros2_ws/build/add_two_ints_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/add_two_ints_cpp -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/add_two_ints_cpp
-Invoking command in '/home/parallels/ros2_ws/build/add_two_ints_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/add_two_ints_cpp -- -j4 -l4
-Invoked command in '/home/parallels/ros2_ws/build/add_two_ints_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/add_two_ints_cpp -- -j4 -l4
-Invoking command in '/home/parallels/ros2_ws/build/add_two_ints_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/add_two_ints_cpp
-Invoked command in '/home/parallels/ros2_ws/build/add_two_ints_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/add_two_ints_cpp
