@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_robot_interfaces/srv/Catch.srv
+// generated code does not contain a copyright notice
+
+#include "my_robot_interfaces/msg/Turtle.idl"
+
+module my_robot_interfaces {
+  module srv {
+    struct Catch_Request {
+      my_robot_interfaces::msg::Turtle turtle;
+    };
+    struct Catch_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

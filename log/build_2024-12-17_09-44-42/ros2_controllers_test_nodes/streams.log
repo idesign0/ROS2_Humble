@@ -1,0 +1,42 @@
+[0.320s] Invoking command in '/home/parallels/ros2_ws/src/ros2_controllers/ros2_controllers_test_nodes': PYTHONPATH=/home/parallels/ros2_ws/build/ros2_controllers_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_controllers_test_nodes build --build-base /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build install --record /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/install.log --single-version-externally-managed install_data
+[0.437s] running egg_info
+[0.437s] creating ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info
+[0.437s] writing ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/PKG-INFO
+[0.437s] writing dependency_links to ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/dependency_links.txt
+[0.437s] writing entry points to ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/entry_points.txt
+[0.437s] writing requirements to ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/requires.txt
+[0.437s] writing top-level names to ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/top_level.txt
+[0.438s] writing manifest file '../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/SOURCES.txt'
+[0.439s] reading manifest file '../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/SOURCES.txt'
+[0.440s] writing manifest file '../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info/SOURCES.txt'
+[0.440s] running build
+[0.440s] running build_py
+[0.440s] creating /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build
+[0.440s] creating /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib
+[0.440s] creating /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes
+[0.440s] copying ros2_controllers_test_nodes/publisher_forward_position_controller.py -> /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes
+[0.441s] copying ros2_controllers_test_nodes/__init__.py -> /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes
+[0.441s] copying ros2_controllers_test_nodes/publisher_joint_trajectory_controller.py -> /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes
+[0.441s] running install
+[0.441s] running install_lib
+[0.442s] creating /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes
+[0.442s] copying /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes/publisher_forward_position_controller.py -> /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes
+[0.442s] copying /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes/__init__.py -> /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes
+[0.442s] copying /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build/lib/ros2_controllers_test_nodes/publisher_joint_trajectory_controller.py -> /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes
+[0.442s] byte-compiling /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes/publisher_forward_position_controller.py to publisher_forward_position_controller.cpython-310.pyc
+[0.443s] byte-compiling /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes/__init__.py to __init__.cpython-310.pyc
+[0.443s] byte-compiling /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes/publisher_joint_trajectory_controller.py to publisher_joint_trajectory_controller.cpython-310.pyc
+[0.444s] running install_data
+[0.444s] creating /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/share/ament_index
+[0.444s] creating /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/share/ament_index/resource_index
+[0.444s] creating /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/share/ament_index/resource_index/packages
+[0.444s] copying resource/ros2_controllers_test_nodes -> /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/share/ament_index/resource_index/packages
+[0.444s] copying package.xml -> /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/share/ros2_controllers_test_nodes
+[0.444s] creating /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/share/ros2_controllers_test_nodes/configs
+[0.444s] running install_egg_info
+[0.445s] Copying ../../../build/ros2_controllers_test_nodes/ros2_controllers_test_nodes.egg-info to /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages/ros2_controllers_test_nodes-2.35.0-py3.10.egg-info
+[0.446s] running install_scripts
+[0.456s] Installing publisher_forward_position_controller script to /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/ros2_controllers_test_nodes
+[0.456s] Installing publisher_joint_trajectory_controller script to /home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/ros2_controllers_test_nodes
+[0.456s] writing list of installed files to '/home/parallels/ros2_ws/build/ros2_controllers_test_nodes/install.log'
+[0.476s] Invoked command in '/home/parallels/ros2_ws/src/ros2_controllers/ros2_controllers_test_nodes' returned '0': PYTHONPATH=/home/parallels/ros2_ws/build/ros2_controllers_test_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_controllers_test_nodes build --build-base /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/build install --record /home/parallels/ros2_ws/build/ros2_controllers_test_nodes/install.log --single-version-externally-managed install_data
