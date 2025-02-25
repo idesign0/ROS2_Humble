@@ -95,6 +95,9 @@
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
+<<<<<<< HEAD
 >>>>>>> working-controll-looop
+=======
+>>>>>>> 2d7bc308328159dde370e77fbec23fe6767a9297
     "ros.distro": "humble"
 }
