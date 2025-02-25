@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_robot_interfaces/msg/LedStates.msg
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module msg {
+    typedef int64 int64__3[3];
+    struct LedStates {
+      int64__3 states;
+    };
+  };
+};
