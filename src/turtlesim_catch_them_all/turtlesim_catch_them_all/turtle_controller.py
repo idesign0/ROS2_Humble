@@ -13,17 +13,19 @@ class turtle_controller(Node):
     def __init__(self):
         super().__init__("turtle_controller")
         self.turtle = Turtle()
+        self.turtlearray = TurtleArray().turtlearray
         self.turtleList_sub = self.create_subscription(TurtleArray,"alive_turtles",self.turtlelist_callback,10)
         self.turtlePose_sub = self.create_subscription(Pose,'turtle1/pose',self.pose_callback,10)
         self.turtlevel_pub = self.create_publisher(Twist,'turtle1/cmd_vel',10)
-        control_timer_ = self.create_timer(1,self.callback_control)
+        control_timer_ = self.create_timer(0.1,self.callback_control)
 
     def turtlelist_callback(self,msg):
 
         if not (len(msg.turtlearray) > 0):
             self.get_logger().warning("No turtles in the array.")
-            exit
+            return
         else:
+            self.turtlearray = msg.turtlearray
             self.turtle = msg.turtlearray[0]
 
     def pose_callback(self,msg):
@@ -31,13 +33,19 @@ class turtle_controller(Node):
 
     def callback_control(self):
 
-        err = 0.00001
+        if not (len(self.turtlearray) > 0):
+            self.get_logger().warning("No turtles in the array.")
+            return
+        
+        err = 0.1
+
         if (abs(self.turtle.x - self.master_pos.x) < err) and (abs(self.turtle.y - self.master_pos.y) < err):
-            self.catch_the_turtle
+            self.catch_the_turtle()
         else:
             msg = Twist()
             msg.linear.x = (self.turtle.x - self.master_pos.x)
             msg.linear.y = (self.turtle.y - self.master_pos.y)
+            msg.angular.z = (self.turtle.theta - self.master_pos.theta)
             self.turtlevel_pub.publish(msg)
             
     def catch_the_turtle(self):
