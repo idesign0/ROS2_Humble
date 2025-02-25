@@ -1,0 +1,24 @@
+[0.000000] (-) TimerEvent: {}
+[0.000126] (-) JobUnselected: {'identifier': 'add_two_ints'}
+[0.000151] (-) JobUnselected: {'identifier': 'add_two_ints_cpp'}
+[0.000168] (-) JobUnselected: {'identifier': 'gazebo_dev'}
+[0.000180] (-) JobUnselected: {'identifier': 'gazebo_msgs'}
+[0.000192] (-) JobUnselected: {'identifier': 'gazebo_plugins'}
+[0.000200] (-) JobUnselected: {'identifier': 'gazebo_ros'}
+[0.000212] (-) JobUnselected: {'identifier': 'gazebo_ros_control'}
+[0.000222] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.000235] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000244] (-) JobUnselected: {'identifier': 'my_robot_bringup'}
+[0.000256] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.000265] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.000278] (-) JobUnselected: {'identifier': 'my_robot_station_bringup'}
+[0.000287] (-) JobUnselected: {'identifier': 'number_counter'}
+[0.000299] (-) JobUnselected: {'identifier': 'polygon_base'}
+[0.000309] (-) JobUnselected: {'identifier': 'polygon_plugins'}
+[0.000322] (-) JobUnselected: {'identifier': 'turtlecatch_bringup'}
+[0.000330] (-) JobUnselected: {'identifier': 'turtlesim_catch_them_all'}
+[0.000342] (-) JobUnselected: {'identifier': 'urdf_sim_tutorial'}
+[0.000354] (gazebo_ros_pkgs) JobQueued: {'identifier': 'gazebo_ros_pkgs', 'dependencies': OrderedDict([('gazebo_dev', '/home/parallels/ros2_ws/install/gazebo_dev'), ('gazebo_msgs', '/home/parallels/ros2_ws/install/gazebo_msgs'), ('gazebo_ros', '/home/parallels/ros2_ws/install/gazebo_ros'), ('gazebo_plugins', '/home/parallels/ros2_ws/install/gazebo_plugins')])}
+[0.000374] (gazebo_ros_pkgs) JobStarted: {'identifier': 'gazebo_ros_pkgs'}
+[0.005730] (gazebo_ros_pkgs) JobEnded: {'identifier': 'gazebo_ros_pkgs', 'rc': 1}
+[0.018858] (-) EventReactorShutdown: {}
