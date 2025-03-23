@@ -1,6 +1,11 @@
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/rrobot/materials.xacro
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/rrobot/rrbot.gazebo
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/rrobot/rrbot.xacro
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/rrobot/rrbot.xml
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/two_wheeled_robot.urdf
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//rviz/robo_config.rviz
