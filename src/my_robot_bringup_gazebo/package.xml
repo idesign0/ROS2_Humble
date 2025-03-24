@@ -8,7 +8,7 @@
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <exec_depend>my_robot_descritpion</exec_depend>
+  <exec_depend>my_robot_description</exec_depend>
   <exec_depend>robot_state_publisher</exec_depend>
   <exec_depend>ros_gz_sim</exec_depend>
   <exec_depend>rviz2</exec_depend>
@@ -19,6 +19,5 @@
 
   <export>
     <build_type>ament_cmake</build_type>
-    <gazebo_ros gazebo_model_path="$(find my_robot_description)/urdf/"/>
   </export>
 </package>
