@@ -1,0 +1,22 @@
+[ 33%] Built target add_two_ints_client
+[ 66%] Built target add_two_ints_client_no_oop
+[100%] Built target add_two_ints_server_cpp
+-- Install configuration: ""
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/lib/add_two_ints_cpp/add_two_ints_server_cpp
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/lib/add_two_ints_cpp/add_two_ints_client_no_oop
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/lib/add_two_ints_cpp/add_two_ints_client
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/ament_index/resource_index/package_run_dependencies/add_two_ints_cpp
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/ament_index/resource_index/parent_prefix_path/add_two_ints_cpp
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/environment/path.sh
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/environment/path.dsv
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/local_setup.bash
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/local_setup.sh
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/local_setup.zsh
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/local_setup.dsv
+-- Installing: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.dsv
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/ament_index/resource_index/packages/add_two_ints_cpp
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/cmake/add_two_ints_cppConfig.cmake
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/cmake/add_two_ints_cppConfig-version.cmake
+-- Up-to-date: /home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.xml

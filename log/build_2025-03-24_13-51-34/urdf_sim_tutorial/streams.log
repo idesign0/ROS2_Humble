@@ -1,0 +1,44 @@
+[0.173s] Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/urdf_sim_tutorial -- -j4 -l4
+[0.193s] Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/urdf_sim_tutorial -- -j4 -l4
+[0.193s] Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/urdf_sim_tutorial
+[0.202s] -- Install configuration: ""
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config/mimic-gripper.yaml
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config/joints.yaml
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config/diffdrive.yaml
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config/gripper.yaml
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config/09a-minimal.yaml
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/config/head.yaml
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch/09-joints.launch.py
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch/09a-minimal.launch.py
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch/10-head.launch.py
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch/gazebo.launch.py
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch/12-gripper.launch.py
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/launch/13-diffdrive.launch.py
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/rviz
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/rviz/odom_urdf.rviz
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/13-diffdrive.urdf.xacro
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/09-publishjoints.urdf.xacro
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/09a-minimal.urdf.xacro
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/12-gripper.urdf.xacro
+[0.202s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/12a-mimic-gripper.urdf.xacro
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/11-limittransmission.urdf.xacro
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/urdf/10-firsttransmission.urdf.xacro
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/ament_index/resource_index/package_run_dependencies/urdf_sim_tutorial
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/ament_index/resource_index/parent_prefix_path/urdf_sim_tutorial
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/environment/ament_prefix_path.sh
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/environment/ament_prefix_path.dsv
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/environment/path.sh
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/environment/path.dsv
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/local_setup.bash
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/local_setup.sh
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/local_setup.zsh
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/local_setup.dsv
+[0.203s] -- Installing: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.dsv
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/ament_index/resource_index/packages/urdf_sim_tutorial
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/cmake/urdf_sim_tutorialConfig.cmake
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/cmake/urdf_sim_tutorialConfig-version.cmake
+[0.203s] -- Up-to-date: /home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.xml
+[0.213s] Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/urdf_sim_tutorial

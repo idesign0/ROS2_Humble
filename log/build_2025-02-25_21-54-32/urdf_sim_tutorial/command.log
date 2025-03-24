@@ -1,6 +1,0 @@
-Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/urdf_sim_tutorial -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/urdf_sim_tutorial
-Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/urdf_sim_tutorial -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/urdf_sim_tutorial
-Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/urdf_sim_tutorial -- -j4 -l4
-Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/urdf_sim_tutorial -- -j4 -l4
-Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/urdf_sim_tutorial
-Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/urdf_sim_tutorial

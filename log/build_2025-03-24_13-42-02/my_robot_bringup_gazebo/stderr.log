@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/parallels/ros2_ws/src/my_robot_bringup_gazebo/urdf": No such file or
+  directory.
+
+[0m
