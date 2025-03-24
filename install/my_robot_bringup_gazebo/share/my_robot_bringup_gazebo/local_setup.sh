@@ -1,0 +1,1 @@
+/home/parallels/ros2_ws/build/my_robot_bringup_gazebo/ament_cmake_environment_hooks/local_setup.sh
