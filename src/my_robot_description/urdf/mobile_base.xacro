@@ -7,6 +7,14 @@
     <xacro:property name="base_height" value="0.2"/>
     <xacro:property name="wheel_radius" value="0.1"/>
     <xacro:property name="wheel_length" value="0.05"/>
+    
+    <link name="base_footprint" />
+    
+    <joint name = "base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link = "base_link"/>
+        <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+    </joint>
 
     <link name="base_link">
         <visual>
@@ -86,12 +94,5 @@
         </collision>
         <xacro:caster_wheel_inertia  m="0.5" r="${wheel_radius/2}" xyz="0 0 0" rpy="0 0 0"/>
     </link>
-    
-    <joint name = "base_joint" type="fixed">
-        <parent link="world"/>
-        <child link = "base_link"/>
-        <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
-    </joint>
-    <link name="world" />
     
 </robot>

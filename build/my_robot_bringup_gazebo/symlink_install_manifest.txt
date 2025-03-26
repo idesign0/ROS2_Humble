@@ -1,5 +1,6 @@
-/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//launch/display.launch.xml
+/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//launch/my_robot_gazebo.launch.xml
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//rviz/robo_config2.rviz
+/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//config/gazebo_bridge.yaml
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup_gazebo
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup_gazebo
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/environment/ament_prefix_path.sh
