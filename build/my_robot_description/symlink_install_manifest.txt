@@ -12,6 +12,7 @@
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//rviz/robo_config.rviz
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//worlds/test_world.sdf
 /home/parallels/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
 /home/parallels/ros2_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
