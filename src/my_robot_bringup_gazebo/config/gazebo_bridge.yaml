@@ -17,14 +17,14 @@
   direction: GZ_TO_ROS
 
   # Camera bridge configuration.
-- topic_name: "/camera"
+- topic_name: "/camera/image_raw"
   ros_type_name: "sensor_msgs/msg/Image"
-  gz_type_name: "gz.msgs.Image"
+  gz_type_name: "ignition.msgs.Image"
   lazy: true
   direction: GZ_TO_ROS
 
-- topic_name: "/camera_info"
+- topic_name: "/camera/camera_info"
   ros_type_name: "sensor_msgs/msg/CameraInfo"
-  gz_type_name: "gz.msgs.CameraInfo"
+  gz_type_name: "ignition.msgs.CameraInfo"
   lazy: true
   direction: GZ_TO_ROS
