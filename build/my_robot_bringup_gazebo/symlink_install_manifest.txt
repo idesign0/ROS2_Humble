@@ -1,3 +1,4 @@
+/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//launch/arm_gazebo.launch.xml
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//launch/my_robot_gazebo.launch.xml
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//rviz/robo_config2.rviz
 /home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo//config/gazebo_bridge.yaml

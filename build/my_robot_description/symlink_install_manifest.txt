@@ -1,6 +1,9 @@
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/arm_gazebo.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/camera.sdf
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/camera.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_arm.urdf.xacro
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_arm.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
@@ -11,6 +14,7 @@
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//urdf/two_wheeled_robot.urdf
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//launch/display_arm.launch.xml
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//rviz/robo_config.rviz
 /home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description//worlds/test_world.sdf
 /home/parallels/ros2_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
