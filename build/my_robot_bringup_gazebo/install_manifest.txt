@@ -1,0 +1,1 @@
+/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.dsv

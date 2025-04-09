@@ -1,0 +1,47 @@
+[0.019s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[0.303s] [  1%] Built target my_robot_interfaces__cpp
+[0.303s] [  2%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.c.o[0m
+[0.303s] [  2%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.303s] [  3%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/action/count_until__type_support.cpp.o[0m
+[0.303s] [  4%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/action/detail/count_until__type_support.cpp.o[0m
+[0.303s] [  5%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/dds_fastrtps/count_until__type_support.cpp.o[0m
+[0.303s] running egg_info
+[0.303s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.303s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.304s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.304s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.304s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.304s] [  5%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[0.304s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.h:19[m[K,
+[0.304s]                  from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.c:4[m[K:
+[0.304s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__struct.h:80:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.h: No such file or directory
+[0.304s]    80 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.h"[m[K
+[0.304s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.304s] compilation terminated.
+[0.304s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/build.make:315: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.c.o] Error 1
+[0.304s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/all] Error 2
+[0.304s] gmake[1]: *** Waiting for unfinished jobs....
+[0.304s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_cpp/my_robot_interfaces/action/count_until__type_support.cpp:7[m[K:
+[0.304s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/action/detail/count_until__struct.hpp:376:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+[0.304s]   376 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+[0.304s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.304s] compilation terminated.
+[0.304s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/build.make:212: CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/action/count_until__type_support.cpp.o] Error 1
+[0.304s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+[0.304s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_introspection_cpp/my_robot_interfaces/action/detail/count_until__type_support.cpp:12[m[K:
+[0.304s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/action/detail/count_until__struct.hpp:376:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+[0.304s]   376 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+[0.304s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.304s] compilation terminated.
+[0.304s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:238: CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/action/detail/count_until__type_support.cpp.o] Error 1
+[0.304s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[0.304s] In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/count_until__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.304s]                  from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/dds_fastrtps/count_until__type_support.cpp:4[m[K:
+[0.304s] [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/action/detail/count_until__struct.hpp:376:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+[0.304s]   376 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+[0.304s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.304s] compilation terminated.
+[0.304s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:238: CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/dds_fastrtps/count_until__type_support.cpp.o] Error 1
+[0.304s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.304s] gmake: *** [Makefile:146: all] Error 2
+[0.321s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j8 -l8

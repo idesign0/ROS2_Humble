@@ -9,7 +9,17 @@
     "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:msg/TurtleArray.idl",
     "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/ComputeRectangleArea.idl",
     "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/SetLED.idl",
-    "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/Catch.idl"
+    "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/Catch.idl",
+    "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/CountUntil.idl"
+  ],
+  "ros_interface_dependencies": [
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "unique_identifier_msgs:/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -33,6 +43,14 @@
     "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/msg/TurtleArray.idl",
     "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/ComputeRectangleArea.idl",
     "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/SetLED.idl",
-    "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/Catch.idl"
+    "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/srv/Catch.idl",
+    "/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces/action/CountUntil.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

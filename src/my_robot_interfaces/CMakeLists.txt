@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ComputeRectangleArea.srv"
   "srv/SetLED.srv"
   "srv/Catch.srv"
+  "action/CountUntil.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

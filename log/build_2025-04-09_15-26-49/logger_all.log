@@ -1,0 +1,987 @@
+[0.051s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.051s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff839b4730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff839b4160>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff839b4160>>, mixin_verb=('build',))
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.135s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/parallels/ros2_ws'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/add_two_ints' with type 'ros.ament_python' and name 'add_two_ints'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/add_two_ints_cpp) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/add_two_ints_cpp' with type 'ros.ament_cmake' and name 'add_two_ints_cpp'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_cpp_pkg) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_cpp_pkg' with type 'ros.ament_cmake' and name 'my_cpp_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_py_pkg) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_py_pkg' with type 'ros.ament_python' and name 'my_py_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_bringup' with type 'ros.ament_cmake' and name 'my_robot_bringup'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup_gazebo) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_bringup_gazebo' with type 'ros.ament_cmake' and name 'my_robot_bringup_gazebo'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_description' with type 'ros.ament_cmake' and name 'my_robot_description'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_interfaces' with type 'ros.ament_cmake' and name 'my_robot_interfaces'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_station_bringup) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_station_bringup' with type 'ros.ament_cmake' and name 'my_robot_station_bringup'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/number_counter) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'src/number_counter' with type 'ros.ament_python' and name 'number_counter'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_base) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/polygon_base' with type 'ros.ament_cmake' and name 'polygon_base'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/polygon_plugins) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/polygon_plugins' with type 'ros.ament_cmake' and name 'polygon_plugins'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlecatch_bringup) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlecatch_bringup' with type 'ros.ament_cmake' and name 'turtlecatch_bringup'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_catch_them_all) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlesim_catch_them_all' with type 'ros.ament_python' and name 'turtlesim_catch_them_all'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_sim_tutorial) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_sim_tutorial' with type 'ros.ament_cmake' and name 'urdf_sim_tutorial'
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.163s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/parallels/ros2_ws/install
+[0.164s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 362 installed packages in /opt/ros/humble
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'add_two_ints' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/add_two_ints', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/add_two_ints', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/add_two_ints', 'symlink_install': False, 'test_result_base': None}
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'cmake_target' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.186s] Level 5:colcon.colcon_core.verb:set package 'add_two_ints_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.186s] DEBUG:colcon.colcon_core.verb:Building package 'add_two_ints_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/add_two_ints_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/add_two_ints_cpp', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/add_two_ints_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_robot_description', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_robot_interfaces', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_robot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'number_counter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'number_counter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/number_counter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/number_counter', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/number_counter', 'symlink_install': False, 'test_result_base': None}
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'cmake_target' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'cmake_clean_cache' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'cmake_clean_first' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'cmake_force_configure' from command line to 'False'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'ament_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'catkin_cmake_args' from command line to 'None'
+[0.187s] Level 5:colcon.colcon_core.verb:set package 'polygon_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.187s] DEBUG:colcon.colcon_core.verb:Building package 'polygon_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/polygon_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/polygon_base', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/polygon_base', 'symlink_install': False, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'urdf_sim_tutorial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_sim_tutorial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/urdf_sim_tutorial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/urdf_sim_tutorial', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/urdf_sim_tutorial', 'symlink_install': False, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_cpp_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'my_cpp_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_cpp_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_cpp_pkg', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_cpp_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_py_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'my_py_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_py_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_py_pkg', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_py_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.188s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.188s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_bringup_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_robot_bringup_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_robot_bringup_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'polygon_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'polygon_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/polygon_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/polygon_plugins', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/polygon_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_catch_them_all' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'turtlesim_catch_them_all' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/turtlesim_catch_them_all', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/turtlesim_catch_them_all', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/turtlesim_catch_them_all', 'symlink_install': False, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_robot_bringup', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'my_robot_station_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.189s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_station_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/my_robot_station_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/my_robot_station_bringup', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/my_robot_station_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'cmake_args' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'cmake_target' from command line to 'None'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.189s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.190s] Level 5:colcon.colcon_core.verb:set package 'turtlecatch_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.190s] DEBUG:colcon.colcon_core.verb:Building package 'turtlecatch_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/parallels/ros2_ws/build/turtlecatch_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/parallels/ros2_ws/install/turtlecatch_bringup', 'merge_install': False, 'path': '/home/parallels/ros2_ws/src/turtlecatch_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.190s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.190s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/my_robot_interfaces' with build type 'ament_cmake'
+[0.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/my_robot_interfaces'
+[0.191s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.192s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.192s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.194s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/my_robot_description' with build type 'ament_cmake'
+[0.194s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/my_robot_description'
+[0.194s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.194s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.196s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/polygon_base' with build type 'ament_cmake'
+[0.196s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/polygon_base'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.198s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/parallels/ros2_ws/src/add_two_ints' with build type 'ament_python'
+[0.198s] Level 1:colcon.colcon_core.shell:create_environment_hook('add_two_ints', 'ament_prefix_path')
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/hook/ament_prefix_path.ps1'
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/hook/ament_prefix_path.dsv'
+[0.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/hook/ament_prefix_path.sh'
+[0.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/add_two_ints_cpp' with build type 'ament_cmake'
+[0.201s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/add_two_ints_cpp'
+[0.201s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.201s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.202s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/parallels/ros2_ws/src/number_counter' with build type 'ament_python'
+[0.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('number_counter', 'ament_prefix_path')
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/number_counter/share/number_counter/hook/ament_prefix_path.ps1'
+[0.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/number_counter/share/number_counter/hook/ament_prefix_path.dsv'
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/number_counter/share/number_counter/hook/ament_prefix_path.sh'
+[0.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/urdf_sim_tutorial' with build type 'ament_cmake'
+[0.208s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/urdf_sim_tutorial'
+[0.208s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.208s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.213s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[0.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_description -- -j8 -l8
+[0.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/polygon_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/polygon_base -- -j8 -l8
+[0.348s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/parallels/ros2_ws/src/add_two_ints'
+[0.348s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.348s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/add_two_ints_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/add_two_ints_cpp -- -j8 -l8
+[0.483s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/parallels/ros2_ws/src/number_counter'
+[0.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/urdf_sim_tutorial -- -j8 -l8
+[0.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_description -- -j8 -l8
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_description
+[0.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/polygon_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/polygon_base -- -j8 -l8
+[0.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/polygon_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/polygon_base
+[0.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/add_two_ints_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/add_two_ints_cpp -- -j8 -l8
+[0.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/add_two_ints_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/add_two_ints_cpp
+[0.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[0.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_description
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description' for CMake module files
+[0.512s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description' for CMake config files
+[0.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/bin'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/lib/python3.10/site-packages'
+[0.514s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/bin'
+[0.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[0.515s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[0.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[0.516s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[0.516s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[0.516s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[0.516s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description' for CMake module files
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description' for CMake config files
+[0.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[0.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[0.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[0.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/bin'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/lib/python3.10/site-packages'
+[0.518s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_description/bin'
+[0.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[0.523s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[0.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[0.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[0.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[0.524s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[0.524s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(polygon_base)
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base' for CMake module files
+[0.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/polygon_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/polygon_base
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base' for CMake config files
+[0.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('polygon_base', 'cmake_prefix_path')
+[0.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/hook/cmake_prefix_path.ps1'
+[0.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/hook/cmake_prefix_path.dsv'
+[0.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/hook/cmake_prefix_path.sh'
+[0.526s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/lib'
+[0.526s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/bin'
+[0.526s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/lib/pkgconfig/polygon_base.pc'
+[0.526s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/lib/python3.10/site-packages'
+[0.526s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/bin'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.ps1'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.dsv'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.sh'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.bash'
+[0.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.zsh'
+[0.528s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/polygon_base/share/colcon-core/packages/polygon_base)
+[0.528s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(polygon_base)
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base' for CMake module files
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base' for CMake config files
+[0.529s] Level 1:colcon.colcon_core.shell:create_environment_hook('polygon_base', 'cmake_prefix_path')
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/hook/cmake_prefix_path.ps1'
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/hook/cmake_prefix_path.dsv'
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/hook/cmake_prefix_path.sh'
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/lib'
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/bin'
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/lib/pkgconfig/polygon_base.pc'
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/lib/python3.10/site-packages'
+[0.530s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_base/bin'
+[0.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.ps1'
+[0.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.dsv'
+[0.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.sh'
+[0.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.bash'
+[0.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_base/share/polygon_base/package.zsh'
+[0.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/polygon_base/share/colcon-core/packages/polygon_base)
+[0.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/my_robot_bringup_gazebo' with build type 'ament_cmake'
+[0.532s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/my_robot_bringup_gazebo'
+[0.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.536s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/polygon_plugins' with build type 'ament_cmake'
+[0.536s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/polygon_plugins'
+[0.536s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.536s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/urdf_sim_tutorial -- -j8 -l8
+[0.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/urdf_sim_tutorial
+[0.542s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(add_two_ints_cpp)
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/add_two_ints_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/add_two_ints_cpp
+[0.543s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp' for CMake module files
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp' for CMake config files
+[0.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('add_two_ints_cpp', 'cmake_prefix_path')
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/hook/cmake_prefix_path.ps1'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/hook/cmake_prefix_path.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/hook/cmake_prefix_path.sh'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/lib'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/bin'
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/lib/pkgconfig/add_two_ints_cpp.pc'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/lib/python3.10/site-packages'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/bin'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.ps1'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.dsv'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.sh'
+[0.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.bash'
+[0.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.zsh'
+[0.550s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/add_two_ints_cpp/share/colcon-core/packages/add_two_ints_cpp)
+[0.550s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(add_two_ints_cpp)
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp' for CMake module files
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp' for CMake config files
+[0.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('add_two_ints_cpp', 'cmake_prefix_path')
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/hook/cmake_prefix_path.ps1'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/hook/cmake_prefix_path.dsv'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/hook/cmake_prefix_path.sh'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/lib'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/bin'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/lib/pkgconfig/add_two_ints_cpp.pc'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/lib/python3.10/site-packages'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints_cpp/bin'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.ps1'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.dsv'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.sh'
+[0.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.bash'
+[0.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints_cpp/share/add_two_ints_cpp/package.zsh'
+[0.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/add_two_ints_cpp/share/colcon-core/packages/add_two_ints_cpp)
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_bringup_gazebo': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_bringup_gazebo -- -j8 -l8
+[0.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/polygon_plugins': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/polygon_plugins -- -j8 -l8
+[0.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_sim_tutorial)
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial' for CMake module files
+[0.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/urdf_sim_tutorial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/urdf_sim_tutorial
+[0.573s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial' for CMake config files
+[0.573s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_sim_tutorial', 'cmake_prefix_path')
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/hook/cmake_prefix_path.ps1'
+[0.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/hook/cmake_prefix_path.dsv'
+[0.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/hook/cmake_prefix_path.sh'
+[0.575s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/bin'
+[0.575s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/lib/pkgconfig/urdf_sim_tutorial.pc'
+[0.575s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/lib/python3.10/site-packages'
+[0.575s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/bin'
+[0.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.ps1'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.dsv'
+[0.576s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.sh'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.bash'
+[0.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.zsh'
+[0.579s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/colcon-core/packages/urdf_sim_tutorial)
+[0.579s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_sim_tutorial)
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial' for CMake module files
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial' for CMake config files
+[0.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_sim_tutorial', 'cmake_prefix_path')
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/hook/cmake_prefix_path.ps1'
+[0.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/hook/cmake_prefix_path.dsv'
+[0.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/hook/cmake_prefix_path.sh'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/bin'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/lib/pkgconfig/urdf_sim_tutorial.pc'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/lib/python3.10/site-packages'
+[0.582s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/urdf_sim_tutorial/bin'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.ps1'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.dsv'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.sh'
+[0.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.bash'
+[0.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/urdf_sim_tutorial/package.zsh'
+[0.584s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/urdf_sim_tutorial/share/colcon-core/packages/urdf_sim_tutorial)
+[0.596s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_bringup_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_bringup_gazebo -- -j8 -l8
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_bringup_gazebo': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_bringup_gazebo
+[0.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/polygon_plugins' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/polygon_plugins -- -j8 -l8
+[0.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/polygon_plugins': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/polygon_plugins
+[0.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup_gazebo)
+[0.606s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo' for CMake module files
+[0.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_bringup_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_bringup_gazebo
+[0.607s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo' for CMake config files
+[0.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup_gazebo', 'cmake_prefix_path')
+[0.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/hook/cmake_prefix_path.ps1'
+[0.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/hook/cmake_prefix_path.dsv'
+[0.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/hook/cmake_prefix_path.sh'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/bin'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/lib/pkgconfig/my_robot_bringup_gazebo.pc'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/lib/python3.10/site-packages'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/bin'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.dsv'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.sh'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.bash'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.zsh'
+[0.617s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/colcon-core/packages/my_robot_bringup_gazebo)
+[0.617s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup_gazebo)
+[0.617s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo' for CMake module files
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo' for CMake config files
+[0.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup_gazebo', 'cmake_prefix_path')
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/hook/cmake_prefix_path.ps1'
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/hook/cmake_prefix_path.dsv'
+[0.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/hook/cmake_prefix_path.sh'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/bin'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/lib/pkgconfig/my_robot_bringup_gazebo.pc'
+[0.618s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/lib/python3.10/site-packages'
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/bin'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.ps1'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.dsv'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.sh'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.bash'
+[0.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/my_robot_bringup_gazebo/package.zsh'
+[0.620s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_bringup_gazebo/share/colcon-core/packages/my_robot_bringup_gazebo)
+[0.621s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(polygon_plugins)
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins' for CMake module files
+[0.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/polygon_plugins' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/polygon_plugins
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins' for CMake config files
+[0.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('polygon_plugins', 'cmake_prefix_path')
+[0.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/cmake_prefix_path.ps1'
+[0.623s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/cmake_prefix_path.dsv'
+[0.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/cmake_prefix_path.sh'
+[0.624s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/lib'
+[0.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('polygon_plugins', 'ld_library_path_lib')
+[0.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/ld_library_path_lib.ps1'
+[0.625s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/ld_library_path_lib.dsv'
+[0.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/ld_library_path_lib.sh'
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/bin'
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/lib/pkgconfig/polygon_plugins.pc'
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/lib/python3.10/site-packages'
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/bin'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.ps1'
+[0.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.dsv'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.sh'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.bash'
+[0.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.zsh'
+[0.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/polygon_plugins/share/colcon-core/packages/polygon_plugins)
+[0.626s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(polygon_plugins)
+[0.626s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins' for CMake module files
+[0.627s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins' for CMake config files
+[0.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('polygon_plugins', 'cmake_prefix_path')
+[0.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/cmake_prefix_path.ps1'
+[0.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/cmake_prefix_path.dsv'
+[0.627s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/cmake_prefix_path.sh'
+[0.627s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/lib'
+[0.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('polygon_plugins', 'ld_library_path_lib')
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/ld_library_path_lib.ps1'
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/ld_library_path_lib.dsv'
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/hook/ld_library_path_lib.sh'
+[0.628s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/bin'
+[0.628s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/lib/pkgconfig/polygon_plugins.pc'
+[0.628s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/lib/python3.10/site-packages'
+[0.628s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/polygon_plugins/bin'
+[0.628s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.ps1'
+[0.629s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.dsv'
+[0.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.sh'
+[0.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.bash'
+[0.629s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/polygon_plugins/share/polygon_plugins/package.zsh'
+[0.629s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/polygon_plugins/share/colcon-core/packages/polygon_plugins)
+[0.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/src/add_two_ints': PYTHONPATH=/home/parallels/ros2_ws/build/add_two_ints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/add_two_ints build --build-base /home/parallels/ros2_ws/build/add_two_ints/build install --record /home/parallels/ros2_ws/build/add_two_ints/install.log --single-version-externally-managed install_data
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/src/number_counter': PYTHONPATH=/home/parallels/ros2_ws/build/number_counter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/number_counter build --build-base /home/parallels/ros2_ws/build/number_counter/build install --record /home/parallels/ros2_ws/build/number_counter/install.log --single-version-externally-managed install_data
+[0.876s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints' for CMake module files
+[0.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/src/add_two_ints' returned '0': PYTHONPATH=/home/parallels/ros2_ws/build/add_two_ints/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/add_two_ints build --build-base /home/parallels/ros2_ws/build/add_two_ints/build install --record /home/parallels/ros2_ws/build/add_two_ints/install.log --single-version-externally-managed install_data
+[0.879s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints' for CMake config files
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints/lib'
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints/bin'
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints/lib/pkgconfig/add_two_ints.pc'
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages'
+[0.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('add_two_ints', 'pythonpath')
+[0.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/hook/pythonpath.ps1'
+[0.881s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/hook/pythonpath.dsv'
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/hook/pythonpath.sh'
+[0.882s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/add_two_ints/bin'
+[0.882s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(add_two_ints)
+[0.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/package.ps1'
+[0.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/package.dsv'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/package.sh'
+[0.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/package.bash'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/add_two_ints/share/add_two_ints/package.zsh'
+[0.886s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/add_two_ints/share/colcon-core/packages/add_two_ints)
+[0.888s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter' for CMake module files
+[0.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/src/number_counter' returned '0': PYTHONPATH=/home/parallels/ros2_ws/build/number_counter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/number_counter build --build-base /home/parallels/ros2_ws/build/number_counter/build install --record /home/parallels/ros2_ws/build/number_counter/install.log --single-version-externally-managed install_data
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter' for CMake config files
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter/lib'
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter/bin'
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter/lib/pkgconfig/number_counter.pc'
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages'
+[0.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('number_counter', 'pythonpath')
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/number_counter/share/number_counter/hook/pythonpath.ps1'
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/number_counter/share/number_counter/hook/pythonpath.dsv'
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/number_counter/share/number_counter/hook/pythonpath.sh'
+[0.890s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/number_counter/bin'
+[0.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(number_counter)
+[0.890s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/number_counter/share/number_counter/package.ps1'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/number_counter/share/number_counter/package.dsv'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/number_counter/share/number_counter/package.sh'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/number_counter/share/number_counter/package.bash'
+[0.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/number_counter/share/number_counter/package.zsh'
+[0.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/number_counter/share/colcon-core/packages/number_counter)
+[4.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[4.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_interfaces
+[4.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
+[4.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_interfaces
+[4.399s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces' for CMake module files
+[4.399s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces' for CMake config files
+[4.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
+[4.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[4.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[4.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[4.400s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/lib'
+[4.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
+[4.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[4.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[4.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[4.401s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/bin'
+[4.401s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[4.401s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/lib/python3.10/site-packages'
+[4.401s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/bin'
+[4.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[4.401s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[4.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[4.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[4.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[4.402s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[4.402s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
+[4.402s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces' for CMake module files
+[4.403s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces' for CMake config files
+[4.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
+[4.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[4.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[4.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/lib'
+[4.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
+[4.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[4.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[4.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/bin'
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/lib/python3.10/site-packages'
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_interfaces/bin'
+[4.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[4.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[4.405s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[4.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/my_cpp_pkg' with build type 'ament_cmake'
+[4.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/my_cpp_pkg'
+[4.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.408s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/parallels/ros2_ws/src/my_py_pkg' with build type 'ament_python'
+[4.408s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg', 'ament_prefix_path')
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.ps1'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.dsv'
+[4.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/ament_prefix_path.sh'
+[4.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.411s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/parallels/ros2_ws/src/turtlesim_catch_them_all' with build type 'ament_python'
+[4.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_catch_them_all', 'ament_prefix_path')
+[4.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/ament_prefix_path.ps1'
+[4.411s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/ament_prefix_path.dsv'
+[4.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/ament_prefix_path.sh'
+[4.411s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.411s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[4.567s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/parallels/ros2_ws/src/my_py_pkg'
+[4.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.707s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/parallels/ros2_ws/src/turtlesim_catch_them_all'
+[4.707s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.708s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/src/turtlesim_catch_them_all': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/build/turtlesim_catch_them_all/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_catch_them_all build --build-base /home/parallels/ros2_ws/build/turtlesim_catch_them_all/build install --record /home/parallels/ros2_ws/build/turtlesim_catch_them_all/install.log --single-version-externally-managed install_data
+[4.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/parallels/ros2_ws/build/my_py_pkg/build install --record /home/parallels/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[5.210s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all' for CMake module files
+[5.211s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all' for CMake config files
+[5.211s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib'
+[5.212s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/bin'
+[5.212s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/pkgconfig/turtlesim_catch_them_all.pc'
+[5.212s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages'
+[5.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_catch_them_all', 'pythonpath')
+[5.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/pythonpath.ps1'
+[5.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/pythonpath.dsv'
+[5.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/hook/pythonpath.sh'
+[5.214s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/bin'
+[5.214s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlesim_catch_them_all)
+[5.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/package.ps1'
+[5.215s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/package.dsv'
+[5.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/package.sh'
+[5.216s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/package.bash'
+[5.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/turtlesim_catch_them_all/package.zsh'
+[5.217s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/turtlesim_catch_them_all/share/colcon-core/packages/turtlesim_catch_them_all)
+[5.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/src/turtlesim_catch_them_all' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/build/turtlesim_catch_them_all/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlesim_catch_them_all build --build-base /home/parallels/ros2_ws/build/turtlesim_catch_them_all/build install --record /home/parallels/ros2_ws/build/turtlesim_catch_them_all/install.log --single-version-externally-managed install_data
+[5.219s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/turtlecatch_bringup' with build type 'ament_cmake'
+[5.219s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/turtlecatch_bringup'
+[5.219s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.220s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/turtlecatch_bringup': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/turtlecatch_bringup -- -j8 -l8
+[5.263s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg' for CMake module files
+[5.263s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg' for CMake config files
+[5.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/parallels/ros2_ws/build/my_py_pkg/build install --record /home/parallels/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[5.266s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg/lib'
+[5.266s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg/bin'
+[5.266s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg/lib/pkgconfig/my_py_pkg.pc'
+[5.267s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages'
+[5.267s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_py_pkg', 'pythonpath')
+[5.268s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.ps1'
+[5.268s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.dsv'
+[5.269s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/hook/pythonpath.sh'
+[5.270s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_py_pkg/bin'
+[5.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_py_pkg)
+[5.270s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.ps1'
+[5.270s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.dsv'
+[5.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.sh'
+[5.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.bash'
+[5.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_py_pkg/share/my_py_pkg/package.zsh'
+[5.272s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_py_pkg/share/colcon-core/packages/my_py_pkg)
+[5.274s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/my_robot_bringup' with build type 'ament_cmake'
+[5.275s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/my_robot_bringup'
+[5.276s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.276s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/turtlecatch_bringup' returned '0': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/turtlecatch_bringup -- -j8 -l8
+[5.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/turtlecatch_bringup': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/parallels/ros2_ws/build/turtlecatch_bringup
+[5.326s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlecatch_bringup)
+[5.328s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup' for CMake module files
+[5.329s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup' for CMake config files
+[5.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlecatch_bringup', 'cmake_prefix_path')
+[5.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/hook/cmake_prefix_path.ps1'
+[5.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/hook/cmake_prefix_path.dsv'
+[5.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/turtlecatch_bringup' returned '0': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/parallels/ros2_ws/build/turtlecatch_bringup
+[5.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/hook/cmake_prefix_path.sh'
+[5.335s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/bin'
+[5.335s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/lib/pkgconfig/turtlecatch_bringup.pc'
+[5.335s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/lib/python3.10/site-packages'
+[5.336s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/bin'
+[5.336s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.ps1'
+[5.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.dsv'
+[5.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.sh'
+[5.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.bash'
+[5.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.zsh'
+[5.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/turtlecatch_bringup/share/colcon-core/packages/turtlecatch_bringup)
+[5.361s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlecatch_bringup)
+[5.361s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup' for CMake module files
+[5.361s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup' for CMake config files
+[5.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlecatch_bringup', 'cmake_prefix_path')
+[5.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/hook/cmake_prefix_path.ps1'
+[5.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/hook/cmake_prefix_path.dsv'
+[5.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/hook/cmake_prefix_path.sh'
+[5.369s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/bin'
+[5.369s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/lib/pkgconfig/turtlecatch_bringup.pc'
+[5.369s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/lib/python3.10/site-packages'
+[5.369s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/turtlecatch_bringup/bin'
+[5.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.ps1'
+[5.370s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.dsv'
+[5.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.sh'
+[5.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.bash'
+[5.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/turtlecatch_bringup/share/turtlecatch_bringup/package.zsh'
+[5.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/turtlecatch_bringup/share/colcon-core/packages/turtlecatch_bringup)
+[5.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_bringup': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_bringup
+[5.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_bringup
+[5.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_bringup': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_bringup -- -j8 -l8
+[6.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_bringup -- -j8 -l8
+[6.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_bringup': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_bringup
+[6.128s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[6.128s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup' for CMake module files
+[6.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/parallels/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_bringup
+[6.129s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup' for CMake config files
+[6.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[6.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[6.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[6.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[6.130s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/bin'
+[6.130s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[6.130s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/lib/python3.10/site-packages'
+[6.130s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/bin'
+[6.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[6.131s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[6.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[6.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[6.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[6.133s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[6.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[6.134s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup' for CMake module files
+[6.135s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup' for CMake config files
+[6.136s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[6.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[6.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/bin'
+[6.138s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[6.139s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/lib/python3.10/site-packages'
+[6.139s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_bringup/bin'
+[6.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[6.141s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[6.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[6.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[6.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[6.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[11.918s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_cpp_pkg -- -j8 -l8
+[11.921s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_cpp_pkg
+[11.940s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cpp_pkg)
+[11.940s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg' for CMake module files
+[11.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_cpp_pkg
+[11.941s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg' for CMake config files
+[11.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cpp_pkg', 'cmake_prefix_path')
+[11.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.ps1'
+[11.942s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.dsv'
+[11.942s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.sh'
+[11.942s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/lib'
+[11.943s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/bin'
+[11.943s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/lib/pkgconfig/my_cpp_pkg.pc'
+[11.943s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/lib/python3.10/site-packages'
+[11.943s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/bin'
+[11.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.ps1'
+[11.943s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv'
+[11.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.sh'
+[11.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.bash'
+[11.944s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.zsh'
+[11.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_cpp_pkg/share/colcon-core/packages/my_cpp_pkg)
+[11.945s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_cpp_pkg)
+[11.945s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg' for CMake module files
+[11.945s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg' for CMake config files
+[11.945s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_cpp_pkg', 'cmake_prefix_path')
+[11.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.ps1'
+[11.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.dsv'
+[11.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/hook/cmake_prefix_path.sh'
+[11.946s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/lib'
+[11.946s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/bin'
+[11.946s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/lib/pkgconfig/my_cpp_pkg.pc'
+[11.946s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/lib/python3.10/site-packages'
+[11.946s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_cpp_pkg/bin'
+[11.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.ps1'
+[11.946s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv'
+[11.946s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.sh'
+[11.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.bash'
+[11.947s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.zsh'
+[11.947s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_cpp_pkg/share/colcon-core/packages/my_cpp_pkg)
+[11.947s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/parallels/ros2_ws/src/my_robot_station_bringup' with build type 'ament_cmake'
+[11.947s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/parallels/ros2_ws/src/my_robot_station_bringup'
+[11.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.959s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_station_bringup': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_station_bringup -- -j8 -l8
+[11.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_station_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_station_bringup -- -j8 -l8
+[11.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/parallels/ros2_ws/build/my_robot_station_bringup': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_station_bringup
+[11.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_station_bringup)
+[11.983s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup' for CMake module files
+[11.983s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/parallels/ros2_ws/build/my_robot_station_bringup' returned '0': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/parallels/ros2_ws/build/my_robot_station_bringup
+[11.983s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup' for CMake config files
+[11.983s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_station_bringup', 'cmake_prefix_path')
+[11.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/hook/cmake_prefix_path.ps1'
+[11.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/hook/cmake_prefix_path.dsv'
+[11.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/hook/cmake_prefix_path.sh'
+[11.984s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/bin'
+[11.984s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/lib/pkgconfig/my_robot_station_bringup.pc'
+[11.984s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/lib/python3.10/site-packages'
+[11.984s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/bin'
+[11.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.ps1'
+[11.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.dsv'
+[11.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.sh'
+[11.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.bash'
+[11.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.zsh'
+[11.985s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_station_bringup/share/colcon-core/packages/my_robot_station_bringup)
+[11.985s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_station_bringup)
+[11.985s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup' for CMake module files
+[11.986s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup' for CMake config files
+[11.986s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_station_bringup', 'cmake_prefix_path')
+[11.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/hook/cmake_prefix_path.ps1'
+[11.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/hook/cmake_prefix_path.dsv'
+[11.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/hook/cmake_prefix_path.sh'
+[11.986s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/bin'
+[11.986s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/lib/pkgconfig/my_robot_station_bringup.pc'
+[11.986s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/lib/python3.10/site-packages'
+[11.987s] Level 1:colcon.colcon_core.environment:checking '/home/parallels/ros2_ws/install/my_robot_station_bringup/bin'
+[11.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.ps1'
+[11.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.dsv'
+[11.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.sh'
+[11.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.bash'
+[11.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/parallels/ros2_ws/install/my_robot_station_bringup/share/my_robot_station_bringup/package.zsh'
+[11.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/parallels/ros2_ws/install/my_robot_station_bringup/share/colcon-core/packages/my_robot_station_bringup)
+[11.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.988s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.996s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.996s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.996s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.014s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.015s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/ros2_ws/install/local_setup.ps1'
+[12.015s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/parallels/ros2_ws/install/_local_setup_util_ps1.py'
+[12.016s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/ros2_ws/install/setup.ps1'
+[12.017s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/ros2_ws/install/local_setup.sh'
+[12.017s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/parallels/ros2_ws/install/_local_setup_util_sh.py'
+[12.017s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/ros2_ws/install/setup.sh'
+[12.018s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/ros2_ws/install/local_setup.bash'
+[12.018s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/ros2_ws/install/setup.bash'
+[12.019s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/parallels/ros2_ws/install/local_setup.zsh'
+[12.019s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/parallels/ros2_ws/install/setup.zsh'

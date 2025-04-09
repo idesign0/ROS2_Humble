@@ -1,0 +1,32 @@
+In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.h:19[m[K,
+                 from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.c:4[m[K:
+[01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__struct.h:80:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.h: No such file or directory
+   80 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/build.make:315: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/action/detail/count_until__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/count_until__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/dds_fastrtps/count_until__type_support.cpp:4[m[K:
+[01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/action/detail/count_until__struct.hpp:376:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+  376 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_cpp/my_robot_interfaces/action/count_until__type_support.cpp:7[m[K:
+[01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/action/detail/count_until__struct.hpp:376:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+  376 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_typesupport_introspection_cpp/my_robot_interfaces/action/detail/count_until__type_support.cpp:12[m[K:
+[01m[K/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_generator_cpp/my_robot_interfaces/action/detail/count_until__struct.hpp:376:10:[m[K [01;31m[Kfatal error: [m[Kunique_identifier_msgs/msg/detail/uuid__struct.hpp: No such file or directory
+  376 | #include [01;31m[K"unique_identifier_msgs/msg/detail/uuid__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:238: CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/dds_fastrtps/count_until__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/build.make:212: CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/action/count_until__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:238: CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/action/detail/count_until__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -5,3 +5,4 @@
 /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/ComputeRectangleArea.idl
 /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/SetLED.idl
 /home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/Catch.idl
+/home/parallels/ros2_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/CountUntil.idl
