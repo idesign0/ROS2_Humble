@@ -60,7 +60,7 @@ class CountUntilClient(Node): # count_until_client
 def main(args=None):
     rclpy.init(args=args)
     node = CountUntilClient() # count_until_client
-    node.send_goal(6,1.0)
+    node.send_goal(10,1.0)
     rclpy.spin(node)
     rclpy.shutdown()
   
