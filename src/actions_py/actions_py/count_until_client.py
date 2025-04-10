@@ -24,7 +24,7 @@ class CountUntilClient(Node): # count_until_client
         # sending goal
         self.get_logger().info("Sending Goal")
         self.count_until_client_.send_goal_async(goal,feedback_callback=self.goal_feedback_callback).add_done_callback(self.goal_response_callback)
-        self.timer_ = self.create_timer(2.0,self.cancel_goal)
+        #self.timer_ = self.create_timer(2.0,self.cancel_goal)
 
     def cancel_goal(self):
         self.get_logger().info("Send a cancel Request.")
