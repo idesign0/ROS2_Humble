@@ -31,20 +31,34 @@ private:
 
         RCLCPP_INFO(this->get_logger(),"Received a Goal");
         
-        // Refuse new goal is one goal is bein active
-        {
-            std::lock_guard<std::mutex> lock(mutex_);
-            if(goal_handle_){
-                if(goal_handle_->is_active()){
-                    RCLCPP_INFO(this->get_logger(),"A Goal is still active, Reject a new goal."); 
-                    return rclcpp_action::GoalResponse::REJECT;
-                }
-            }
-        }
+        // Policy: Refuse new goal is one goal is bein active
+        // {
+        //     std::lock_guard<std::mutex> lock(mutex_);
+        //     if(goal_handle_){
+        //         if(goal_handle_->is_active()){
+        //             RCLCPP_INFO(this->get_logger(),"A Goal is still active, Reject a new goal."); 
+        //             return rclcpp_action::GoalResponse::REJECT;
+        //         }
+        //     }
+        // }
+
+
         if (goal->target_number <= 0){
             RCLCPP_INFO(this->get_logger(),"Rejecting a Goal");
             return rclcpp_action::GoalResponse::REJECT;
         }
+
+        // Policy: Preemt existing goal while receiving the new valid goal
+        {
+                std::lock_guard<std::mutex> lock(mutex_);
+                if(goal_handle_){
+                    if(goal_handle_->is_active()){
+                        RCLCPP_INFO(this->get_logger(),"Abort current goal and Accept New Goal");
+                        preemted_goal_id_ = goal_handle_->get_goal_id();
+                    }
+                } 
+        }
+
         RCLCPP_INFO(this->get_logger(),"Accepting  a Goal");
         return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
     }
@@ -80,6 +94,14 @@ private:
                 goal_handle->canceled(result);   
                 return;     
             }
+            {
+                std::lock_guard<std::mutex> lock(mutex_); 
+                if(goal_handle->get_goal_id()==preemted_goal_id_){
+                    result->reached_number = counter;
+                    goal_handle->abort(result);   
+                    return;
+                }
+            }
             counter++;
             RCLCPP_INFO(this->get_logger(),"Counter: %d",counter);
             feedback->current_number = counter;
@@ -96,6 +118,7 @@ private:
     rclcpp::CallbackGroup::SharedPtr cb_group_;
     std::mutex mutex_;
     std::shared_ptr<CountUntilGoalHandle> goal_handle_;
+    rclcpp_action::GoalUUID preemted_goal_id_;
 };
  
 int main(int argc, char **argv)
