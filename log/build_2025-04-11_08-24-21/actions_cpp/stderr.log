@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:14:
+  Parse error.  Expected "(", got identifier with text "add_executable".
+
+[0m

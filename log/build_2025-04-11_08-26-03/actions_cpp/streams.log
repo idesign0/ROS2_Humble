@@ -1,0 +1,29 @@
+[0.006s] Invoking command in '/home/parallels/ros2_ws/build/actions_cpp': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/parallels/ros2_ws/src/actions_cpp -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/actions_cpp
+[0.017s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.079s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.091s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.092s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.095s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.100s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.105s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.121s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.122s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.187s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.212s] -- Found my_robot_interfaces: 0.0.0 (/home/parallels/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+[0.231s] -- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.273s] -- Configuring done
+[0.275s] [31mCMake Error at CMakeLists.txt:14 (add_executable):
+[0.275s]   Cannot find source file:
+[0.275s] 
+[0.275s]     src/coun_until_server.cpp
+[0.275s] 
+[0.275s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[0.275s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[0.275s] 
+[0.275s] [0m
+[0.275s] [31mCMake Error at CMakeLists.txt:14 (add_executable):
+[0.275s]   No SOURCES given to target: count_until_server
+[0.275s] 
+[0.275s] [0m
+[0.275s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[0.279s] Invoked command in '/home/parallels/ros2_ws/build/actions_cpp' returned '1': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/parallels/ros2_ws/src/actions_cpp -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/actions_cpp

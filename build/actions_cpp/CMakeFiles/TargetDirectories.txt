@@ -1,0 +1,11 @@
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/uninstall.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/actions_cpp_uninstall.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/count_until_server.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/count_until_client.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/test.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/edit_cache.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/rebuild_cache.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/list_install_components.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/install.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/install/local.dir
+/home/parallels/ros2_ws/build/actions_cpp/CMakeFiles/install/strip.dir
