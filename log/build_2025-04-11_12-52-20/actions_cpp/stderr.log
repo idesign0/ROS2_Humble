@@ -1,0 +1,15 @@
+[01m[K/home/parallels/ros2_ws/src/actions_cpp/src/count_until_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/parallels/ros2_ws/src/actions_cpp/src/count_until_server.cpp:91:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::MultiThreadedExecutor::spin(std::shared_ptr<CountUntilServerNode>&)[m[K’
+   91 |     [01;31m[Kexecutor. spin(node)[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/parallels/ros2_ws/src/actions_cpp/src/count_until_server.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:70:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::executors::MultiThreadedExecutor::spin()[m[K’
+   70 |   [01;36m[Kspin[m[K() override;
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:70:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/count_until_server.dir/build.make:76: CMakeFiles/count_until_server.dir/src/count_until_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/count_until_server.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

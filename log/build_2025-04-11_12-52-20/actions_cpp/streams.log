@@ -1,0 +1,23 @@
+[0.007s] Invoking command in '/home/parallels/ros2_ws/build/actions_cpp': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/actions_cpp:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/actions_cpp -- -j8 -l8
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target count_until_client[0m
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target count_until_server[0m
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/count_until_server.dir/src/count_until_server.cpp.o[0m
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/count_until_client.dir/src/count_until_client.cpp.o[0m
+[1.906s] [01m[K/home/parallels/ros2_ws/src/actions_cpp/src/count_until_server.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.906s] [01m[K/home/parallels/ros2_ws/src/actions_cpp/src/count_until_server.cpp:91:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::executors::MultiThreadedExecutor::spin(std::shared_ptr<CountUntilServerNode>&)[m[K’
+[1.906s]    91 |     [01;31m[Kexecutor. spin(node)[m[K;
+[1.906s]       |     [01;31m[K~~~~~~~~~~~~~~^~~~~~[m[K
+[1.906s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.906s]                  from [01m[K/home/parallels/ros2_ws/src/actions_cpp/src/count_until_server.cpp:1[m[K:
+[1.906s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:70:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual void rclcpp::executors::MultiThreadedExecutor::spin()[m[K’
+[1.906s]    70 |   [01;36m[Kspin[m[K() override;
+[1.906s]       |   [01;36m[K^~~~[m[K
+[1.912s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:70:3:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[2.290s] gmake[2]: *** [CMakeFiles/count_until_server.dir/build.make:76: CMakeFiles/count_until_server.dir/src/count_until_server.cpp.o] Error 1
+[2.290s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/count_until_server.dir/all] Error 2
+[2.290s] gmake[1]: *** Waiting for unfinished jobs....
+[2.756s] [ 75%] [32m[1mLinking CXX executable count_until_client[0m
+[2.863s] [ 75%] Built target count_until_client
+[2.864s] gmake: *** [Makefile:146: all] Error 2
+[2.865s] Invoked command in '/home/parallels/ros2_ws/build/actions_cpp' returned '2': CMAKE_PREFIX_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces:/home/parallels/ros2_ws/install/actions_cpp:/home/parallels/ros2_ws/install/urdf_sim_tutorial:/home/parallels/ros2_ws/install/turtlecatch_bringup:/home/parallels/ros2_ws/install/polygon_plugins:/home/parallels/ros2_ws/install/polygon_base:/home/parallels/ros2_ws/install/my_robot_station_bringup:/home/parallels/ros2_ws/install/my_robot_bringup:/home/parallels/ros2_ws/install/my_cpp_pkg:/home/parallels/ros2_ws/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/install/my_robot_description:/home/parallels/ros2_ws/install/add_two_ints_cpp:/usr:/usr:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble LD_LIBRARY_PATH=/home/parallels/ros2_ws/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/install/polygon_plugins/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/parallels/ros2_ws/build/actions_cpp -- -j8 -l8
