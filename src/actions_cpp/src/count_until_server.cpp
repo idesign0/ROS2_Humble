@@ -53,11 +53,14 @@ private:
 
         // Execute the action
         int counter = 0;
+        auto feedback = std::make_shared<CountUntil::Feedback>();
         rclcpp::Rate loop_rate(1.0/period);
         for(int i=0;i<target_number;i++){
             counter++;
             RCLCPP_INFO(this->get_logger(),"Counter: %d",counter);
-           loop_rate.sleep();
+            feedback->current_number = counter;
+            goal_handle->publish_feedback(feedback);
+            loop_rate.sleep();
         }
 
         // Set the final state and return the result

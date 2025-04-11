@@ -27,6 +27,8 @@ public:
         auto options = rclcpp_action::Client<CountUntil>::SendGoalOptions();
         options.goal_response_callback = std::bind(&CountUntilClientNode::goal_response_callback,this,_1);
         options.result_callback = std::bind(&CountUntilClientNode::goal_result_callback,this,_1);
+        options.feedback_callback = std::bind(&CountUntilClientNode::goal_feedback_callback,this,_1,_2);
+
 
         // send a goal
         RCLCPP_INFO(this->get_logger(),"Sending a Goal");
@@ -34,6 +36,12 @@ public:
     }
     
 private:
+
+    void goal_feedback_callback(const CountUntilGoalHandle::SharedPtr &goal_handle, const std::shared_ptr<const CountUntil::Feedback> feedback){
+        (void)goal_handle;
+        int number = feedback->current_number;
+        RCLCPP_INFO(this->get_logger(),"Got Feedback: %d",number);
+    }
 
     void goal_response_callback(const CountUntilGoalHandle::SharedPtr &goal_handle){
         if(!goal_handle){
@@ -50,10 +58,10 @@ private:
         if (status == rclcpp_action::ResultCode::SUCCEEDED){
             RCLCPP_INFO(this->get_logger(),"Succeeded!");            
         }else if (status == rclcpp_action::ResultCode::ABORTED){
-            RCLCPP_INFO(this->get_logger(),"Aborted!");            
+            RCLCPP_ERROR(this->get_logger(),"Aborted!");            
         }  
         int reached_number = result.result->reached_number;
-        RCLCPP_ERROR(this->get_logger(),"Result: %d",reached_number);
+        RCLCPP_INFO(this->get_logger(),"Result: %d",reached_number);
     }
     rclcpp_action::Client<CountUntil>::SharedPtr count_until_client_;
 
