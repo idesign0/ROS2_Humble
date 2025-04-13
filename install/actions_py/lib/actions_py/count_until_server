@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# EASY-INSTALL-ENTRY-SCRIPT: 'actions-py','console_scripts','count_until_server'
+# EASY-INSTALL-ENTRY-SCRIPT: 'actions-py==0.0.0','console_scripts','count_until_server'
 import re
 import sys
 
 # for compatibility with easy_install; see #2198
-__requires__ = 'actions-py'
+__requires__ = 'actions-py==0.0.0'
 
 try:
     from importlib.metadata import distribution
@@ -30,4 +30,4 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(load_entry_point('actions-py', 'console_scripts', 'count_until_server')())
+    sys.exit(load_entry_point('actions-py==0.0.0', 'console_scripts', 'count_until_server')())

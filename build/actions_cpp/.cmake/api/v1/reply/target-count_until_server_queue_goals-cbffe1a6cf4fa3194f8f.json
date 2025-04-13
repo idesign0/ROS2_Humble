@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "count_until_client"
+			"path" : "count_until_server_queue_goals"
 		}
 	],
 	"backtrace" : 1,
@@ -36,13 +36,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 17,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
@@ -254,7 +254,7 @@
 			]
 		}
 	],
-	"id" : "count_until_client::@6890427a1f51a3e7e1df",
+	"id" : "count_until_server_queue_goals::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -618,8 +618,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "count_until_client",
-	"nameOnDisk" : "count_until_client",
+	"name" : "count_until_server_queue_goals",
+	"nameOnDisk" : "count_until_server_queue_goals",
 	"paths" : 
 	{
 		"build" : ".",
@@ -640,7 +640,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/count_until_client.cpp",
+			"path" : "src/count_until_server_queue_goals.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

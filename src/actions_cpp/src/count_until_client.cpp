@@ -83,6 +83,8 @@ int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<CountUntilClientNode>(); 
+    node->send_goal(15,1);
+    node->send_goal(10,1);
     node->send_goal(5,1);
     rclcpp::spin(node);
     rclcpp::shutdown();

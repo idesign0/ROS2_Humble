@@ -211,6 +211,19 @@ count_until_server/fast:
 .PHONY : count_until_server/fast
 
 #=============================================================================
+# Target rules for targets named count_until_server_queue_goals
+
+# Build rule for target.
+count_until_server_queue_goals: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 count_until_server_queue_goals
+.PHONY : count_until_server_queue_goals
+
+# fast build rule for target.
+count_until_server_queue_goals/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_server_queue_goals.dir/build.make CMakeFiles/count_until_server_queue_goals.dir/build
+.PHONY : count_until_server_queue_goals/fast
+
+#=============================================================================
 # Target rules for targets named count_until_client
 
 # Build rule for target.
@@ -271,6 +284,30 @@ src/count_until_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_server.dir/build.make CMakeFiles/count_until_server.dir/src/count_until_server.cpp.s
 .PHONY : src/count_until_server.cpp.s
 
+src/count_until_server_queue_goals.o: src/count_until_server_queue_goals.cpp.o
+.PHONY : src/count_until_server_queue_goals.o
+
+# target to build an object file
+src/count_until_server_queue_goals.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_server_queue_goals.dir/build.make CMakeFiles/count_until_server_queue_goals.dir/src/count_until_server_queue_goals.cpp.o
+.PHONY : src/count_until_server_queue_goals.cpp.o
+
+src/count_until_server_queue_goals.i: src/count_until_server_queue_goals.cpp.i
+.PHONY : src/count_until_server_queue_goals.i
+
+# target to preprocess a source file
+src/count_until_server_queue_goals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_server_queue_goals.dir/build.make CMakeFiles/count_until_server_queue_goals.dir/src/count_until_server_queue_goals.cpp.i
+.PHONY : src/count_until_server_queue_goals.cpp.i
+
+src/count_until_server_queue_goals.s: src/count_until_server_queue_goals.cpp.s
+.PHONY : src/count_until_server_queue_goals.s
+
+# target to generate assembly for a file
+src/count_until_server_queue_goals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/count_until_server_queue_goals.dir/build.make CMakeFiles/count_until_server_queue_goals.dir/src/count_until_server_queue_goals.cpp.s
+.PHONY : src/count_until_server_queue_goals.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +325,16 @@ help:
 	@echo "... uninstall"
 	@echo "... count_until_client"
 	@echo "... count_until_server"
+	@echo "... count_until_server_queue_goals"
 	@echo "... src/count_until_client.o"
 	@echo "... src/count_until_client.i"
 	@echo "... src/count_until_client.s"
 	@echo "... src/count_until_server.o"
 	@echo "... src/count_until_server.i"
 	@echo "... src/count_until_server.s"
+	@echo "... src/count_until_server_queue_goals.o"
+	@echo "... src/count_until_server_queue_goals.i"
+	@echo "... src/count_until_server_queue_goals.s"
 .PHONY : help
 
 
