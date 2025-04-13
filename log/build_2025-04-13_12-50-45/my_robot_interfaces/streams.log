@@ -1,0 +1,44 @@
+[0.005s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_interfaces
+[0.036s] -- The C compiler identification is GNU 11.4.0
+[0.064s] -- The CXX compiler identification is GNU 11.4.0
+[0.067s] -- Detecting C compiler ABI info
+[0.099s] -- Detecting C compiler ABI info - done
+[0.102s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.103s] -- Detecting C compile features
+[0.103s] -- Detecting C compile features - done
+[0.104s] -- Detecting CXX compiler ABI info
+[0.141s] -- Detecting CXX compiler ABI info - done
+[0.145s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.145s] -- Detecting CXX compile features
+[0.145s] -- Detecting CXX compile features - done
+[0.152s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.235s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.266s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.338s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.345s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.361s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.419s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.693s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.805s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.931s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.943s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.948s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.962s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.962s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.962s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.962s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[0.977s] -- Found PythonExtra: .so  
+[1.010s] -- Configuring done
+[1.037s] -- Generating done
+[1.045s] -- Build files have been written to: /home/parallels/ros2_ws/build/my_robot_interfaces
+[1.048s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/src/my_robot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/install/my_robot_interfaces
+[1.049s] Invoking command in '/home/parallels/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j8 -l8
+[1.069s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[1.071s] failed to create symbolic link '/home/parallels/ros2_ws/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[1.071s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[1.071s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[1.072s] gmake[1]: *** Waiting for unfinished jobs....
+[1.073s] [  1%] Built target my_robot_interfaces__cpp
+[1.075s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[1.075s] gmake: *** [Makefile:146: all] Error 2
+[1.076s] Invoked command in '/home/parallels/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/build/my_robot_interfaces -- -j8 -l8

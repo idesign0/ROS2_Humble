@@ -29,7 +29,6 @@ public:
         options.result_callback = std::bind(&CountUntilClientNode::goal_result_callback,this,_1);
         options.feedback_callback = std::bind(&CountUntilClientNode::goal_feedback_callback,this,_1,_2);
 
-
         // send a goal
         RCLCPP_INFO(this->get_logger(),"Sending a Goal");
         count_until_client_->async_send_goal(goal,options);

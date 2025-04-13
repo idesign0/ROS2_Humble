@@ -8,6 +8,7 @@
     "/home/parallels/ros2_ws/src/my_robot_interfaces:srv/ComputeRectangleArea.srv",
     "/home/parallels/ros2_ws/src/my_robot_interfaces:srv/SetLED.srv",
     "/home/parallels/ros2_ws/src/my_robot_interfaces:srv/Catch.srv",
-    "/home/parallels/ros2_ws/src/my_robot_interfaces:action/CountUntil.action"
+    "/home/parallels/ros2_ws/src/my_robot_interfaces:action/CountUntil.action",
+    "/home/parallels/ros2_ws/src/my_robot_interfaces:action/ReachUntil.action"
   ]
 }
