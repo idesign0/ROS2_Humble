@@ -47,7 +47,7 @@ class ReachUntilServerNode(Node): # MODIFY NAME
 
         self.get_logger().info("Getting the Result.")
         result.position = current_position
-        result.message = "Target has been reached successfully!"
+        result.message = "Target has been reached successfully."
 
         goal_handle.succeed()
         self.get_logger().info("Publishing the Result.")
