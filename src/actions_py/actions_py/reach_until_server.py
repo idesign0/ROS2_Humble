@@ -4,7 +4,7 @@ import time
 import threading
 from rclpy.node import Node
 from rclpy.action import ActionServer
-from rclpy.action.server import ServerGoalHandle, GoalResponse
+from rclpy.action.server import ServerGoalHandle, GoalResponse, CancelResponse
 from my_robot_interfaces.action import ReachUntil
 from rclpy.executors import MultiThreadedExecutor
 from rclpy.callback_groups import ReentrantCallbackGroup
@@ -18,6 +18,7 @@ class ReachUntilServerNode(Node): # MODIFY NAME
 
         self.server_ = ActionServer(self,ReachUntil,"reach_until",
                                     goal_callback=self.goal_callback,
+                                    cancel_callback=self.goal_cancel_callback,
                                     execute_callback=self.goal_execute_callback,
                                     callback_group=ReentrantCallbackGroup())
 
@@ -34,11 +35,15 @@ class ReachUntilServerNode(Node): # MODIFY NAME
         # new goal is valid and abort previous goal and accept new goal
         with self.goal_lock_:
             if self.goal_handle_ is not None and  self.goal_handle_.is_active:
-                self.get_logger().warn("Goal is aborted")
+                self.get_logger().error("Goal is aborted")
                 self.goal_handle_.abort()
 
         self.get_logger().info("Accept Goal.")
         return GoalResponse.ACCEPT        
+
+    def goal_cancel_callback(self,goal_handle:ServerGoalHandle):
+        self.get_logger().info("Received a cancel request")
+        return CancelResponse.ACCEPT
 
     def goal_execute_callback(self, goal_handle : ServerGoalHandle):
         with self.goal_lock_:
@@ -54,10 +59,21 @@ class ReachUntilServerNode(Node): # MODIFY NAME
         result = ReachUntil.Result()
 
         while (current_position is not target_position):
-            
+            self.robot_position_ = current_position
             if not self.goal_handle_.is_active:
                 result.position = current_position
                 result.message = "Preemted by another goal."
+                return result
+            
+            if  self.goal_handle_.is_cancel_requested:
+                result.position = current_position
+                if current_position == target_position:
+                    result.message = "Success after canceled request."
+                    goal_handle.succeed()
+                else:
+                    result.message = "Canceled."
+                    goal_handle.canceled()
+                
                 return result
 
             difference = target_position - current_position
