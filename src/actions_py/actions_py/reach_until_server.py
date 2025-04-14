@@ -3,16 +3,27 @@ import rclpy
 import time
 from rclpy.node import Node
 from rclpy.action import ActionServer
-from rclpy.action.server import ServerGoalHandle
+from rclpy.action.server import ServerGoalHandle, GoalResponse
 from my_robot_interfaces.action import ReachUntil
  
 class ReachUntilServerNode(Node): # MODIFY NAME
     def __init__(self):
         super().__init__("reach_until_server_node") # MODIFY NAME
         self.robot_position_ = 50
-        self.server_ = ActionServer(self,ReachUntil,"reach_until",execute_callback=self.goal_execute_callback)
+        self.server_ = ActionServer(self,ReachUntil,"reach_until",
+                                    goal_callback=self.goal_callback,
+                                    execute_callback=self.goal_execute_callback)
         self.get_logger().info("Server is listening!")
         self.get_logger().info("Robot Position: " + str(self.robot_position_))
+
+    def goal_callback(self,goal_request:ReachUntil.Goal):
+        self.get_logger().info("Received the new goal")
+        if goal_request.position not in range(0,100) or goal_request.velocity <= 0:
+            self.get_logger().warn("Invalid position/velocity, reject goal.")
+            return GoalResponse.REJECT
+
+        self.get_logger().info("Accept Goal.")
+        return GoalResponse.ACCEPT
 
     def goal_execute_callback(self, goal_handle : ServerGoalHandle):
         self.get_logger().info("Getting the Goal!")
@@ -27,27 +38,24 @@ class ReachUntilServerNode(Node): # MODIFY NAME
         while (current_position is not target_position):
             difference = target_position - current_position
             if difference > 0:
-                if (difference>=velocity):
-                    current_position = current_position+velocity                  
-                    goal_handle.publish_feedback(feedback)
-                if (difference<velocity):
-                    current_position = current_position+difference                                     
-                    goal_handle.publish_feedback(feedback)
+                if (abs(difference)>=velocity):
+                    current_position = current_position+velocity     
+                else:
+                    current_position = current_position+difference   
             else:
-                if (difference>=velocity):
-                    current_position = current_position-velocity                                      
-                    goal_handle.publish_feedback(feedback)
-                if (difference<velocity):
+                if (abs(difference)>=velocity):
+                    current_position = current_position-velocity           
+                else:
                     current_position = current_position-difference
-                    goal_handle.publish_feedback(feedback)
             
             feedback.current_position = current_position
+            goal_handle.publish_feedback(feedback)
             self.get_logger().info(str(current_position))                                        
             time.sleep(1)
 
         self.get_logger().info("Getting the Result.")
         result.position = current_position
-        result.message = "Target has been reached successfully."
+        result.message = "Target has been reached successfully!"
 
         goal_handle.succeed()
         self.get_logger().info("Publishing the Result.")

@@ -50,7 +50,7 @@ class ReachUntilClientNode(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = ReachUntilClientNode()
-    node.send_goal(140,7)
+    node.send_goal(21,-3)
     rclpy.spin(node)
     rclpy.shutdown()
  
