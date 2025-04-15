@@ -13,7 +13,7 @@ public:
         number_timer_ = 
             this->create_wall_timer(std::chrono::milliseconds((int)(1000.0 / publish_frequency)),
                                     std::bind(&NumberPublisherNode::publishNumber, this));
-        RCLCPP_INFO(this->get_logger(), "Number publisher has been started.");
+        RCLCPP_INFO(this->get_logger(), "Number publisher has been started..");
     }
 
 private:
