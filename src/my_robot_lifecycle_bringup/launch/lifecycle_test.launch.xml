@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="lifecycle_py" exec="number_publisher" name="my_number_publisher"/>
+</launch>

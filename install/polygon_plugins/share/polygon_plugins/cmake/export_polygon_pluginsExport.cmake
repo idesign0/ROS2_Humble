@@ -55,7 +55,7 @@ add_library(polygon_plugins::polygon_plugins SHARED IMPORTED)
 
 set_target_properties(polygon_plugins::polygon_plugins PROPERTIES
   INTERFACE_COMPILE_FEATURES "c_std_99;cxx_std_17"
-  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/home/parallels/ros2_ws/install/polygon_base/include"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/home/parallels/ros2_ws/ROS2_Humble/install/polygon_base/include"
   INTERFACE_LINK_LIBRARIES "pluginlib::pluginlib"
 )
 

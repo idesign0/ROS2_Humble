@@ -1,0 +1,16 @@
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/lib/lifecycle_cpp/number_publisher
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/ament_index/resource_index/package_run_dependencies/lifecycle_cpp
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/ament_index/resource_index/parent_prefix_path/lifecycle_cpp
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/ament_prefix_path.sh
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/ament_prefix_path.dsv
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/path.sh
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/path.dsv
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.bash
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.sh
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.zsh
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.dsv
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/package.dsv
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/ament_index/resource_index/packages/lifecycle_cpp
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/cmake/lifecycle_cppConfig.cmake
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/cmake/lifecycle_cppConfig-version.cmake
+/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/package.xml

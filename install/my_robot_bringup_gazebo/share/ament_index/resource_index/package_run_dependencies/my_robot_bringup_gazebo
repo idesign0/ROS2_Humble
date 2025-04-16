@@ -1,1 +1,1 @@
-/home/parallels/ros2_ws/build/my_robot_bringup_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup_gazebo
+my_robot_description;robot_state_publisher;ros_gz_sim;ros_gz_bridge;rviz2;joint_state_publisher_gui;ament_lint_auto;ament_lint_common

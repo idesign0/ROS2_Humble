@@ -1,1 +1,0 @@
-/home/parallels/ros2_ws/src/actions_py/setup.py

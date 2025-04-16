@@ -1,0 +1,61 @@
+[0.288s] Invoking command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_humble/install/lifecycle_py:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/ROS2_Humble/src/lifecycle_cpp -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp
+[0.477s] -- The C compiler identification is GNU 11.4.0
+[0.477s] -- The CXX compiler identification is GNU 11.4.0
+[0.477s] -- Detecting C compiler ABI info
+[0.477s] -- Detecting C compiler ABI info - done
+[0.477s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.477s] -- Detecting C compile features
+[0.477s] -- Detecting C compile features - done
+[0.477s] -- Detecting CXX compiler ABI info
+[0.693s] -- Detecting CXX compiler ABI info - done
+[0.697s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.697s] -- Detecting CXX compile features
+[0.697s] -- Detecting CXX compile features - done
+[0.702s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.888s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.089s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.173s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.188s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.205s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.241s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.320s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.326s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.479s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.502s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.537s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.553s] -- Looking for pthread.h
+[1.648s] -- Looking for pthread.h - found
+[1.649s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.784s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.785s] -- Found Threads: TRUE  
+[1.857s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.981s] -- Configuring done
+[2.006s] -- Generating done
+[2.016s] -- Build files have been written to: /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp
+[2.058s] Invoked command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_humble/install/lifecycle_py:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake /home/parallels/ros2_ws/ROS2_Humble/src/lifecycle_cpp -DCMAKE_INSTALL_PREFIX=/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp
+[2.058s] Invoking command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_humble/install/lifecycle_py:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp -- -j8 -l8
+[2.236s] [ 50%] [32mBuilding CXX object CMakeFiles/number_publisher.dir/src/number_publisher.cpp.o[0m
+[8.496s] [100%] [32m[1mLinking CXX executable number_publisher[0m
+[8.662s] [100%] Built target number_publisher
+[8.670s] Invoked command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_humble/install/lifecycle_py:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --build /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp -- -j8 -l8
+[8.670s] Invoking command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_humble/install/lifecycle_py:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp
+[8.678s] -- Install configuration: ""
+[8.678s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/lib/lifecycle_cpp/number_publisher
+[8.679s] -- Set runtime path of "/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/lib/lifecycle_cpp/number_publisher" to ""
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/ament_index/resource_index/package_run_dependencies/lifecycle_cpp
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/ament_index/resource_index/parent_prefix_path/lifecycle_cpp
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/ament_prefix_path.sh
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/ament_prefix_path.dsv
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/path.sh
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/environment/path.dsv
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.bash
+[8.679s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.sh
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.zsh
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/local_setup.dsv
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/package.dsv
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/ament_index/resource_index/packages/lifecycle_cpp
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/cmake/lifecycle_cppConfig.cmake
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/cmake/lifecycle_cppConfig-version.cmake
+[8.680s] -- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp/share/lifecycle_cpp/package.xml
+[8.680s] Invoked command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/parallels/ros2_humble/install/lifecycle_py:/home/parallels/ros2_ws/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/install/number_counter:/home/parallels/ros2_ws/install/my_py_pkg:/home/parallels/ros2_ws/install/actions_py:/home/parallels/ros2_ws/install/add_two_ints:/opt/ros/humble /usr/bin/cmake --install /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_cpp

@@ -1,0 +1,44 @@
+[0.757s] Invoking command in '/home/parallels/ros2_ws/ROS2_Humble/src/number_counter': PYTHONPATH=/home/parallels/ros2_ws/ROS2_Humble/build/number_counter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/number_counter build --build-base /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build install --record /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/install.log --single-version-externally-managed install_data
+[0.992s] running egg_info
+[0.992s] creating ../../build/number_counter/number_counter.egg-info
+[0.992s] writing ../../build/number_counter/number_counter.egg-info/PKG-INFO
+[0.993s] writing dependency_links to ../../build/number_counter/number_counter.egg-info/dependency_links.txt
+[0.993s] writing entry points to ../../build/number_counter/number_counter.egg-info/entry_points.txt
+[0.993s] writing requirements to ../../build/number_counter/number_counter.egg-info/requires.txt
+[0.993s] writing top-level names to ../../build/number_counter/number_counter.egg-info/top_level.txt
+[0.993s] writing manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+[0.995s] reading manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+[0.996s] writing manifest file '../../build/number_counter/number_counter.egg-info/SOURCES.txt'
+[0.996s] running build
+[0.996s] running build_py
+[0.996s] creating /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build
+[0.996s] creating /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib
+[0.997s] creating /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter
+[0.997s] copying number_counter/number_publisher.py -> /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter
+[0.997s] copying number_counter/__init__.py -> /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter
+[0.997s] copying number_counter/number_counter.py -> /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter
+[0.997s] copying number_counter/python_temp.py -> /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter
+[0.997s] running install
+[0.998s] running install_lib
+[0.999s] creating /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter
+[0.999s] copying /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter/number_publisher.py -> /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter
+[1.000s] copying /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter/__init__.py -> /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter
+[1.000s] copying /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter/number_counter.py -> /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter
+[1.000s] copying /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build/lib/number_counter/python_temp.py -> /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter
+[1.000s] byte-compiling /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter/number_publisher.py to number_publisher.cpython-310.pyc
+[1.000s] byte-compiling /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter/__init__.py to __init__.cpython-310.pyc
+[1.000s] byte-compiling /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter/number_counter.py to number_counter.cpython-310.pyc
+[1.000s] byte-compiling /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter/python_temp.py to python_temp.cpython-310.pyc
+[1.000s] running install_data
+[1.000s] creating /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/share/ament_index
+[1.000s] creating /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/share/ament_index/resource_index
+[1.001s] creating /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/share/ament_index/resource_index/packages
+[1.001s] copying resource/number_counter -> /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/share/ament_index/resource_index/packages
+[1.001s] copying package.xml -> /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/share/number_counter
+[1.002s] running install_egg_info
+[1.002s] Copying ../../build/number_counter/number_counter.egg-info to /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages/number_counter-0.0.0-py3.10.egg-info
+[1.002s] running install_scripts
+[1.023s] Installing number_count script to /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/number_counter
+[1.023s] Installing number_pub script to /home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/number_counter
+[1.023s] writing list of installed files to '/home/parallels/ros2_ws/ROS2_Humble/build/number_counter/install.log'
+[1.060s] Invoked command in '/home/parallels/ros2_ws/ROS2_Humble/src/number_counter' returned '0': PYTHONPATH=/home/parallels/ros2_ws/ROS2_Humble/build/number_counter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/number_counter build --build-base /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/build install --record /home/parallels/ros2_ws/ROS2_Humble/build/number_counter/install.log --single-version-externally-managed install_data

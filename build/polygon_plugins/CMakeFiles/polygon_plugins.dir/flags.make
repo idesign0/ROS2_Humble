@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DPOLYGON_PLUGINS_BUILDING_LIBRARY -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"polygon_plugins\" -Dpolygon_plugins_EXPORTS
 
-CXX_INCLUDES = -I/home/parallels/ros2_ws/src/polygon_plugins/include -I/home/parallels/ros2_ws/install/polygon_base/include -isystem /opt/ros/humble/include/pluginlib -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/class_loader -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/rcutils
+CXX_INCLUDES = -I/home/parallels/ros2_ws/ROS2_Humble/src/polygon_plugins/include -I/home/parallels/ros2_ws/ROS2_Humble/install/polygon_base/include -isystem /opt/ros/humble/include/pluginlib -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/class_loader -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/rcutils
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic
 

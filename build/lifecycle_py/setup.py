@@ -1,1 +1,0 @@
-/home/parallels/ros2_humble/ROS2_Humble/src/lifecycle_py/setup.py
