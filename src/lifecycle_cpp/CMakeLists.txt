@@ -9,9 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
 
 add_executable(number_publisher src/number_publisher.cpp)
-ament_target_dependencies(number_publisher rclcpp example_interfaces)
+ament_target_dependencies(number_publisher rclcpp rclcpp_lifecycle example_interfaces)
 
 install(TARGETS
   number_publisher
