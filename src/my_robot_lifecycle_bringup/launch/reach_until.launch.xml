@@ -5,4 +5,7 @@
     <node pkg="lifecycle_py" exec="reach_until_server" name="reach_until_server_b">
         <param name="robot_name" value="B" />
     </node>
+    <node pkg="lifecycle_py" exec="reach_until_startup">
+        <param name="managed_node_names" value="['reach_until_server_a','reach_until_server_b']"/>
+    </node>
 </launch>

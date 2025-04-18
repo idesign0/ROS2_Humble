@@ -23,6 +23,7 @@ setup(
             "number_publisher = lifecycle_py.number_publisher:main",
             "reach_until_server = lifecycle_py.reach_until_server:main",
             "lifecycle_node_manager = lifecycle_py.lifecycle_node_manager:main",
+            "reach_until_startup = lifecycle_py.reach_until_startup:main"
         ],
     },
 )

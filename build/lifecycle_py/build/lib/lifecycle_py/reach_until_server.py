@@ -20,7 +20,9 @@ class ReachUntilServerNode(LifecycleNode):
 
     def on_configure(self, previous_state:LifecycleState):
         self.get_logger().info("In on_configure")
-        self.server_ = ActionServer(self,ReachUntil,"reach_until",
+        self.declare_parameter("robot_name",rclpy.Parameter.Type.STRING)
+        self.robot_name_ = self.get_parameter("robot_name").value
+        self.server_ = ActionServer(self,ReachUntil,"reach_until_" + self.robot_name_,
                                     goal_callback=self.goal_callback,
                                     cancel_callback=self.goal_cancel_callback,
                                     execute_callback=self.goal_execute_callback,
@@ -32,6 +34,8 @@ class ReachUntilServerNode(LifecycleNode):
     def on_cleanup(self, previous_state:LifecycleState):
         self.get_logger().info("In on_cleanup")
         self.server_.destroy()
+        self.undeclare_parameter("robot_name")
+        self.robot_name_ = ""
         return TransitionCallbackReturn.SUCCESS
     
     def on_activate(self, previous_state:LifecycleState):
@@ -42,10 +46,16 @@ class ReachUntilServerNode(LifecycleNode):
     def on_deactivate(self, previous_state:LifecycleState):
         self.get_logger().info("In on_deactivate")
         self.server_activated_= False
+        with self.goal_lock_:
+            if self.goal_handle_ is not None and  self.goal_handle_.is_active:
+                self.get_logger().error("Goal is aborted")
+                self.goal_handle_.abort()
         return super().on_deactivate(previous_state)
 
     def on_shutdown(self, previous_state:LifecycleState):
         self.get_logger().info("In on_shutdown")
+        self.undeclare_parameter("robot_name")
+        self.robot_name_ = ""
         self.server_.destroy()
         return TransitionCallbackReturn.SUCCESS
 
@@ -90,7 +100,7 @@ class ReachUntilServerNode(LifecycleNode):
             self.robot_position_ = current_position
             if not self.goal_handle_.is_active:
                 result.position = current_position
-                result.message = "Preemted by another goal."
+                result.message = "Preemted by another goal, or node is deativated"
                 return result
             
             if  self.goal_handle_.is_cancel_requested:
