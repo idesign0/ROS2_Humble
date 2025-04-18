@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="lifecycle_py" exec="reach_until_server" name="reach_until_server_a">
+        <param name="robot_name" value="A" />
+    </node>
+    <node pkg="lifecycle_py" exec="reach_until_server" name="reach_until_server_b">
+        <param name="robot_name" value="B" />
+    </node>
+</launch>

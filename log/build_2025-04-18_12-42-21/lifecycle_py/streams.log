@@ -1,0 +1,18 @@
+[0.311s] Invoking command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py': PYTHONPATH=/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py/build --no-deps symlink_data
+[0.435s] running develop
+[0.512s] running egg_info
+[0.512s] writing lifecycle_py.egg-info/PKG-INFO
+[0.512s] writing dependency_links to lifecycle_py.egg-info/dependency_links.txt
+[0.512s] writing entry points to lifecycle_py.egg-info/entry_points.txt
+[0.512s] writing requirements to lifecycle_py.egg-info/requires.txt
+[0.512s] writing top-level names to lifecycle_py.egg-info/top_level.txt
+[0.513s] reading manifest file 'lifecycle_py.egg-info/SOURCES.txt'
+[0.513s] writing manifest file 'lifecycle_py.egg-info/SOURCES.txt'
+[0.514s] running build_ext
+[0.514s] Creating /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/python3.10/site-packages/lifecycle-py.egg-link (link to .)
+[0.515s] Installing number_publisher script to /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/lifecycle_py
+[0.515s] Installing reach_until_server script to /home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/lifecycle_py
+[0.515s] 
+[0.515s] Installed /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py
+[0.515s] running symlink_data
+[0.530s] Invoked command in '/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py' returned '0': PYTHONPATH=/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py/build --no-deps symlink_data
