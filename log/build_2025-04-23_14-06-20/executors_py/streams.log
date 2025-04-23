@@ -1,0 +1,19 @@
+[0.338s] Invoking command in '/home/parallels/ros2_ws/ROS2_Humble/build/executors_py': PYTHONPATH=/home/parallels/ros2_ws/ROS2_Humble/build/executors_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/parallels/ros2_ws/ROS2_Humble/build/executors_py/build --no-deps symlink_data
+[0.471s] running develop
+[0.559s] running egg_info
+[0.559s] writing executors_py.egg-info/PKG-INFO
+[0.559s] writing dependency_links to executors_py.egg-info/dependency_links.txt
+[0.559s] writing entry points to executors_py.egg-info/entry_points.txt
+[0.559s] writing requirements to executors_py.egg-info/requires.txt
+[0.559s] writing top-level names to executors_py.egg-info/top_level.txt
+[0.560s] reading manifest file 'executors_py.egg-info/SOURCES.txt'
+[0.561s] writing manifest file 'executors_py.egg-info/SOURCES.txt'
+[0.562s] running build_ext
+[0.562s] Creating /home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/python3.10/site-packages/executors-py.egg-link (link to .)
+[0.562s] Installing multi_threaded_executor script to /home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/executors_py
+[0.562s] Installing number_publisher script to /home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/executors_py
+[0.562s] Installing single_threaded_executor script to /home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/executors_py
+[0.562s] 
+[0.562s] Installed /home/parallels/ros2_ws/ROS2_Humble/build/executors_py
+[0.562s] running symlink_data
+[0.577s] Invoked command in '/home/parallels/ros2_ws/ROS2_Humble/build/executors_py' returned '0': PYTHONPATH=/home/parallels/ros2_ws/ROS2_Humble/build/executors_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/parallels/ros2_ws/ROS2_Humble/build/executors_py/build --no-deps symlink_data

@@ -1,0 +1,5 @@
+[console_scripts]
+multi_threaded_executor = executors_py.multi_threaded_executor:main
+number_publisher = executors_py.number_publisher:main
+single_threaded_executor = executors_py.single_threaded_executor:main
+
