@@ -8,10 +8,12 @@ class Node1 : public rclcpp::Node
 {
 public:
     Node1() : Node("node1")
-    {
-        this->timer1_ = this->create_wall_timer(1000ms, std::bind(&Node1::callbackTimer1, this));
-        this->timer2_ = this->create_wall_timer(1000ms, std::bind(&Node1::callbackTimer2, this));
-        this->timer3_ = this->create_wall_timer(1000ms, std::bind(&Node1::callbackTimer3, this));
+    {   
+        cb_group_1 = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+        cb_group_2 = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
+        this->timer1_ = this->create_wall_timer(1000ms, std::bind(&Node1::callbackTimer1, this),cb_group_1);
+        this->timer2_ = this->create_wall_timer(1000ms, std::bind(&Node1::callbackTimer2, this),cb_group_2);
+        this->timer3_ = this->create_wall_timer(1000ms, std::bind(&Node1::callbackTimer3, this),cb_group_2);
     }
 
 private:
@@ -37,6 +39,10 @@ private:
     rclcpp::TimerBase::SharedPtr timer1_;
     rclcpp::TimerBase::SharedPtr timer2_;
     rclcpp::TimerBase::SharedPtr timer3_;
+
+    rclcpp::CallbackGroup::SharedPtr cb_group_1;
+    rclcpp::CallbackGroup::SharedPtr cb_group_2 ;
+
 };
 
 class Node2 : public rclcpp::Node
@@ -44,8 +50,9 @@ class Node2 : public rclcpp::Node
 public:
     Node2() : Node("node2")
     {
-        this->timer4_ = this->create_wall_timer(1000ms, std::bind(&Node2::callbackTimer4, this));
-        this->timer5_ = this->create_wall_timer(1000ms, std::bind(&Node2::callbackTimer5, this));
+        cb_group_3 = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
+        this->timer4_ = this->create_wall_timer(1000ms, std::bind(&Node2::callbackTimer4, this),cb_group_3);
+        this->timer5_ = this->create_wall_timer(1000ms, std::bind(&Node2::callbackTimer5, this),cb_group_3);
     }
 
 private:
@@ -64,12 +71,20 @@ private:
 
     rclcpp::TimerBase::SharedPtr timer4_;
     rclcpp::TimerBase::SharedPtr timer5_;
+
+    rclcpp::CallbackGroup::SharedPtr cb_group_3;
+
 };
 
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
-    // todo
+    auto node1 = std::make_shared<Node1>();
+    auto node2 = std::make_shared<Node2>();
+    rclcpp::executors::MultiThreadedExecutor executor;
+    executor.add_node(node1);
+    executor.add_node(node2);
+    executor.spin();
     rclcpp::shutdown();
     return 0;
 }
