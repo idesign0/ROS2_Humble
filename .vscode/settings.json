@@ -77,8 +77,7 @@
         "typeinfo": "cpp",
         "variant": "cpp"
     },
-<<<<<<< HEAD
-=======
+
     "python.analysis.extraPaths": [
         "/home/parallels/ros2_ws/build/turtlesim_catch_them_all",
         "/home/parallels/ros2_ws/install/turtlesim_catch_them_all/lib/python3.10/site-packages",
@@ -93,11 +92,8 @@
         "/home/parallels/ros2_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages",
         "/home/parallels/ros2_ws/install/add_two_ints/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
-        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
     ],
-<<<<<<< HEAD
->>>>>>> working-controll-looop
-=======
->>>>>>> 2d7bc308328159dde370e77fbec23fe6767a9297
+
     "ros.distro": "humble"
 }
