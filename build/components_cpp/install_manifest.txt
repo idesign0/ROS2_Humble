@@ -1,3 +1,4 @@
+/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/lib/libnumber_pub_component.so
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/lib/components_cpp/manual_composition
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/ament_index/resource_index/package_run_dependencies/components_cpp
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/ament_index/resource_index/parent_prefix_path/components_cpp
@@ -11,6 +12,7 @@
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/components_cpp/local_setup.dsv
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/components_cpp/package.dsv
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/ament_index/resource_index/packages/components_cpp
+/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/ament_index/resource_index/rclcpp_components/components_cpp
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/components_cpp/cmake/components_cppConfig.cmake
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/components_cpp/cmake/components_cppConfig-version.cmake
 /home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/share/components_cpp/package.xml

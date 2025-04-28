@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-df1520d2d86ea3fe4430.json",
+					"jsonFile" : "directory-.-67ca022359456eae6fc5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -18,7 +18,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -35,7 +36,8 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -51,8 +53,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "manual_composition::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-manual_composition-94260e2269a168629ae9.json",
+					"jsonFile" : "target-manual_composition-40183ff85a1169a16e86.json",
 					"name" : "manual_composition",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "number_pub_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-number_pub_component-25cdf83bef83d6583c0f.json",
+					"name" : "number_pub_component",
 					"projectIndex" : 0
 				},
 				{

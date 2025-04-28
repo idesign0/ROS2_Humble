@@ -272,7 +272,10 @@ SITE:STRING=ubuntu-linux-22-04-02-desktop
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libexample_interfaces__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for action_msgs.
+action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -328,6 +331,9 @@ ament_index_cpp_DIR:PATH=/opt/ros/humble/share/ament_index_cpp/cmake
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/humble/share/class_loader/cmake
+
 //Value Computed by CMake
 components_cpp_BINARY_DIR:STATIC=/home/parallels/ros2_ws/ROS2_Humble/build/components_cpp
 
@@ -336,6 +342,15 @@ components_cpp_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 components_cpp_SOURCE_DIR:STATIC=/home/parallels/ros2_ws/ROS2_Humble/src/components_cpp
+
+//The directory containing a CMake configuration file for composition_interfaces.
+composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cmake
+
+//The directory containing a CMake configuration file for console_bridge.
+console_bridge_DIR:PATH=/usr/lib/aarch64-linux-gnu/console_bridge/cmake
+
+//The directory containing a CMake configuration file for example_interfaces.
+example_interfaces_DIR:PATH=/opt/ros/humble/share/example_interfaces/cmake
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
@@ -357,6 +372,9 @@ libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/c
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
+
+//Dependencies for the target
+number_pub_component_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;rclcpp_components::component_manager;general;example_interfaces::example_interfaces__rosidl_generator_c;general;example_interfaces::example_interfaces__rosidl_typesupport_fastrtps_c;general;example_interfaces::example_interfaces__rosidl_typesupport_introspection_c;general;example_interfaces::example_interfaces__rosidl_typesupport_c;general;example_interfaces::example_interfaces__rosidl_typesupport_fastrtps_cpp;general;example_interfaces::example_interfaces__rosidl_typesupport_introspection_cpp;general;example_interfaces::example_interfaces__rosidl_typesupport_cpp;general;example_interfaces::example_interfaces__rosidl_generator_py;
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
@@ -381,6 +399,9 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
+
+//The directory containing a CMake configuration file for rclcpp_components.
+rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
 
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
@@ -465,6 +486,9 @@ std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
+
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cmake
 
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake

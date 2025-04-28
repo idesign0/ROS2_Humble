@@ -1,0 +1,8 @@
+[31mCMake Error at /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_nodes.cmake:43 (message):
+  rclcpp_components_register_nodes() first argument 'number_pub_component' is
+  not a shared library target
+Call Stack (most recent call first):
+  CMakeLists.txt:18 (rclcpp_components_register_nodes)
+
+[0m
+gmake: *** [Makefile:321: cmake_check_build_system] Error 1

@@ -198,6 +198,19 @@ components_cpp_uninstall/fast:
 .PHONY : components_cpp_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named number_pub_component
+
+# Build rule for target.
+number_pub_component: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 number_pub_component
+.PHONY : number_pub_component
+
+# fast build rule for target.
+number_pub_component/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_pub_component.dir/build.make CMakeFiles/number_pub_component.dir/build
+.PHONY : number_pub_component/fast
+
+#=============================================================================
 # Target rules for targets named manual_composition
 
 # Build rule for target.
@@ -282,6 +295,30 @@ src/node2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/manual_composition.dir/build.make CMakeFiles/manual_composition.dir/src/node2.cpp.s
 .PHONY : src/node2.cpp.s
 
+src/number_publisher.o: src/number_publisher.cpp.o
+.PHONY : src/number_publisher.o
+
+# target to build an object file
+src/number_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_pub_component.dir/build.make CMakeFiles/number_pub_component.dir/src/number_publisher.cpp.o
+.PHONY : src/number_publisher.cpp.o
+
+src/number_publisher.i: src/number_publisher.cpp.i
+.PHONY : src/number_publisher.i
+
+# target to preprocess a source file
+src/number_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_pub_component.dir/build.make CMakeFiles/number_pub_component.dir/src/number_publisher.cpp.i
+.PHONY : src/number_publisher.cpp.i
+
+src/number_publisher.s: src/number_publisher.cpp.s
+.PHONY : src/number_publisher.s
+
+# target to generate assembly for a file
+src/number_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_pub_component.dir/build.make CMakeFiles/number_pub_component.dir/src/number_publisher.cpp.s
+.PHONY : src/number_publisher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -298,6 +335,7 @@ help:
 	@echo "... components_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... manual_composition"
+	@echo "... number_pub_component"
 	@echo "... src/manual_composition.o"
 	@echo "... src/manual_composition.i"
 	@echo "... src/manual_composition.s"
@@ -307,6 +345,9 @@ help:
 	@echo "... src/node2.o"
 	@echo "... src/node2.i"
 	@echo "... src/node2.s"
+	@echo "... src/number_publisher.o"
+	@echo "... src/number_publisher.i"
+	@echo "... src/number_publisher.s"
 .PHONY : help
 
 
