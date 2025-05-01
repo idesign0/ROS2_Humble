@@ -19,6 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Catch.srv"
   "action/CountUntil.action"
   "action/ReachUntil.action"
+  "action/MoveTurtle.action"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

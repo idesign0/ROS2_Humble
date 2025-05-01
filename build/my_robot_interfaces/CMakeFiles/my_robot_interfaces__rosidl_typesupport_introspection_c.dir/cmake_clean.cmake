@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/count_until__type_support.c.o"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/count_until__type_support.c.o.d"
+  "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/move_turtle__type_support.c.o"
+  "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/move_turtle__type_support.c.o.d"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/reach_until__type_support.c.o"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/reach_until__type_support.c.o.d"
   "CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/hardware_status__type_support.c.o"
@@ -21,6 +23,8 @@ file(REMOVE_RECURSE
   "libmy_robot_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/count_until__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/count_until__type_support.c"
+  "rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/move_turtle__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/move_turtle__type_support.c"
   "rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/reach_until__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/reach_until__type_support.c"
   "rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_c.h"

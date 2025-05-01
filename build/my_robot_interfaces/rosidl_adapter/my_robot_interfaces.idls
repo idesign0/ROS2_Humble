@@ -7,3 +7,4 @@
 /home/parallels/ros2_ws/ROS2_Humble/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:srv/Catch.idl
 /home/parallels/ros2_ws/ROS2_Humble/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/CountUntil.idl
 /home/parallels/ros2_ws/ROS2_Humble/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/ReachUntil.idl
+/home/parallels/ros2_ws/ROS2_Humble/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/MoveTurtle.idl

@@ -1,5 +1,7 @@
 action/CountUntil.action
 action/CountUntil.idl
+action/MoveTurtle.action
+action/MoveTurtle.idl
 action/ReachUntil.action
 action/ReachUntil.idl
 msg/HardwareStatus.idl

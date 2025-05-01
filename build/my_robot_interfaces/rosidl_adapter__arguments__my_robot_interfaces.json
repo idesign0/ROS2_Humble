@@ -9,6 +9,7 @@
     "/home/parallels/ros2_ws/ROS2_Humble/src/my_robot_interfaces:srv/SetLED.srv",
     "/home/parallels/ros2_ws/ROS2_Humble/src/my_robot_interfaces:srv/Catch.srv",
     "/home/parallels/ros2_ws/ROS2_Humble/src/my_robot_interfaces:action/CountUntil.action",
-    "/home/parallels/ros2_ws/ROS2_Humble/src/my_robot_interfaces:action/ReachUntil.action"
+    "/home/parallels/ros2_ws/ROS2_Humble/src/my_robot_interfaces:action/ReachUntil.action",
+    "/home/parallels/ros2_ws/ROS2_Humble/src/my_robot_interfaces:action/MoveTurtle.action"
   ]
 }
