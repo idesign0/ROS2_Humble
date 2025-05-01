@@ -1,1 +1,1 @@
-rclcpp;rclcpp_action;turtlesim;geometry_msgs;my_robot_interfaces;ament_lint_auto;ament_lint_common
+rclcpp;rclcpp_action;rclcpp_lifecycle;turtlesim;geometry_msgs;my_robot_interfaces;ament_lint_auto;ament_lint_common
