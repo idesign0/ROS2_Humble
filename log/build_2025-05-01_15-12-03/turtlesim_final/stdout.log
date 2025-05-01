@@ -1,0 +1,41 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)
+-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found my_robot_interfaces: 0.0.0 (/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+-- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final
+[ 50%] [32mBuilding CXX object CMakeFiles/final_project_component.dir/src/final_project.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libfinal_project_component.so[0m
+[100%] Built target final_project_component
+-- Install configuration: ""
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_component.so
+-- Set runtime path of "/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_component.so" to ""
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/package_run_dependencies/turtlesim_final
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/parent_prefix_path/turtlesim_final
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/ament_prefix_path.sh
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/path.sh
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/path.dsv
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.bash
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.sh
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.zsh
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.dsv
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/package.dsv
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/packages/turtlesim_final
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/rclcpp_components/turtlesim_final
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/cmake/turtlesim_finalConfig.cmake
+-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/cmake/turtlesim_finalConfig-version.cmake
+-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/package.xml

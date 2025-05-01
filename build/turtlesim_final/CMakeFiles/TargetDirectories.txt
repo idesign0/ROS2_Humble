@@ -1,6 +1,6 @@
 /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/uninstall.dir
 /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/turtlesim_final_uninstall.dir
-/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/final_project.dir
+/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/final_project_component.dir
 /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/test.dir
 /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/edit_cache.dir
 /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final/CMakeFiles/rebuild_cache.dir

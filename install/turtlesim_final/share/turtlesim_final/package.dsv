@@ -1,6 +1,9 @@
 source;share/turtlesim_final/hook/cmake_prefix_path.ps1
 source;share/turtlesim_final/hook/cmake_prefix_path.dsv
 source;share/turtlesim_final/hook/cmake_prefix_path.sh
+source;share/turtlesim_final/hook/ld_library_path_lib.ps1
+source;share/turtlesim_final/hook/ld_library_path_lib.dsv
+source;share/turtlesim_final/hook/ld_library_path_lib.sh
 source;share/turtlesim_final/local_setup.bash
 source;share/turtlesim_final/local_setup.dsv
 source;share/turtlesim_final/local_setup.ps1

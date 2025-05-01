@@ -198,24 +198,24 @@ turtlesim_final_uninstall/fast:
 .PHONY : turtlesim_final_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named final_project
+# Target rules for targets named final_project_component
 
 # Build rule for target.
-final_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 final_project
-.PHONY : final_project
+final_project_component: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 final_project_component
+.PHONY : final_project_component
 
 # fast build rule for target.
-final_project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project.dir/build.make CMakeFiles/final_project.dir/build
-.PHONY : final_project/fast
+final_project_component/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_component.dir/build.make CMakeFiles/final_project_component.dir/build
+.PHONY : final_project_component/fast
 
 src/final_project.o: src/final_project.cpp.o
 .PHONY : src/final_project.o
 
 # target to build an object file
 src/final_project.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project.dir/build.make CMakeFiles/final_project.dir/src/final_project.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_component.dir/build.make CMakeFiles/final_project_component.dir/src/final_project.cpp.o
 .PHONY : src/final_project.cpp.o
 
 src/final_project.i: src/final_project.cpp.i
@@ -223,7 +223,7 @@ src/final_project.i: src/final_project.cpp.i
 
 # target to preprocess a source file
 src/final_project.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project.dir/build.make CMakeFiles/final_project.dir/src/final_project.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_component.dir/build.make CMakeFiles/final_project_component.dir/src/final_project.cpp.i
 .PHONY : src/final_project.cpp.i
 
 src/final_project.s: src/final_project.cpp.s
@@ -231,7 +231,7 @@ src/final_project.s: src/final_project.cpp.s
 
 # target to generate assembly for a file
 src/final_project.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project.dir/build.make CMakeFiles/final_project.dir/src/final_project.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_component.dir/build.make CMakeFiles/final_project_component.dir/src/final_project.cpp.s
 .PHONY : src/final_project.cpp.s
 
 # Help Target
@@ -249,7 +249,7 @@ help:
 	@echo "... test"
 	@echo "... turtlesim_final_uninstall"
 	@echo "... uninstall"
-	@echo "... final_project"
+	@echo "... final_project_component"
 	@echo "... src/final_project.o"
 	@echo "... src/final_project.i"
 	@echo "... src/final_project.s"
