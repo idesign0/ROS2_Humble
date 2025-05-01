@@ -1,5 +1,7 @@
 /home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/components.launch.py
 /home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/components.launch.xml
+/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/finalproject.launch.xml
+/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/finalproject_TurtleBot.launch.xml
 /home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/lifecycle_test.launch.py
 /home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/lifecycle_test.launch.xml
 /home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup/share/my_robot_lifecycle_bringup//launch/reach_until.launch.xml

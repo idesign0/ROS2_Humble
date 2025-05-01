@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node"/>
+    <executable cmd="ros2 service call /kill turtlesim/srv/Kill '{name: 'turtle1'}'" output="screen"/>
+    <node pkg="rclcpp_components" exec="component_container_mt" name="turtle_container"/> 
+    <executable cmd="ros2 component load /turtle_container turtlesim_final finalproject::TurtleController -r __node:=turtle_controller_1 -p turtle_name:=a" output="screen"/>
+    <node pkg="lifecycle_py" exec="lifecycle_node_manager">
+        <param name="managed_node_name" value="turtle_controller_1"/>
+    </node>
+</launch>

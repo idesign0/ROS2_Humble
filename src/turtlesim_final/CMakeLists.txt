@@ -20,8 +20,14 @@ add_library(final_project_component SHARED src/final_project.cpp)
 ament_target_dependencies(final_project_component rclcpp rclcpp_components turtlesim geometry_msgs my_robot_interfaces rclcpp_action rclcpp_lifecycle)
 rclcpp_components_register_nodes(final_project_component "finalproject::TurtleController")
 
+add_library(final_project_turtlebot_component SHARED src/final_project_turtlebot.cpp)
+
+ament_target_dependencies(final_project_turtlebot_component rclcpp rclcpp_components geometry_msgs my_robot_interfaces rclcpp_action rclcpp_lifecycle)
+rclcpp_components_register_nodes(final_project_turtlebot_component "finalproject::TurtleBotController")
+
 install(TARGETS
   final_project_component
+  final_project_turtlebot_component
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin

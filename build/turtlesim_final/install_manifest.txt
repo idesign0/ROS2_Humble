@@ -1,4 +1,5 @@
 /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_component.so
+/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_turtlebot_component.so
 /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/package_run_dependencies/turtlesim_final
 /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/parent_prefix_path/turtlesim_final
 /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/ament_prefix_path.sh

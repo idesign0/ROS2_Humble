@@ -37,13 +37,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 23,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 30,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
@@ -256,6 +256,18 @@
 			],
 			"targetId" : "final_project_component::@6890427a1f51a3e7e1df",
 			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libfinal_project_turtlebot_component.so"
+			],
+			"targetId" : "final_project_turtlebot_component::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
 			"type" : "target"
 		},
 		{

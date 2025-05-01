@@ -1,0 +1,8 @@
+<launch>
+    <executable cmd="ros2 launch my_robot_bringup_gazebo my_robot_gazebo.launch.xml" output="screen"/>
+    <node pkg="rclcpp_components" exec="component_container_mt" name="turtle_container"/> 
+    <executable cmd="ros2 component load /turtle_container turtlesim_final finalproject::TurtleBotController -r __node:=turtlebot_controller_1" output="screen"/>
+    <node pkg="lifecycle_py" exec="lifecycle_node_manager">
+        <param name="managed_node_name" value="turtlebot_controller_1"/>
+    </node>
+</launch>

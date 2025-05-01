@@ -1,0 +1,188 @@
+[0.000000] (-) TimerEvent: {}
+[0.001750] (-) JobUnselected: {'identifier': 'actions_cpp'}
+[0.001855] (-) JobUnselected: {'identifier': 'actions_py'}
+[0.001933] (-) JobUnselected: {'identifier': 'add_two_ints'}
+[0.001975] (-) JobUnselected: {'identifier': 'add_two_ints_cpp'}
+[0.002006] (-) JobUnselected: {'identifier': 'components_cpp'}
+[0.002031] (-) JobUnselected: {'identifier': 'components_py'}
+[0.002056] (-) JobUnselected: {'identifier': 'executors_cpp'}
+[0.002100] (-) JobUnselected: {'identifier': 'executors_py'}
+[0.002124] (-) JobUnselected: {'identifier': 'lifecycle_cpp'}
+[0.002147] (-) JobUnselected: {'identifier': 'lifecycle_py'}
+[0.002171] (-) JobUnselected: {'identifier': 'my_cpp_pkg'}
+[0.002195] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.002220] (-) JobUnselected: {'identifier': 'my_robot_bringup'}
+[0.002243] (-) JobUnselected: {'identifier': 'my_robot_bringup_gazebo'}
+[0.002268] (-) JobUnselected: {'identifier': 'my_robot_description'}
+[0.002291] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.002316] (-) JobUnselected: {'identifier': 'my_robot_lifecycle_bringup'}
+[0.002340] (-) JobUnselected: {'identifier': 'my_robot_station_bringup'}
+[0.002364] (-) JobUnselected: {'identifier': 'number_counter'}
+[0.002391] (-) JobUnselected: {'identifier': 'polygon_base'}
+[0.002415] (-) JobUnselected: {'identifier': 'polygon_plugins'}
+[0.003095] (-) JobUnselected: {'identifier': 'turtlecatch_bringup'}
+[0.003340] (-) JobUnselected: {'identifier': 'turtlesim_catch_them_all'}
+[0.003381] (turtlesim_final) JobQueued: {'identifier': 'turtlesim_final', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces')])}
+[0.003411] (turtlesim_final) JobStarted: {'identifier': 'turtlesim_final'}
+[0.019108] (turtlesim_final) JobProgress: {'identifier': 'turtlesim_final', 'progress': 'cmake'}
+[0.021375] (turtlesim_final) JobProgress: {'identifier': 'turtlesim_final', 'progress': 'build'}
+[0.021842] (turtlesim_final) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final', '--', '-j8', '-l8'], 'cwd': '/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_plugins/lib:/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/ros2_ws/ROS2_Humble/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1571'), ('SYSTEMD_EXEC_PID', '271845'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '324137'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:2001426'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-02-desktop:@/tmp/.ICE-unix/271820,unix/ubuntu-linux-22-04-02-desktop:/tmp/.ICE-unix/271820'), ('INVOCATION_ID', 'fbbda02a483844e08509b95c9c8b7f04'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9SC652'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final:/home/parallels/ros2_ws/ROS2_Humble/install/turtlecatch_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_plugins:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_base:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_station_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_py_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/my_cpp_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/actions_py:/home/parallels/ros2_ws/ROS2_Humble/install/actions_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_description:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2d3a2146-524d-4970-9a7b-a3916033d4d6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/build/actions_py:/home/parallels/ros2_ws/ROS2_Humble/install/actions_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/build/executors_py:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/build/components_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final:/home/parallels/ros2_ws/ROS2_Humble/install/turtlecatch_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_plugins:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_base:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_station_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_cpp_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/actions_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_description:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints_cpp:/usr:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter:/home/parallels/ros2_ws/ROS2_Humble/install/my_py_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/actions_py:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_py:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints:/opt/ros/humble')]), 'shell': False}
+[0.095203] (turtlesim_final) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099162] (-) TimerEvent: {}
+[0.199402] (-) TimerEvent: {}
+[0.299853] (-) TimerEvent: {}
+[0.358227] (turtlesim_final) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.399952] (-) TimerEvent: {}
+[0.439989] (turtlesim_final) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.445188] (turtlesim_final) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.463272] (turtlesim_final) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.481490] (turtlesim_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.499833] (turtlesim_final) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500126] (-) TimerEvent: {}
+[0.555274] (turtlesim_final) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.559335] (turtlesim_final) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600239] (-) TimerEvent: {}
+[0.700528] (-) TimerEvent: {}
+[0.722272] (turtlesim_final) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800668] (-) TimerEvent: {}
+[0.804182] (turtlesim_final) StdoutLine: {'line': b'-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)\n'}
+[0.855966] (turtlesim_final) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.874033] (turtlesim_final) StdoutLine: {'line': b'-- Found my_robot_interfaces: 0.0.0 (/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces/share/my_robot_interfaces/cmake)\n'}
+[0.884370] (turtlesim_final) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.12 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.896284] (turtlesim_final) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[0.900729] (-) TimerEvent: {}
+[0.911414] (turtlesim_final) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.000853] (-) TimerEvent: {}
+[1.012424] (turtlesim_final) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.042054] (turtlesim_final) StdoutLine: {'line': b'-- Generating done\n'}
+[1.061511] (turtlesim_final) StdoutLine: {'line': b'-- Build files have been written to: /home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final\n'}
+[1.082571] (turtlesim_final) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target final_project_component\x1b[0m\n'}
+[1.101061] (turtlesim_final) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/final_project_component.dir/src/final_project.cpp.o\x1b[0m\n'}
+[1.101372] (-) TimerEvent: {}
+[1.201642] (-) TimerEvent: {}
+[1.302770] (-) TimerEvent: {}
+[1.403695] (-) TimerEvent: {}
+[1.506510] (-) TimerEvent: {}
+[1.606755] (-) TimerEvent: {}
+[1.706988] (-) TimerEvent: {}
+[1.807320] (-) TimerEvent: {}
+[1.907823] (-) TimerEvent: {}
+[2.008221] (-) TimerEvent: {}
+[2.108528] (-) TimerEvent: {}
+[2.209032] (-) TimerEvent: {}
+[2.309361] (-) TimerEvent: {}
+[2.409864] (-) TimerEvent: {}
+[2.510550] (-) TimerEvent: {}
+[2.611234] (-) TimerEvent: {}
+[2.711813] (-) TimerEvent: {}
+[2.813094] (-) TimerEvent: {}
+[2.913790] (-) TimerEvent: {}
+[3.014741] (-) TimerEvent: {}
+[3.115169] (-) TimerEvent: {}
+[3.215743] (-) TimerEvent: {}
+[3.317458] (-) TimerEvent: {}
+[3.417928] (-) TimerEvent: {}
+[3.518504] (-) TimerEvent: {}
+[3.622258] (-) TimerEvent: {}
+[3.725232] (-) TimerEvent: {}
+[3.825801] (-) TimerEvent: {}
+[3.926419] (-) TimerEvent: {}
+[4.026954] (-) TimerEvent: {}
+[4.129237] (-) TimerEvent: {}
+[4.230357] (-) TimerEvent: {}
+[4.331259] (-) TimerEvent: {}
+[4.432049] (-) TimerEvent: {}
+[4.532711] (-) TimerEvent: {}
+[4.633247] (-) TimerEvent: {}
+[4.733550] (-) TimerEvent: {}
+[4.834183] (-) TimerEvent: {}
+[4.934471] (-) TimerEvent: {}
+[5.034863] (-) TimerEvent: {}
+[5.135172] (-) TimerEvent: {}
+[5.235870] (-) TimerEvent: {}
+[5.339008] (-) TimerEvent: {}
+[5.439543] (-) TimerEvent: {}
+[5.539959] (-) TimerEvent: {}
+[5.640531] (-) TimerEvent: {}
+[5.741304] (-) TimerEvent: {}
+[5.841788] (-) TimerEvent: {}
+[5.942126] (-) TimerEvent: {}
+[6.042421] (-) TimerEvent: {}
+[6.143198] (-) TimerEvent: {}
+[6.243812] (-) TimerEvent: {}
+[6.344197] (-) TimerEvent: {}
+[6.444437] (-) TimerEvent: {}
+[6.544698] (-) TimerEvent: {}
+[6.621221] (turtlesim_final) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libfinal_project_component.so\x1b[0m\n'}
+[6.645509] (-) TimerEvent: {}
+[6.745896] (-) TimerEvent: {}
+[6.846424] (-) TimerEvent: {}
+[6.946873] (-) TimerEvent: {}
+[7.047192] (-) TimerEvent: {}
+[7.072355] (turtlesim_final) StdoutLine: {'line': b'[ 50%] Built target final_project_component\n'}
+[7.088771] (turtlesim_final) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/final_project_turtlebot_component.dir/src/final_project_turtlebot.cpp.o\x1b[0m\n'}
+[7.147476] (-) TimerEvent: {}
+[7.247914] (-) TimerEvent: {}
+[7.348262] (-) TimerEvent: {}
+[7.449071] (-) TimerEvent: {}
+[7.549377] (-) TimerEvent: {}
+[7.650876] (-) TimerEvent: {}
+[7.751479] (-) TimerEvent: {}
+[7.852415] (-) TimerEvent: {}
+[7.952776] (-) TimerEvent: {}
+[8.053147] (-) TimerEvent: {}
+[8.153637] (-) TimerEvent: {}
+[8.254014] (-) TimerEvent: {}
+[8.354688] (-) TimerEvent: {}
+[8.455329] (-) TimerEvent: {}
+[8.555557] (-) TimerEvent: {}
+[8.655865] (-) TimerEvent: {}
+[8.756235] (-) TimerEvent: {}
+[8.856554] (-) TimerEvent: {}
+[8.956868] (-) TimerEvent: {}
+[9.057313] (-) TimerEvent: {}
+[9.157723] (-) TimerEvent: {}
+[9.258172] (-) TimerEvent: {}
+[9.358763] (-) TimerEvent: {}
+[9.459372] (-) TimerEvent: {}
+[9.559755] (-) TimerEvent: {}
+[9.660235] (-) TimerEvent: {}
+[9.760856] (-) TimerEvent: {}
+[9.862031] (-) TimerEvent: {}
+[9.962413] (-) TimerEvent: {}
+[10.063171] (-) TimerEvent: {}
+[10.163544] (-) TimerEvent: {}
+[10.263757] (-) TimerEvent: {}
+[10.364394] (-) TimerEvent: {}
+[10.469810] (-) TimerEvent: {}
+[10.496355] (turtlesim_final) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libfinal_project_turtlebot_component.so\x1b[0m\n'}
+[10.569909] (-) TimerEvent: {}
+[10.670568] (-) TimerEvent: {}
+[10.684049] (turtlesim_final) StdoutLine: {'line': b'[100%] Built target final_project_turtlebot_component\n'}
+[10.692893] (turtlesim_final) CommandEnded: {'returncode': 0}
+[10.695059] (turtlesim_final) JobProgress: {'identifier': 'turtlesim_final', 'progress': 'install'}
+[10.700045] (turtlesim_final) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final'], 'cwd': '/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'parallels'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces/lib:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_plugins/lib:/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/parallels'), ('OLDPWD', '/home/parallels/ros2_ws/ROS2_Humble/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1571'), ('SYSTEMD_EXEC_PID', '271845'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '324137'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'parallels'), ('JOURNAL_STREAM', '8:2001426'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'parallels'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-linux-22-04-02-desktop:@/tmp/.ICE-unix/271820,unix/ubuntu-linux-22-04-02-desktop:/tmp/.ICE-unix/271820'), ('INVOCATION_ID', 'fbbda02a483844e08509b95c9c8b7f04'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9SC652'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final:/home/parallels/ros2_ws/ROS2_Humble/install/turtlecatch_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_plugins:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_base:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_station_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_py_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/my_cpp_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/actions_py:/home/parallels/ros2_ws/ROS2_Humble/install/actions_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_description:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:2d3a2146-524d-4970-9a7b-a3916033d4d6'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/parallels/ros2_ws/ROS2_Humble/build/turtlesim_final'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_catch_them_all/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/my_py_pkg/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/build/actions_py:/home/parallels/ros2_ws/ROS2_Humble/install/actions_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/parallels/ros2_ws/ROS2_Humble/build/lifecycle_py:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/build/executors_py:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/build/components_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_py/lib/python3.10/site-packages:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_interfaces:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final:/home/parallels/ros2_ws/ROS2_Humble/install/turtlecatch_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_plugins:/home/parallels/ros2_ws/ROS2_Humble/install/polygon_base:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_station_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_lifecycle_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup:/home/parallels/ros2_ws/ROS2_Humble/install/my_cpp_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/actions_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_bringup_gazebo:/home/parallels/ros2_ws/ROS2_Humble/install/my_robot_description:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/components_cpp:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints_cpp:/usr:/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_catch_them_all:/home/parallels/ros2_ws/ROS2_Humble/install/number_counter:/home/parallels/ros2_ws/ROS2_Humble/install/my_py_pkg:/home/parallels/ros2_ws/ROS2_Humble/install/actions_py:/home/parallels/ros2_ws/ROS2_Humble/install/lifecycle_py:/home/parallels/ros2_ws/ROS2_Humble/install/executors_py:/home/parallels/ros2_ws/ROS2_Humble/install/components_py:/home/parallels/ros2_ws/ROS2_Humble/install/add_two_ints:/opt/ros/humble')]), 'shell': False}
+[10.706872] (turtlesim_final) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.707975] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_component.so\n'}
+[10.712003] (turtlesim_final) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_component.so" to ""\n'}
+[10.712110] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_turtlebot_component.so\n'}
+[10.714352] (turtlesim_final) StdoutLine: {'line': b'-- Set runtime path of "/home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/lib/libfinal_project_turtlebot_component.so" to ""\n'}
+[10.714683] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/package_run_dependencies/turtlesim_final\n'}
+[10.714733] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/parent_prefix_path/turtlesim_final\n'}
+[10.714762] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/ament_prefix_path.sh\n'}
+[10.714799] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/ament_prefix_path.dsv\n'}
+[10.714939] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/path.sh\n'}
+[10.715075] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/environment/path.dsv\n'}
+[10.715139] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.bash\n'}
+[10.715170] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.sh\n'}
+[10.715211] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.zsh\n'}
+[10.715254] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/local_setup.dsv\n'}
+[10.715325] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/package.dsv\n'}
+[10.715383] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/packages/turtlesim_final\n'}
+[10.715424] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/ament_index/resource_index/rclcpp_components/turtlesim_final\n'}
+[10.715669] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/cmake/turtlesim_finalConfig.cmake\n'}
+[10.715799] (turtlesim_final) StdoutLine: {'line': b'-- Up-to-date: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/cmake/turtlesim_finalConfig-version.cmake\n'}
+[10.715854] (turtlesim_final) StdoutLine: {'line': b'-- Installing: /home/parallels/ros2_ws/ROS2_Humble/install/turtlesim_final/share/turtlesim_final/package.xml\n'}
+[10.716430] (turtlesim_final) CommandEnded: {'returncode': 0}
+[10.744834] (turtlesim_final) JobEnded: {'identifier': 'turtlesim_final', 'rc': 0}
+[10.746522] (-) EventReactorShutdown: {}

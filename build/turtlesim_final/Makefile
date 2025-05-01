@@ -210,6 +210,19 @@ final_project_component/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_component.dir/build.make CMakeFiles/final_project_component.dir/build
 .PHONY : final_project_component/fast
 
+#=============================================================================
+# Target rules for targets named final_project_turtlebot_component
+
+# Build rule for target.
+final_project_turtlebot_component: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 final_project_turtlebot_component
+.PHONY : final_project_turtlebot_component
+
+# fast build rule for target.
+final_project_turtlebot_component/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_turtlebot_component.dir/build.make CMakeFiles/final_project_turtlebot_component.dir/build
+.PHONY : final_project_turtlebot_component/fast
+
 src/final_project.o: src/final_project.cpp.o
 .PHONY : src/final_project.o
 
@@ -234,6 +247,30 @@ src/final_project.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_component.dir/build.make CMakeFiles/final_project_component.dir/src/final_project.cpp.s
 .PHONY : src/final_project.cpp.s
 
+src/final_project_turtlebot.o: src/final_project_turtlebot.cpp.o
+.PHONY : src/final_project_turtlebot.o
+
+# target to build an object file
+src/final_project_turtlebot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_turtlebot_component.dir/build.make CMakeFiles/final_project_turtlebot_component.dir/src/final_project_turtlebot.cpp.o
+.PHONY : src/final_project_turtlebot.cpp.o
+
+src/final_project_turtlebot.i: src/final_project_turtlebot.cpp.i
+.PHONY : src/final_project_turtlebot.i
+
+# target to preprocess a source file
+src/final_project_turtlebot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_turtlebot_component.dir/build.make CMakeFiles/final_project_turtlebot_component.dir/src/final_project_turtlebot.cpp.i
+.PHONY : src/final_project_turtlebot.cpp.i
+
+src/final_project_turtlebot.s: src/final_project_turtlebot.cpp.s
+.PHONY : src/final_project_turtlebot.s
+
+# target to generate assembly for a file
+src/final_project_turtlebot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/final_project_turtlebot_component.dir/build.make CMakeFiles/final_project_turtlebot_component.dir/src/final_project_turtlebot.cpp.s
+.PHONY : src/final_project_turtlebot.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... turtlesim_final_uninstall"
 	@echo "... uninstall"
 	@echo "... final_project_component"
+	@echo "... final_project_turtlebot_component"
 	@echo "... src/final_project.o"
 	@echo "... src/final_project.i"
 	@echo "... src/final_project.s"
+	@echo "... src/final_project_turtlebot.o"
+	@echo "... src/final_project_turtlebot.i"
+	@echo "... src/final_project_turtlebot.s"
 .PHONY : help
 
 
