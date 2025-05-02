@@ -1,1 +1,0 @@
-/home/parallels/ros2_ws/ROS2_Humble/build/my_robot_lifecycle_bringup/ament_cmake_core/my_robot_lifecycle_bringupConfig-version.cmake
