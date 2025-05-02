@@ -45,7 +45,7 @@ namespace finalproject{
                 cb_group_
             );
 
-            RCLCPP_INFO(this->get_logger(),"Action server has been started");
+            RCLCPP_INFO(this->get_logger(),"Action server has been started!");
             
             spawn_turtle();
             
