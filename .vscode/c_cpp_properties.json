@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/humble/include/**",
+        "/home/parallels/ros2_ws/ROS2_Humble/src/components_cpp/include/**",
+        "/home/parallels/ros2_ws/ROS2_Humble/src/executors_cpp/include/**",
+        "/home/parallels/ros2_ws/ROS2_Humble/src/polygon_base/include/**",
+        "/home/parallels/ros2_ws/ROS2_Humble/src/polygon_plugins/include/**",
+        "/home/parallels/ros2_ws/ROS2_Humble/src/turtlesim_final/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
