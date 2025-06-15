@@ -9,10 +9,10 @@
         <param name="robot_description"
             value = "$(command 'xacro $(var urdf_path)')" />
     </node>
-    <!-- <include 
+    <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
         <arg name="gz_args" value="-v 4 $(var world_path) -s" />
-    </include> -->
+    </include>
     <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
         <arg name="gz_args" value="-v 4 empty.sdf -g --render-engine ogre2" />
@@ -22,5 +22,5 @@
     <node pkg="ros_gz_bridge" exec="parameter_bridge">
         <param name="config_file" value="$(var gazebo_config_path)"/>
     </node>
-    <node pkg="rviz2" exec = "rviz2" output="screen" emulate_tty="true" args="-d $(var rviz_path)"/>
+    <node pkg="rviz2" exec = "rviz2" output="screen" args="-d $(var rviz_path)"/>
 </launch>  
