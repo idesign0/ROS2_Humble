@@ -1,0 +1,27 @@
+<launch>
+    <let name="urdf_path" value="$(find-pkg-share my_robot_description)/urdf/my_robot_controller.urdf.xacro" /> 
+    <let name="rviz_path" value="~/ros2_ws/src/my_robot_description/rviz/roboconfig_controller.rviz" /> 
+    <let name="robot_controllers" value="$(find-pkg-share my_robot_description)/config/my_controllers.yaml" />
+    <let name="world_path" value="$(find-pkg-share my_robot_description)/worlds/test_world.sdf" />
+
+    <node pkg="robot_state_publisher" exec = "robot_state_publisher">
+        <param name="robot_description"
+            value = "$(command 'xacro $(var urdf_path)')" />
+    </node>
+
+    <include 
+        file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+        <arg name="gz_args" value=" -s $(var world_path)"/>
+    </include>
+    
+    <include 
+        file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
+        <arg name="gz_args" value=" -g $(var world_path) --render-engine ogre2 "/>
+    </include>
+
+    <node pkg="ros_gz_sim" exec="create" args="-topic robot_description" />
+    <node pkg="rviz2" exec = "rviz2" output="screen" args="-d $(var rviz_path)"/>
+
+    <node pkg="controller_manager" exec="spawner" output="screen" args="joint_state_broadcaster" />
+    <node pkg="controller_manager" exec="spawner" output="screen" args="diff_cont --param-file  $(var robot_controllers)" />
+</launch>  
