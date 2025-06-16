@@ -1,6 +1,6 @@
 <launch>
     <let name="urdf_path" value="$(find-pkg-share my_robot_description)/urdf/my_robot_base_arm.urdf.xacro" /> 
-    <let name="rviz_path" value="~/ros2_ws/src/my_robot_description/rviz/roboconfig.rviz" /> 
+    <let name="rviz_path" value="$(find-pkg-share my_robot_description)/rviz/roboconfig.rviz" /> 
     <let name="gazebo_config_path" value="$(find-pkg-share my_robot_bringup_gazebo)/config/gazebo_bridge.yaml" />
     <let name="world_path" value="$(find-pkg-share my_robot_description)/worlds/test_world.sdf" />
 
@@ -9,13 +9,10 @@
         <param name="robot_description"
             value = "$(command 'xacro $(var urdf_path)')" />
     </node>
+
     <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-        <arg name="gz_args" value="-v 4 $(var world_path) -s" />
-    </include>
-    <include 
-        file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-        <arg name="gz_args" value="-v 4 empty.sdf -g --render-engine ogre2" />
+        <arg name="gz_args" value="-v 4 empty.sdf --render-engine ogre" />
     </include>
 
     <node pkg="ros_gz_sim" exec="create" args="-topic robot_description" />
