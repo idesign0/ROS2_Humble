@@ -3,6 +3,7 @@
     <let name="rviz_path" value="$(find-pkg-share my_robot_description)/rviz/roboconfig_controller.rviz" /> 
     <let name="robot_controllers" value="$(find-pkg-share my_robot_description)/config/my_controllers.yaml" />
     <let name="world_path" value="$(find-pkg-share my_robot_description)/worlds/test_world.sdf" />
+    <let name="gazebo_config_path" value="$(find-pkg-share my_robot_bringup_gazebo)/config/gazebo_bridge.yaml" />
 
     <node pkg="robot_state_publisher" exec = "robot_state_publisher">
         <param name="robot_description"
@@ -15,6 +16,11 @@
     </include>
 
     <node pkg="ros_gz_sim" exec="create" args="-topic robot_description" />
+    
+    <node pkg="ros_gz_bridge" exec="parameter_bridge">
+        <param name="config_file" value="$(var gazebo_config_path)"/>
+    </node>
+
     <node pkg="rviz2" exec = "rviz2" output="screen" args="-d $(var rviz_path)"/>
 
     <node pkg="controller_manager" exec="spawner" output="screen" args="joint_state_broadcaster" />
