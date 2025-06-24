@@ -6,6 +6,9 @@
                 "limitSymbolsToIncludedHeaders": false
             },
             "includePath": [
+                "~/humble-ros2/install/**",
+                "~/ros2_ws/install/**",
+                "~/ros2_ws/src/**",
                 "/opt/ros/humble/include/**",
                 "~/ros2_ws/ROS2_Humble/install/**",
                 "/usr/include/**",

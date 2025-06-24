@@ -30,6 +30,7 @@
 
     <node pkg="controller_manager" exec="spawner" output="screen" args="joint_state_broadcaster" />
     <node pkg="controller_manager" exec="spawner" output="screen" args="diff_cont --param-file  $(var robot_controllers)" />
+    <node pkg="controller_manager" exec="spawner" output="screen" args="arm_cont --param-file  $(var robot_controllers)" />
     
     <!-- <node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" output="screen" args="-ros-args -p stamped:=true -p frame_id:=base_footprint -r /cmd_vel:=/diff_cont/cmd_vel"/> -->
 
