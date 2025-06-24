@@ -25,4 +25,5 @@
 
     <node pkg="controller_manager" exec="spawner" output="screen" args="joint_state_broadcaster" />
     <node pkg="controller_manager" exec="spawner" output="screen" args="diff_cont --param-file  $(var robot_controllers)" />
+    <node pkg="controller_manager" exec="spawner" output="screen" args="arm_cont --param-file  $(var robot_controllers)" />
 </launch>  
