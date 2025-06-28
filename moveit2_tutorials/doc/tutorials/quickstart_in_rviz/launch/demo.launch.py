@@ -9,9 +9,10 @@ from launch.actions import ExecuteProcess
 from ament_index_python.packages import get_package_share_directory
 from moveit_configs_utils import MoveItConfigsBuilder
 
+# add lib prior to avoid capability issues with moveit_configs_utils, for Linux "LD_PRELOAD"
+# export DYLD_INSERT_LIBRARIES=$HOME/humble-ros2/install/moveit_ros_move_group/lib/libmoveit_move_group_default_capabilities.dylib
 
 def generate_launch_description():
-
     declared_arguments = []
     declared_arguments.append(
         DeclareLaunchArgument(
@@ -46,7 +47,7 @@ def launch_setup(context, *args, **kwargs):
         package="moveit_ros_move_group",
         executable="move_group",
         output="screen",
-        parameters=[moveit_config.to_dict()],
+        parameters=[moveit_config.to_dict()]
     )
 
     rviz_base = LaunchConfiguration("rviz_config")
