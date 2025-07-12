@@ -11,7 +11,7 @@
     </node>
     <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-        <arg name="gz_args" value="-v 4 $(var world_path) -s" />
+        <arg name="gz_args" value="-v 4 $(var world_path) -s -r" />
     </include>
     <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
