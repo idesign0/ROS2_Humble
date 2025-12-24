@@ -68,7 +68,7 @@ Changelog for package irobot_create_description
   * Updated README to have installation and example instructions for both Ignition and Classic
   Moved .repos files to the root of the repository
   * Ignition and Gazebo packages are now optional and only built if the required dependencies are installed
-  * Made ros_ign_interfaces optional in irobot_create_ignition_bringup
+  * Made ros_gz_interfaces optional in irobot_create_ignition_bringup
   * fix license and minor changes to CMake and README
   * Interface buttons mock publisher not used in Ignition sim
   * Fixed linter errors

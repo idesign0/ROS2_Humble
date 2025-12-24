@@ -68,10 +68,10 @@ private:
   gazebo::common::Time last_time_;
 
   /// \brief Pose of the sensor from previous iteration.
-  ignition::math::Pose3d last_pose_;
+  gz::math::Pose3d last_pose_;
 
   /// Integrated position of the sensor
-  ignition::math::Vector3d integrated_position_;
+  gz::math::Vector3d integrated_position_;
 
   /// Helper class to enforce a specific update rate
   utils::UpdateRateEnforcer update_rate_enforcer_;

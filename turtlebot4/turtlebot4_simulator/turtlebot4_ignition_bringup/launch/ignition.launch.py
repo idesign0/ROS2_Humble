@@ -53,8 +53,8 @@ def generate_launch_description():
         'irobot_create_description')
     pkg_irobot_create_ignition_bringup = get_package_share_directory(
         'irobot_create_ignition_bringup')
-    # pkg_irobot_create_ignition_plugins = get_package_share_directory(
-    #     'irobot_create_ignition_plugins')
+    pkg_irobot_create_ignition_plugins = get_package_share_directory(
+        'irobot_create_ignition_plugins')
     pkg_ros_gz_sim = get_package_share_directory(
         'ros_gz_sim')
 
@@ -67,11 +67,11 @@ def generate_launch_description():
             str(Path(pkg_turtlebot4_description).parent.resolve()), ':' +
             str(Path(pkg_irobot_create_description).parent.resolve())])
 
-    # ign_gui_plugin_path = SetEnvironmentVariable(
-    #     name='GZ_GUI_PLUGIN_PATH',
-    #     value=[
-    #         os.path.join(pkg_turtlebot4_ignition_gui_plugins, 'lib'), ':' +
-    #         os.path.join(pkg_irobot_create_ignition_plugins, 'lib')])
+    ign_gui_plugin_path = SetEnvironmentVariable(
+        name='GZ_GUI_PLUGIN_PATH',
+        value=[
+            os.path.join(pkg_turtlebot4_ignition_gui_plugins, 'lib'), ':' +
+            os.path.join(pkg_irobot_create_ignition_plugins, 'lib')])
 
     # Paths
     gz_sim_launch = PathJoinSubstitution(
@@ -114,7 +114,7 @@ def generate_launch_description():
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(ign_resource_path)
-    #ld.add_action(ign_gui_plugin_path)
+    ld.add_action(ign_gui_plugin_path)
     ld.add_action(ignition_gazebo_server)
     ld.add_action(ignition_gazebo_gui)
     ld.add_action(clock_bridge)

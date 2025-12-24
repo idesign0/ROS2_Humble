@@ -51,7 +51,7 @@ private:
   rclcpp::Publisher<irobot_create_msgs::msg::HazardDetection>::SharedPtr bumper_pub_{nullptr};
 
   // Transformation between robot pose and world
-  ignition::math::Matrix4d r_tf_w_;
+  gz::math::Matrix4d r_tf_w_;
 
   // Pointer to the Contact Sensor model
   gazebo::sensors::ContactSensorPtr bumper_{nullptr};

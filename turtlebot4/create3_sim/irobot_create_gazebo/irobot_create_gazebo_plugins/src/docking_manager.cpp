@@ -40,35 +40,35 @@ bool DockingManager::AreModelsReady()
 
 irobot_create_toolbox::PolarCoordinate
 DockingManager::EmitterCartesianPointToReceiverPolarPoint(
-  const ignition::math::Vector2d & emitter_point)
+  const gz::math::Vector2d & emitter_point)
 {
-  const ignition::math::Vector3d emitter_point_3d =
-    ignition::math::Vector3d{emitter_point.X(), emitter_point.Y(), 0.0};
-  const ignition::math::Pose3d emitter_pose = emitter_link_->WorldPose();
-  const ignition::math::Pose3d receiver_pose = receiver_link_->WorldPose();
+  const gz::math::Vector3d emitter_point_3d =
+    gz::math::Vector3d{emitter_point.X(), emitter_point.Y(), 0.0};
+  const gz::math::Pose3d emitter_pose = emitter_link_->WorldPose();
+  const gz::math::Pose3d receiver_pose = receiver_link_->WorldPose();
   // Pose of emitter relative to the receiver
-  const ignition::math::Pose3d emitter_wrt_receiver_pose = emitter_pose - receiver_pose;
+  const gz::math::Pose3d emitter_wrt_receiver_pose = emitter_pose - receiver_pose;
   // Convert emitter point to a receiver point
-  const ignition::math::Vector3d emitter_wrt_receiver_point =
+  const gz::math::Vector3d emitter_wrt_receiver_point =
     emitter_wrt_receiver_pose.CoordPositionAdd(emitter_point_3d);
   return irobot_create_toolbox::toPolar(
-    ignition::math::Vector2d{emitter_wrt_receiver_point.X(), emitter_wrt_receiver_point.Y()});
+    gz::math::Vector2d{emitter_wrt_receiver_point.X(), emitter_wrt_receiver_point.Y()});
 }
 
 irobot_create_toolbox::PolarCoordinate
 DockingManager::ReceiverCartesianPointToEmitterPolarPoint(
-  const ignition::math::Vector2d & receiver_point)
+  const gz::math::Vector2d & receiver_point)
 {
-  const ignition::math::Vector3d receiver_point_3d =
-    ignition::math::Vector3d{receiver_point.X(), receiver_point.Y(), 0.0};
-  const ignition::math::Pose3d emitter_pose = emitter_link_->WorldPose();
-  const ignition::math::Pose3d receiver_pose = receiver_link_->WorldPose();
+  const gz::math::Vector3d receiver_point_3d =
+    gz::math::Vector3d{receiver_point.X(), receiver_point.Y(), 0.0};
+  const gz::math::Pose3d emitter_pose = emitter_link_->WorldPose();
+  const gz::math::Pose3d receiver_pose = receiver_link_->WorldPose();
   // Pose of receiver relative to the emitter
-  const ignition::math::Pose3d receiver_wrt_emitter_pose = receiver_pose - emitter_pose;
+  const gz::math::Pose3d receiver_wrt_emitter_pose = receiver_pose - emitter_pose;
   // Convert receiver point to an emitter point
-  const ignition::math::Vector3d receiver_wrt_emitter_point =
+  const gz::math::Vector3d receiver_wrt_emitter_point =
     receiver_wrt_emitter_pose.CoordPositionAdd(receiver_point_3d);
   return irobot_create_toolbox::toPolar(
-    ignition::math::Vector2d{receiver_wrt_emitter_point.X(), receiver_wrt_emitter_point.Y()});
+    gz::math::Vector2d{receiver_wrt_emitter_point.X(), receiver_wrt_emitter_point.Y()});
 }
 }  // namespace irobot_create_gazebo_plugins

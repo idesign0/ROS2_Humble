@@ -36,7 +36,7 @@ void GazeboRosBumper::Load(gazebo::sensors::SensorPtr sensor, sdf::ElementPtr sd
 
 void GazeboRosBumper::OnUpdate()
 {
-  if (r_tf_w_ == ignition::math::Matrix4d::Zero) {
+  if (r_tf_w_ == gz::math::Matrix4d::Zero) {
     RCLCPP_WARN_STREAM(ros_node_->get_logger(), "Global pose callback is not being invoked");
     return;
   }
@@ -47,10 +47,10 @@ void GazeboRosBumper::OnUpdate()
 
   for (int i = 0; i < contacts.contact_size(); ++i) {
     // Get collision point in world reference frame
-    const ignition::math::Vector3d c_vec =
+    const gz::math::Vector3d c_vec =
       gazebo::msgs::ConvertIgn(contacts.contact(i).position(0));
     // Get collision w.r.t. robot frame
-    const ignition::math::Vector3d r_vec = r_tf_w_.Inverse() * c_vec;
+    const gz::math::Vector3d r_vec = r_tf_w_.Inverse() * c_vec;
     const double relative_contact_angle_xy = std::atan2(r_vec.Y(), r_vec.X());
     // Check what zone of the bumper has hit an object
     // Only publish if the bump event corresponds to one of the zones
@@ -91,8 +91,8 @@ void GazeboRosBumper::GzPoseCallback(ConstPosesStampedPtr & msg)
     return;
     //  Otherwise, update global pose with the new value.
   } else {
-    r_tf_w_ = ignition::math::Matrix4d(
-      ignition::math::Pose3d(
+    r_tf_w_ = gz::math::Matrix4d(
+      gz::math::Pose3d(
         i->position().x(), i->position().y(), i->position().z(), i->orientation().w(),
         i->orientation().x(), i->orientation().y(), i->orientation().z()));
     return;

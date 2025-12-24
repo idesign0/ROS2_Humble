@@ -1,58 +1,58 @@
-cmake_minimum_required(VERSION 3.10.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
+cmake_policy(SET CMP0100 NEW)
 
-if(POLICY CMP0100)
-  cmake_policy(SET CMP0100 NEW)
-endif()
+project(Turtlebot4Hmi LANGUAGES CXX)
 
+# ------------------------------------------------------------
+# Qt setup
+# ------------------------------------------------------------
 set(CMAKE_AUTOMOC ON)
-set(OpenGL_GL_PREFERENCE LEGACY)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
-# Find Qt5
-find_package(Qt5
-  COMPONENTS
-    Core
-    Quick
-    QuickControls2
-  REQUIRED
+# ------------------------------------------------------------
+# Dependencies
+# ------------------------------------------------------------
+find_package(Qt5 REQUIRED COMPONENTS
+  Core
+  Quick
+  QuickControls2
 )
 
-# Find the Ignition gui library
 find_package(tinyxml2 REQUIRED)
-find_package(ignition-gui6 REQUIRED)
-find_package(ignition-common4 REQUIRED)
+find_package(gz-gui9 REQUIRED)
+find_package(gz-common6 REQUIRED)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${IGNITION-GUI_CXX_FLAGS}")
-
-qt5_add_resources(resources_rcc Turtlebot4Hmi.qrc)
-
-include_directories(SYSTEM
-  ${IGNITION-COMMON_INCLUDE_DIRS}
-  ${IGNITION-GUI_INCLUDE_DIRS}
-  ${Qt5Core_INCLUDE_DIRS}
-  ${Qt5Qml_INCLUDE_DIRS}
-  ${Qt5Quick_INCLUDE_DIRS}
-  ${Qt5QuickControls2_INCLUDE_DIRS}
+# ------------------------------------------------------------
+# Plugin library
+# ------------------------------------------------------------
+add_library(Turtlebot4Hmi SHARED
+  Turtlebot4Hmi.cc
+  Turtlebot4Hmi.hh
+  Turtlebot4Hmi.qrc
 )
 
-link_directories(
-  ${IGNITION-COMMON_LIBRARY_DIRS}
-  ${IGNITION-GUI_LIBRARY_DIRS}
-)
+# ------------------------------------------------------------
+# Compile settings
+# ------------------------------------------------------------
+target_compile_features(Turtlebot4Hmi PRIVATE cxx_std_17)
 
-# Generate examples
-add_library(Turtlebot4Hmi SHARED ${headers_MOC}
-Turtlebot4Hmi.cc
-  ${resources_rcc}
-)
+# ------------------------------------------------------------
+# Link libraries (TARGET-BASED, NO GLOBAL VARIABLES)
+# ------------------------------------------------------------
 target_link_libraries(Turtlebot4Hmi
-  ${IGNITION-GUI_LIBRARIES}
-  ${Qt5Core_LIBRARIES}
-  ${Qt5Qml_LIBRARIES}
-  ${Qt5Quick_LIBRARIES}
-  ${Qt5QuickControls2_LIBRARIES}
+  Qt5::Core
+  Qt5::Quick
+  Qt5::QuickControls2
+
+  gz-gui9::gz-gui9
+  gz-common6::gz-common6
 )
 
+# ------------------------------------------------------------
+# Install location (REQUIRED for gz gui plugins)
+# ------------------------------------------------------------
 install(
   TARGETS Turtlebot4Hmi
-  DESTINATION share/${PROJECT_NAME}/lib
+  LIBRARY DESTINATION lib/gz/gui/plugins
 )

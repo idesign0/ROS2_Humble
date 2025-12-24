@@ -27,7 +27,7 @@
   <depend>irobot_create_ignition_toolbox</depend>
 
   <!-- ROS IGN -->
-  <depend>ros_ign_interfaces</depend>
+  <depend>ros_gz_interfaces</depend>
   <depend>ros_ign_gazebo</depend>
   <depend>ros_ign_bridge</depend>
 

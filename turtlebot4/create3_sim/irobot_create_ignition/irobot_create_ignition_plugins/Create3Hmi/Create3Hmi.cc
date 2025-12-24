@@ -23,9 +23,9 @@ namespace gui
 Create3Hmi::Create3Hmi()
   : Plugin()
 {
-  this->create3_button_pub_ = ignition::transport::Node::Publisher();
+  this->create3_button_pub_ = gz::transport::Node::Publisher();
   this->create3_button_pub_ =
-    this->node_.Advertise < ignition::msgs::Int32 > (this->create3_button_topic_);
+    this->node_.Advertise < gz::msgs::Int32 > (this->create3_button_topic_);
 }
 
 Create3Hmi::~Create3Hmi()
@@ -52,12 +52,12 @@ void Create3Hmi::LoadConfig(const tinyxml2::XMLElement * _pluginElem)
 
 void Create3Hmi::OnCreate3Button(const int button)
 {
-  ignition::msgs::Int32 button_msg;
+  gz::msgs::Int32 button_msg;
 
   button_msg.set_data(button);
 
   if (!this->create3_button_pub_.Publish(button_msg)) {
-    ignerr << "ignition::msgs::Int32 message couldn't be published at topic: " <<
+    gzerr << "gz::msgs::Int32 message couldn't be published at topic: " <<
       this->create3_button_topic_ << std::endl;
   }
 }
@@ -72,20 +72,20 @@ void Create3Hmi::SetNamespace(const QString &_name)
   this->namespace_ = _name.toStdString();
   this->create3_button_topic_ = this->namespace_ + "/create3_buttons";
 
-  ignmsg << "A new robot name has been entered, publishing on topic: '" <<
+  gzmsg << "A new robot name has been entered, publishing on topic: '" <<
       this->create3_button_topic_ << " ' " <<std::endl;
 
   // Update publisher with new topic.
-  this->create3_button_pub_ = ignition::transport::Node::Publisher();
+  this->create3_button_pub_ = gz::transport::Node::Publisher();
   this->create3_button_pub_ =
-      this->node_.Advertise< ignition::msgs::Int32 >
+      this->node_.Advertise< gz::msgs::Int32 >
       (this->create3_button_topic_);
   if (!this->create3_button_pub_)
   {
     App()->findChild<MainWindow *>()->notifyWithDuration(
       QString::fromStdString("Error when advertising topic: " +
         this->create3_button_topic_), 4000);
-    ignerr << "Error when advertising topic: " <<
+    gzerr << "Error when advertising topic: " <<
       this->create3_button_topic_ << std::endl;
   }else {
     App()->findChild<MainWindow *>()->notifyWithDuration(
@@ -101,5 +101,5 @@ void Create3Hmi::SetNamespace(const QString &_name)
 
 // Register this plugin
 IGNITION_ADD_PLUGIN(
-  ignition::gui::Create3Hmi,
-  ignition::gui::Plugin)
+  gz::gui::Create3Hmi,
+  gz::gui::Plugin)

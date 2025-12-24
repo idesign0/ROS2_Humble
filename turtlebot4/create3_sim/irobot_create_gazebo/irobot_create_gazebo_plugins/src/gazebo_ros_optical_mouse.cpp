@@ -85,10 +85,10 @@ void GazeboRosOpticalMouse::OnUpdate(const gazebo::common::UpdateInfo & info)
   }
 
   // Get pose
-  const ignition::math::Pose3d current_pose = link_->WorldPose();
+  const gz::math::Pose3d current_pose = link_->WorldPose();
   // Pose difference with respect to the last mouse link pose. The result is a Pose from
   // the last pose to the current pose.
-  const ignition::math::Vector3d position_displacement = (current_pose - last_pose_).Pos();
+  const gz::math::Vector3d position_displacement = (current_pose - last_pose_).Pos();
 
   // Configure an empty message with the timestamp
   msg_.header.stamp = gazebo_ros::Convert<builtin_interfaces::msg::Time>(current_time);

@@ -65,7 +65,7 @@ def generate_launch_description():
         remappings=[
             ([namespace, '/cmd_vel'], 'cmd_vel'),
             (['/model/', robot_name, '/cmd_vel'],
-             'diffdrive_controller/cmd_vel_unstamped')
+             'diffdrive_controller/cmd_vel')
         ])
 
     # Pose bridge

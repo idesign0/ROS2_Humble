@@ -15,7 +15,7 @@
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>turtlebot4_msgs</depend>
-  <depend>ros_ign_interfaces</depend>
+  <depend>ros_gz_interfaces</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

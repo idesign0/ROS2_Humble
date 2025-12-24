@@ -9,5 +9,6 @@
         "list": "cpp",
         "string": "cpp",
         "vector": "cpp"
-    }
+    },
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true
 }

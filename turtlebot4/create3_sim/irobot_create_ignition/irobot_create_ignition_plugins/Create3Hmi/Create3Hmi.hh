@@ -6,12 +6,12 @@
 #ifndef IROBOT_CREATE_IGNITION__IROBOT_CREATE_IGNITION_PLUGINS__CREATE3HMI__CREATE3HMI_HH_
 #define IROBOT_CREATE_IGNITION__IROBOT_CREATE_IGNITION_PLUGINS__CREATE3HMI__CREATE3HMI_HH_
 
-#include <ignition/gui/qt.h>
+#include <gz/gui/qt.h>
 
 #include <string>
 
-#include <ignition/gui/Plugin.hh>
-#include <ignition/transport/Node.hh>
+#include <gz/gui/Plugin.hh>
+#include <gz/transport/Node.hh>
 
 
 namespace ignition
@@ -60,8 +60,8 @@ protected slots:
   void OnCreate3Button(const int button);
 
 private:
-  ignition::transport::Node node_;
-  ignition::transport::Node::Publisher create3_button_pub_;
+  gz::transport::Node node_;
+  gz::transport::Node::Publisher create3_button_pub_;
   std::string namespace_ = "";
   std::string create3_button_topic_ = "/create3_buttons";
 };

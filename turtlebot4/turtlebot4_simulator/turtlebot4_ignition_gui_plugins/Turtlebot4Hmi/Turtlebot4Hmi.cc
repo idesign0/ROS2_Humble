@@ -16,18 +16,19 @@
  * @author Roni Kreinin (rkreinin@clearpathrobotics.com)
  */
 
+#include <QObject>
 #include "Turtlebot4Hmi.hh"
 
-#include <ignition/msgs/int32.pb.h>
+#include <gz/msgs/int32.pb.h>
 
 #include <iostream>
 #include <vector>
 
-#include <ignition/plugin/Register.hh>
-#include <ignition/gui/Application.hh>
-#include <ignition/gui/MainWindow.hh>
+#include <gz/plugin/Register.hh>
+#include <gz/gui/Application.hh>
+#include <gz/gui/MainWindow.hh>
 
-using ignition::gui::Turtlebot4Hmi;
+using gz::gui::Turtlebot4Hmi;
 
 Turtlebot4Hmi::Turtlebot4Hmi()
 : Plugin()
@@ -43,10 +44,10 @@ Turtlebot4Hmi::~Turtlebot4Hmi()
 
 void Turtlebot4Hmi::CreatePublishers()
 {
-  this->hmi_button_pub_ = ignition::transport::Node::Publisher();
-  this->hmi_button_pub_ = this->node_.Advertise < ignition::msgs::Int32 > (this->hmi_button_topic_);
-  this->create3_button_pub_ = ignition::transport::Node::Publisher();
-  this->create3_button_pub_ = this->node_.Advertise < ignition::msgs::Int32 > (
+  this->hmi_button_pub_ = gz::transport::Node::Publisher();
+  this->hmi_button_pub_ = this->node_.Advertise < gz::msgs::Int32 > (this->hmi_button_topic_);
+  this->create3_button_pub_ = gz::transport::Node::Publisher();
+  this->create3_button_pub_ = this->node_.Advertise < gz::msgs::Int32 > (
     this->create3_button_topic_);
 }
 
@@ -112,7 +113,7 @@ void Turtlebot4Hmi::SetNamespace(const QString &_name)
 {
   this->namespace_ = _name.toStdString();
 
-  ignmsg << "A new robot namespace has been entered: '" <<
+  gzmsg << "A new robot namespace has been entered: '" <<
       this->namespace_ << " ' " <<std::endl;
 
   // Remove existing pub/subs
@@ -140,41 +141,41 @@ void Turtlebot4Hmi::SetNamespace(const QString &_name)
 
 void Turtlebot4Hmi::OnHmiButton(const int button)
 {
-  ignition::msgs::Int32 button_msg;
+  gz::msgs::Int32 button_msg;
 
   button_msg.set_data(button);
 
   if (!this->hmi_button_pub_.Publish(button_msg)) {
-    ignerr << "ignition::msgs::Int32 message couldn't be published at topic: " <<
+    gzerr << "gz::msgs::Int32 message couldn't be published at topic: " <<
       this->hmi_button_topic_ << std::endl;
   }
 }
 
 void Turtlebot4Hmi::OnCreate3Button(const int button)
 {
-  ignition::msgs::Int32 button_msg;
+  gz::msgs::Int32 button_msg;
 
   button_msg.set_data(button);
 
   if (!this->create3_button_pub_.Publish(button_msg)) {
-    ignerr << "ignition::msgs::Int32 message couldn't be published at topic: " <<
+    gzerr << "gz::msgs::Int32 message couldn't be published at topic: " <<
       this->create3_button_topic_ << std::endl;
   }
 }
 
-void Turtlebot4Hmi::OnRawMessage(const ignition::msgs::StringMsg & msg)
+void Turtlebot4Hmi::OnRawMessage(const gz::msgs::StringMsg & msg)
 {
   std::lock_guard < std::mutex > lock(this->raw_msg_mutex_);
   this->AddMsg(QString::fromStdString(msg.data()));
 }
 
-void Turtlebot4Hmi::OnSelectedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnSelectedMessage(const gz::msgs::Int32 & msg)
 {
   std::lock_guard < std::mutex > lock(this->selected_msg_mutex_);
   selected_line_ = msg.data();
 }
 
-void Turtlebot4Hmi::OnPowerLedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnPowerLedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -194,7 +195,7 @@ void Turtlebot4Hmi::OnPowerLedMessage(const ignition::msgs::Int32 & msg)
   }
 }
 
-void Turtlebot4Hmi::OnMotorsLedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnMotorsLedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -214,7 +215,7 @@ void Turtlebot4Hmi::OnMotorsLedMessage(const ignition::msgs::Int32 & msg)
   }
 }
 
-void Turtlebot4Hmi::OnCommsLedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnCommsLedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -234,7 +235,7 @@ void Turtlebot4Hmi::OnCommsLedMessage(const ignition::msgs::Int32 & msg)
   }
 }
 
-void Turtlebot4Hmi::OnWifiLedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnWifiLedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -254,7 +255,7 @@ void Turtlebot4Hmi::OnWifiLedMessage(const ignition::msgs::Int32 & msg)
   }
 }
 
-void Turtlebot4Hmi::OnBatteryLedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnBatteryLedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -286,7 +287,7 @@ void Turtlebot4Hmi::OnBatteryLedMessage(const ignition::msgs::Int32 & msg)
   }
 }
 
-void Turtlebot4Hmi::OnUser1LedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnUser1LedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -306,7 +307,7 @@ void Turtlebot4Hmi::OnUser1LedMessage(const ignition::msgs::Int32 & msg)
   }
 }
 
-void Turtlebot4Hmi::OnUser2LedMessage(const ignition::msgs::Int32 & msg)
+void Turtlebot4Hmi::OnUser2LedMessage(const gz::msgs::Int32 & msg)
 {
   switch (msg.data()) {
     case 0:
@@ -379,6 +380,6 @@ void Turtlebot4Hmi::OnAddMsg(QString msg)
 }
 
 // Register this plugin
-IGNITION_ADD_PLUGIN(
-  ignition::gui::Turtlebot4Hmi,
-  ignition::gui::Plugin)
+GZ_ADD_PLUGIN(
+  gz::gui::Turtlebot4Hmi,
+  gz::gui::Plugin)

@@ -18,7 +18,7 @@ void GazeboRosImu::Load(gazebo::sensors::SensorPtr sensor, sdf::ElementPtr sdf)
   ros_node_ = gazebo_ros::Node::Get(sdf);
 
   sensor_ = std::dynamic_pointer_cast<gazebo::sensors::ImuSensor>(sensor);
-  sensor_->SetWorldToReferenceOrientation(ignition::math::Quaterniond::Identity);
+  sensor_->SetWorldToReferenceOrientation(gz::math::Quaterniond::Identity);
 
   gravity_ = gazebo::physics::get_world(sensor_->WorldName())->Gravity();
 
@@ -35,11 +35,11 @@ void GazeboRosImu::Load(gazebo::sensors::SensorPtr sensor, sdf::ElementPtr sdf)
 void GazeboRosImu::OnUpdate()
 {
   // Calculate gravity w.r.t. IMU frame
-  const ignition::math::Matrix4d imu_tf_w{sensor_->Orientation()};
-  const ignition::math::Vector3d gravity_imu{imu_tf_w.Inverse() * gravity_};
+  const gz::math::Matrix4d imu_tf_w{sensor_->Orientation()};
+  const gz::math::Vector3d gravity_imu{imu_tf_w.Inverse() * gravity_};
 
   // Remove gravity component from IMU reading
-  const ignition::math::Vector3d no_gravity_acceleration{
+  const gz::math::Vector3d no_gravity_acceleration{
     sensor_->LinearAcceleration() + gravity_imu};
 
   // Fill message with latest sensor data
