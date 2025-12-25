@@ -57,9 +57,9 @@ def generate_launch_description():
         }],
         arguments=[
             [namespace,
-             '/cmd_vel' + '@geometry_msgs/msg/Twist' + '[gz.msgs.Twist'],
+             '/cmd_vel' + '@geometry_msgs/msg/TwistStamped' + '[gz.msgs.Twist'],
             ['/model/', robot_name, '/cmd_vel' +
-             '@geometry_msgs/msg/Twist' +
+             '@geometry_msgs/msg/TwistStamped' +
              ']gz.msgs.Twist']
         ],
         remappings=[
