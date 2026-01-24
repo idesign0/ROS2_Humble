@@ -32,6 +32,7 @@ include_directories(SYSTEM
   ${Qt5Qml_INCLUDE_DIRS}
   ${Qt5Quick_INCLUDE_DIRS}
   ${Qt5QuickControls2_INCLUDE_DIRS}
+  "/opt/homebrew/include/ignition/cmake2"
 )
 
 link_directories(
