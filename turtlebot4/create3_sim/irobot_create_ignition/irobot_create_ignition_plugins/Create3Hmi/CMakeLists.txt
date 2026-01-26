@@ -14,6 +14,7 @@ find_package(Qt5
     QuickControls2
   REQUIRED
 )
+find_package(ignition-cmake2 REQUIRED)
 
 qt5_add_resources(resources_rcc Create3Hmi.qrc)
 
@@ -42,6 +43,10 @@ ament_target_dependencies(
     ignition-common4
     ignition-gazebo6
     ignition-plugin1
+)
+
+target_include_directories(Create3Hmi SYSTEM PRIVATE
+  /opt/homebrew/include/ignition/cmake2
 )
 
 install(
