@@ -19,14 +19,16 @@
 #ifndef TURTLEBOT4_IGNITION_GUI_PLUGINS__TURTLEBOT4HMI__TURTLEBOT4HMI_HH_
 #define TURTLEBOT4_IGNITION_GUI_PLUGINS__TURTLEBOT4HMI__TURTLEBOT4HMI_HH_
 
-#include <ignition/gui/qt.h>
+#include <gz/gui/qt.h>
 
 #include <string>
 
-#include <ignition/transport/Node.hh>
-#include <ignition/gui/Plugin.hh>
+#include <gz/msgs/int32.pb.h>
+#include <gz/msgs/stringmsg.pb.h>
+#include <gz/transport/Node.hh>
+#include <gz/gui/Plugin.hh>
 
-namespace ignition
+namespace gz
 {
 
 namespace gui
@@ -82,15 +84,15 @@ signals:
 
   /// \brief Subscriber callbacks
 private:
-  void OnRawMessage(const ignition::msgs::StringMsg & msg);
-  void OnSelectedMessage(const ignition::msgs::Int32 & msg);
-  void OnPowerLedMessage(const ignition::msgs::Int32 & msg);
-  void OnMotorsLedMessage(const ignition::msgs::Int32 & msg);
-  void OnCommsLedMessage(const ignition::msgs::Int32 & msg);
-  void OnWifiLedMessage(const ignition::msgs::Int32 & msg);
-  void OnBatteryLedMessage(const ignition::msgs::Int32 & msg);
-  void OnUser1LedMessage(const ignition::msgs::Int32 & msg);
-  void OnUser2LedMessage(const ignition::msgs::Int32 & msg);
+  void OnRawMessage(const gz::msgs::StringMsg & msg);
+  void OnSelectedMessage(const gz::msgs::Int32 & msg);
+  void OnPowerLedMessage(const gz::msgs::Int32 & msg);
+  void OnMotorsLedMessage(const gz::msgs::Int32 & msg);
+  void OnCommsLedMessage(const gz::msgs::Int32 & msg);
+  void OnWifiLedMessage(const gz::msgs::Int32 & msg);
+  void OnBatteryLedMessage(const gz::msgs::Int32 & msg);
+  void OnUser1LedMessage(const gz::msgs::Int32 & msg);
+  void OnUser2LedMessage(const gz::msgs::Int32 & msg);
   void CreatePublishers();
   void CreateSubscribers();
   void RemovePublishers();
@@ -103,9 +105,9 @@ private slots:
   void OnAddMsg(QString msg);
 
 private:
-  ignition::transport::Node node_;
-  ignition::transport::Node::Publisher hmi_button_pub_;
-  ignition::transport::Node::Publisher create3_button_pub_;
+  gz::transport::Node node_;
+  gz::transport::Node::Publisher hmi_button_pub_;
+  gz::transport::Node::Publisher create3_button_pub_;
 
   std::string namespace_ = "";
   std::string hmi_button_topic_ = "/hmi/buttons";
@@ -133,6 +135,6 @@ private:
 
 }  // namespace gui
 
-}  // namespace ignition
+}  // namespace gz
 
 #endif  // TURTLEBOT4_IGNITION_GUI_PLUGINS__TURTLEBOT4HMI__TURTLEBOT4HMI_HH_

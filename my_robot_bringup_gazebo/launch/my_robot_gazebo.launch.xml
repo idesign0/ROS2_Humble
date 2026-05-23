@@ -11,11 +11,11 @@
     </node>
     <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-        <arg name="gz_args" value="-v 4 $(var world_path) -s -r" />
+        <arg name="gz_args" value="-v 4 $(var world_path) -s" />
     </include>
     <include 
         file="$(find-pkg-share ros_gz_sim)/launch/gz_sim.launch.py">
-        <arg name="gz_args" value="-v 4 empty.sdf -g --render-engine ogre2" />
+        <arg name="gz_args" value="-v 4 -g --render-engine ogre2" />
     </include>
 
     <node pkg="ros_gz_sim" exec="create" args="-topic robot_description" />

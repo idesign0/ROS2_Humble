@@ -16,29 +16,14 @@ find_package(Qt5
   REQUIRED
 )
 
-# Find the Ignition gui library
+# Find the Gazebo gui library (replaces ignition-gui6 in Harmonic)
 find_package(tinyxml2 REQUIRED)
-find_package(ignition-gui6 REQUIRED)
-find_package(ignition-common4 REQUIRED)
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${IGNITION-GUI_CXX_FLAGS}")
+find_package(gz-gui8 REQUIRED)
+find_package(gz-common5 REQUIRED)
+find_package(gz-msgs10 REQUIRED)
+find_package(gz-transport13 REQUIRED)
 
 qt5_add_resources(resources_rcc Turtlebot4Hmi.qrc)
-
-include_directories(SYSTEM
-  ${IGNITION-COMMON_INCLUDE_DIRS}
-  ${IGNITION-GUI_INCLUDE_DIRS}
-  ${Qt5Core_INCLUDE_DIRS}
-  ${Qt5Qml_INCLUDE_DIRS}
-  ${Qt5Quick_INCLUDE_DIRS}
-  ${Qt5QuickControls2_INCLUDE_DIRS}
-  "/opt/homebrew/include/ignition/cmake2"
-)
-
-link_directories(
-  ${IGNITION-COMMON_LIBRARY_DIRS}
-  ${IGNITION-GUI_LIBRARY_DIRS}
-)
 
 # Generate examples
 add_library(Turtlebot4Hmi SHARED ${headers_MOC}
@@ -46,7 +31,10 @@ Turtlebot4Hmi.cc
   ${resources_rcc}
 )
 target_link_libraries(Turtlebot4Hmi
-  ${IGNITION-GUI_LIBRARIES}
+  gz-gui8::gz-gui8
+  gz-common5::gz-common5
+  gz-msgs10::gz-msgs10
+  gz-transport13::gz-transport13
   ${Qt5Core_LIBRARIES}
   ${Qt5Qml_LIBRARIES}
   ${Qt5Quick_LIBRARIES}

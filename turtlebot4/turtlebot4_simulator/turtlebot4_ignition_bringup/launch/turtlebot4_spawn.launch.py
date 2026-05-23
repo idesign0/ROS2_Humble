@@ -268,7 +268,7 @@ def generate_launch_description():
 
     # Nav2
     nav2 = TimerAction(
-        period=180.0,
+        period=10.0,
         actions=[
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([nav2_launch]),

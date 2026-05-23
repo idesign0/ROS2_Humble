@@ -194,7 +194,7 @@ def generate_launch_description():
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(cmd_vel_bridge)
     ld.add_action(pose_bridge)
-    ld.add_action(odom_base_tf_bridge)
+    # odom_base_tf_bridge disabled — see comment above
     ld.add_action(bumper_contact_bridge)
     ld.add_action(cliff_bridges)
     ld.add_action(ir_bridges)
