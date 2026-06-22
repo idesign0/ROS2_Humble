@@ -5,16 +5,16 @@
 
 #include "Create3Hmi.hh"
 
-#include <ignition/msgs/int32.pb.h>
+#include <gz/msgs/int32.pb.h>
 
 #include <iostream>
 
-#include <ignition/plugin/Register.hh>
-#include <ignition/gui/Application.hh>
-#include <ignition/gui/MainWindow.hh>
+#include <gz/plugin/Register.hh>
+#include <gz/gui/Application.hh>
+#include <gz/gui/MainWindow.hh>
 
 
-namespace ignition
+namespace gz
 {
 
 namespace gui
@@ -97,9 +97,9 @@ void Create3Hmi::SetNamespace(const QString &_name)
 
 }  // namespace gui
 
-}  // namespace ignition
+}  // namespace gz
 
 // Register this plugin
-IGNITION_ADD_PLUGIN(
+GZ_ADD_PLUGIN(
   gz::gui::Create3Hmi,
   gz::gui::Plugin)

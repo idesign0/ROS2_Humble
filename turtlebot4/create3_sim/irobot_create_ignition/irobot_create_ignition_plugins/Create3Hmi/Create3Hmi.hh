@@ -14,7 +14,7 @@
 #include <gz/transport/Node.hh>
 
 
-namespace ignition
+namespace gz
 {
 
 namespace gui
@@ -68,6 +68,6 @@ private:
 
 }  // namespace gui
 
-}  // namespace ignition
+}  // namespace gz
 
 #endif  // IROBOT_CREATE_IGNITION__IROBOT_CREATE_IGNITION_PLUGINS__CREATE3HMI__CREATE3HMI_HH_

@@ -58,20 +58,29 @@ def generate_launch_description():
     pkg_ros_gz_sim = get_package_share_directory(
         'ros_gz_sim')
 
+    # Ensure GZ_CONFIG_PATH is propagated so the gz Ruby launcher can find gz-sim
+    gz_config_path = SetEnvironmentVariable(
+        name='GZ_CONFIG_PATH',
+        value=os.environ.get('GZ_CONFIG_PATH', '/opt/homebrew/opt/ros2-kilted/share/gz'))
+
     # Set ignition resource path
+    _gz_resource_base = os.environ.get('GZ_SIM_RESOURCE_PATH', '')
     ign_resource_path = SetEnvironmentVariable(
         name='GZ_SIM_RESOURCE_PATH',
         value=[
-            os.path.join(pkg_turtlebot4_ignition_bringup, 'worlds'), ':' +
-            os.path.join(pkg_irobot_create_ignition_bringup, 'worlds'), ':' +
-            str(Path(pkg_turtlebot4_description).parent.resolve()), ':' +
-            str(Path(pkg_irobot_create_description).parent.resolve())])
+            os.path.join(pkg_turtlebot4_ignition_bringup, 'worlds'), ':',
+            os.path.join(pkg_irobot_create_ignition_bringup, 'worlds'), ':',
+            str(Path(pkg_turtlebot4_description).parent.resolve()), ':',
+            str(Path(pkg_irobot_create_description).parent.resolve()),
+            (':' + _gz_resource_base) if _gz_resource_base else ''])
 
+    _gz_gui_base = os.environ.get('GZ_GUI_PLUGIN_PATH', '')
     ign_gui_plugin_path = SetEnvironmentVariable(
         name='GZ_GUI_PLUGIN_PATH',
         value=[
-            os.path.join(pkg_turtlebot4_ignition_gui_plugins, 'lib'), ':' +
-            os.path.join(pkg_irobot_create_ignition_plugins, 'lib')])
+            os.path.join(pkg_turtlebot4_ignition_gui_plugins, 'lib'), ':',
+            os.path.join(pkg_irobot_create_ignition_plugins, 'lib'),
+            (':' + _gz_gui_base) if _gz_gui_base else ''])
 
     # Paths
     gz_sim_launch = PathJoinSubstitution(
@@ -113,6 +122,7 @@ def generate_launch_description():
 
     # Create launch description and add actions
     ld = LaunchDescription(ARGUMENTS)
+    ld.add_action(gz_config_path)
     ld.add_action(ign_resource_path)
     ld.add_action(ign_gui_plugin_path)
     ld.add_action(ignition_gazebo_server)

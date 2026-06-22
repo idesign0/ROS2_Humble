@@ -10,31 +10,13 @@ find_package(ament_cmake REQUIRED)
 
 set(OpenGL_GL_PREFERENCE LEGACY)
 
-# Find the Ignition gui library
-find_package(ignition-common4 QUIET)
+find_package(gz-gui9 QUIET)
+find_package(gz-msgs11 QUIET)
+find_package(gz-transport14 QUIET)
+find_package(gz-plugin3 QUIET)
 
-# Find tinyxml2 manually, since Homebrew doesn't export CMake targets
-find_path(TINYXML2_INCLUDE_DIR tinyxml2.h PATHS /opt/homebrew/include)
-find_library(TINYXML2_LIBRARY NAMES tinyxml2 PATHS /opt/homebrew/lib)
-
-if(NOT TINYXML2_INCLUDE_DIR OR NOT TINYXML2_LIBRARY)
-  message(FATAL_ERROR "Could not find TinyXML2")
-endif()
-
-add_library(tinyxml2_imported STATIC IMPORTED GLOBAL)
-set_target_properties(tinyxml2_imported PROPERTIES
-  IMPORTED_LOCATION "${TINYXML2_LIBRARY}"
-  INTERFACE_INCLUDE_DIRECTORIES "${TINYXML2_INCLUDE_DIR}"
-)
-
-add_library(tinyxml2::tinyxml2 ALIAS tinyxml2_imported)
-
-find_package(ignition-gazebo6 QUIET)
-
-find_package(ignition-plugin1 QUIET)
-
-if(NOT ignition-gazebo6_FOUND OR NOT ignition-common4_FOUND OR NOT ignition-plugin1_FOUND)
-  message(WARNING "Ignition not found. Skipping ${PROJECT_NAME} package.")
+if(NOT gz-gui9_FOUND OR NOT gz-msgs11_FOUND OR NOT gz-transport14_FOUND OR NOT gz-plugin3_FOUND)
+  message(WARNING "Gazebo (gz-gui9/gz-msgs11/gz-transport14/gz-plugin3) not found. Skipping ${PROJECT_NAME} package.")
   ament_package()
   return()
 endif()

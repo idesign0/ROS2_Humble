@@ -36,12 +36,10 @@ target_link_libraries(
     ${Qt5Qml_LIBRARIES}
     ${Qt5Quick_LIBRARIES}
     ${Qt5QuickControls2_LIBRARIES}
-)
-ament_target_dependencies(
-  Create3Hmi
-    ignition-common4
-    ignition-gazebo6
-    ignition-plugin1
+    gz-gui9::gz-gui9
+    gz-msgs11::gz-msgs11
+    gz-transport14::gz-transport14
+    gz-plugin3::gz-plugin3
 )
 
 install(
