@@ -111,7 +111,7 @@ MotionControlNode::MotionControlNode(const rclcpp::NodeOptions & options)
     std::bind(&MotionControlNode::hazard_vector_callback, this, _1));
 
   // Create subscription to let other applications drive the robot
-  teleop_subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
+  teleop_subscription_ = this->create_subscription<geometry_msgs::msg::TwistStamped>(
     "cmd_vel", rclcpp::SensorDataQoS(),
     std::bind(&MotionControlNode::commanded_velocity_callback, this, _1));
 
@@ -123,8 +123,8 @@ MotionControlNode::MotionControlNode(const rclcpp::NodeOptions & options)
     "kidnap_status", rclcpp::SensorDataQoS(),
     std::bind(&MotionControlNode::kidnap_callback, this, _1));
 
-  cmd_vel_out_pub_ = this->create_publisher<geometry_msgs::msg::Twist>(
-    "diffdrive_controller/cmd_vel_unstamped", rclcpp::SystemDefaultsQoS());
+  cmd_vel_out_pub_ = this->create_publisher<geometry_msgs::msg::TwistStamped>(
+    "diffdrive_controller/cmd_vel", rclcpp::SystemDefaultsQoS());
 
   backup_limit_hazard_pub_ = this->create_publisher<irobot_create_msgs::msg::HazardDetection>(
     "_internal/backup_limit", rclcpp::SensorDataQoS().reliable());
@@ -274,11 +274,13 @@ void MotionControlNode::control_robot()
   if (backup_printed_ && !backup_buffer_low_) {
     backup_printed_ = false;
   }
-  auto cmd_out_msg = std::make_unique<geometry_msgs::msg::Twist>();
-  if (!e_stop_engaged_) {
-    *cmd_out_msg = *command;
+  geometry_msgs::msg::TwistStamped cmd_out_msg;
+  if (!e_stop_engaged_ && command) {
+      cmd_out_msg.header.stamp = this->now();
+      cmd_out_msg.header.frame_id = base_frame_;
+      cmd_out_msg.twist = *command;  // command is geometry_msgs::msg::Twist
   }
-  cmd_vel_out_pub_->publish(std::move(cmd_out_msg));
+  cmd_vel_out_pub_->publish(cmd_out_msg);
   auto wheel_status_msg = std::make_unique<irobot_create_msgs::msg::WheelStatus>();
   wheel_status_msg->header.stamp = this->now();
   wheel_status_msg->header.frame_id = base_frame_;
@@ -330,7 +332,7 @@ void MotionControlNode::hazard_vector_callback(
   reflex_behavior_->update_hazards(current_state_);
 }
 
-void MotionControlNode::commanded_velocity_callback(geometry_msgs::msg::Twist::ConstSharedPtr msg)
+void MotionControlNode::commanded_velocity_callback(geometry_msgs::msg::TwistStamped::ConstSharedPtr msg)
 {
   if (scheduler_->has_behavior()) {
     const auto time_now = this->now();
@@ -345,7 +347,7 @@ void MotionControlNode::commanded_velocity_callback(geometry_msgs::msg::Twist::C
 
   const std::lock_guard<std::mutex> lock(mutex_);
 
-  last_teleop_cmd_ = *msg;
+  last_teleop_cmd_ = msg->twist;
   last_teleop_ts_ = this->now();
 }
 

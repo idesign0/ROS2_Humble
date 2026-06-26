@@ -18,11 +18,16 @@
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, GroupAction
+from launch.actions import (DeclareLaunchArgument, EmitEvent,
+                            GroupAction, RegisterEventHandler)
 from launch.conditions import IfCondition, UnlessCondition
+from launch.events import matches_action
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
-from launch_ros.actions import Node, PushRosNamespace
+from launch_ros.actions import LifecycleNode, PushRosNamespace
+from launch_ros.event_handlers import OnStateTransition
+from launch_ros.events.lifecycle import ChangeState
+from lifecycle_msgs.msg import Transition
 
 from nav2_common.launch import RewrittenYaml
 
@@ -44,12 +49,13 @@ def generate_launch_description():
 
     namespace = LaunchConfiguration('namespace')
     sync = LaunchConfiguration('sync')
+    use_sim_time = LaunchConfiguration('use_sim_time')
 
     slam_params_arg = DeclareLaunchArgument(
         'params',
         default_value=PathJoinSubstitution(
             [pkg_turtlebot4_navigation, 'config', 'slam.yaml']),
-        description='Robot namespace')
+        description='SLAM parameters file')
 
     slam_params = RewrittenYaml(
         source_file=LaunchConfiguration('params'),
@@ -66,30 +72,87 @@ def generate_launch_description():
         ('/map_metadata', 'map_metadata'),
     ]
 
+    sync_slam_node = LifecycleNode(
+        package='slam_toolbox',
+        executable='sync_slam_toolbox_node',
+        name='slam_toolbox',
+        namespace=namespace,
+        output='screen',
+        parameters=[
+            slam_params,
+            {'use_sim_time': use_sim_time,
+             'use_lifecycle_manager': False}
+        ],
+        remappings=remappings,
+        condition=IfCondition(sync))
+
+    async_slam_node = LifecycleNode(
+        package='slam_toolbox',
+        executable='async_slam_toolbox_node',
+        name='slam_toolbox',
+        namespace=namespace,
+        output='screen',
+        parameters=[
+            slam_params,
+            {'use_sim_time': use_sim_time,
+             'use_lifecycle_manager': False}
+        ],
+        remappings=remappings,
+        condition=UnlessCondition(sync))
+
+    # Trigger configure transition immediately after node starts (sync)
+    configure_sync = EmitEvent(
+        event=ChangeState(
+            lifecycle_node_matcher=matches_action(sync_slam_node),
+            transition_id=Transition.TRANSITION_CONFIGURE
+        ),
+        condition=IfCondition(sync))
+
+    # Trigger activate once configure completes (sync)
+    activate_sync = RegisterEventHandler(
+        OnStateTransition(
+            target_lifecycle_node=sync_slam_node,
+            start_state='configuring',
+            goal_state='inactive',
+            entities=[
+                EmitEvent(event=ChangeState(
+                    lifecycle_node_matcher=matches_action(sync_slam_node),
+                    transition_id=Transition.TRANSITION_ACTIVATE
+                ))
+            ]
+        ),
+        condition=IfCondition(sync))
+
+    # Same for async node
+    configure_async = EmitEvent(
+        event=ChangeState(
+            lifecycle_node_matcher=matches_action(async_slam_node),
+            transition_id=Transition.TRANSITION_CONFIGURE
+        ),
+        condition=UnlessCondition(sync))
+
+    activate_async = RegisterEventHandler(
+        OnStateTransition(
+            target_lifecycle_node=async_slam_node,
+            start_state='configuring',
+            goal_state='inactive',
+            entities=[
+                EmitEvent(event=ChangeState(
+                    lifecycle_node_matcher=matches_action(async_slam_node),
+                    transition_id=Transition.TRANSITION_ACTIVATE
+                ))
+            ]
+        ),
+        condition=UnlessCondition(sync))
+
     slam = GroupAction([
         PushRosNamespace(namespace),
-
-        Node(package='slam_toolbox',
-             executable='sync_slam_toolbox_node',
-             name='slam_toolbox',
-             output='screen',
-             parameters=[
-               slam_params,
-               {'use_sim_time': LaunchConfiguration('use_sim_time')}
-             ],
-             remappings=remappings,
-             condition=IfCondition(sync)),
-
-        Node(package='slam_toolbox',
-             executable='async_slam_toolbox_node',
-             name='slam_toolbox',
-             output='screen',
-             parameters=[
-               slam_params,
-               {'use_sim_time': LaunchConfiguration('use_sim_time')}
-             ],
-             remappings=remappings,
-             condition=UnlessCondition(sync))
+        sync_slam_node,
+        async_slam_node,
+        configure_sync,
+        activate_sync,
+        configure_async,
+        activate_async,
     ])
 
     ld = LaunchDescription(ARGUMENTS)

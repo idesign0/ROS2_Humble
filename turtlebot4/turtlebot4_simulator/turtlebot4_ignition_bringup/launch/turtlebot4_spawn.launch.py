@@ -266,9 +266,9 @@ def generate_launch_description():
         condition=IfCondition(LaunchConfiguration('rviz')),
     )
 
-    # Nav2
+    # Nav2 — longer delay when using slam (robot must undock and build initial map first)
     nav2 = TimerAction(
-        period=10.0,
+        period=60.0,
         actions=[
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([nav2_launch]),

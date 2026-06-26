@@ -57,15 +57,15 @@ def generate_launch_description():
         }],
         arguments=[
             [namespace,
-             '/cmd_vel' + '@geometry_msgs/msg/Twist' + '[gz.msgs.Twist'],
+             '/cmd_vel' + '@geometry_msgs/msg/TwistStamped' + '[gz.msgs.Twist'],
             ['/model/', robot_name, '/cmd_vel' +
-             '@geometry_msgs/msg/Twist' +
+             '@geometry_msgs/msg/TwistStamped' +
              ']gz.msgs.Twist']
         ],
         remappings=[
             ([namespace, '/cmd_vel'], 'cmd_vel'),
             (['/model/', robot_name, '/cmd_vel'],
-             'diffdrive_controller/cmd_vel_unstamped')
+             'diffdrive_controller/cmd_vel')
         ])
 
     # Pose bridge
@@ -194,7 +194,7 @@ def generate_launch_description():
     ld = LaunchDescription(ARGUMENTS)
     ld.add_action(cmd_vel_bridge)
     ld.add_action(pose_bridge)
-    # odom_base_tf_bridge disabled — see comment above
+    ld.add_action(odom_base_tf_bridge)
     ld.add_action(bumper_contact_bridge)
     ld.add_action(cliff_bridges)
     ld.add_action(ir_bridges)
